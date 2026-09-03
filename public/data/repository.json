@@ -1,0 +1,1998 @@
+{
+  "generatedAt": "2026-09-03T00:00:00+02:00",
+  "checkedAt": "2026-09-03",
+  "closureNote": "Catálogo jurídico-operativo comprobado el 3 de septiembre de 2026. No se localizó un Plan Regional 2026/2027; el último publicado es el correspondiente a 2025/2026.",
+  "catalogVersion": "3c6c3329055f",
+  "officialPortal": "https://formacion.educarex.es/",
+  "assistant": {
+    "status": "knowledge_prepared",
+    "url": null
+  },
+  "documents": [
+    {
+      "id": "loe-2-2006",
+      "titulo": "Ley Orgánica 2/2006, de Educación (texto consolidado)",
+      "bloque": "marco_general",
+      "tipo": "Ley orgánica",
+      "fecha": "2006-05-03",
+      "curso": null,
+      "organoEmisor": "Jefatura del Estado",
+      "estado": "Vigente, modificada",
+      "ambito": "Estatal",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "formación permanente",
+        "profesorado",
+        "calidad educativa"
+      ],
+      "naturaleza": "Norma con rango de ley",
+      "relacionSIFE": "Marco estatal del derecho y deber de formación permanente del profesorado.",
+      "resumenTecnico": "Regula el sistema educativo y establece que la formación permanente es un derecho y una obligación del profesorado y una responsabilidad de las administraciones educativas y de los centros.",
+      "aspectosClave": [
+        "Formación permanente como derecho y obligación",
+        "Programas de actualización científica, didáctica y profesional",
+        "Responsabilidad compartida de administración y centros"
+      ],
+      "articulosApartadosRelevantes": [
+        "Artículos 102 y 103",
+        "Artículo 105.2.d)"
+      ],
+      "modificacionesPosteriores": [
+        "Modificada de forma relevante por la Ley Orgánica 3/2020 (LOMLOE)"
+      ],
+      "normativaRelacionada": [
+        "lomloe-3-2020",
+        "ley-4-2011-extremadura",
+        "decreto-69-2007"
+      ],
+      "tipoFuente": "BOE",
+      "fuenteOficial": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-7899",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/01_marco_general/LOE-2-2006-consolidada.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/01_marco_general/LOE-2-2006-consolidada.pdf",
+      "sha256": "05a78a7cec05ac8d9e2e91824d7f9399d9a54603285bd1374dd648cf0fcb0ce7",
+      "textoIndexable": "ley organica 2/2006, de educacion (texto consolidado) marco_general ley organica jefatura del estado vigente, modificada estatal imprescindible formacion permanente profesorado calidad educativa norma con rango de ley marco estatal del derecho y deber de formacion permanente del profesorado. regula el sistema educativo y establece que la formacion permanente es un derecho y una obligacion del profesorado y una responsabilidad de las administraciones educativas y de los centros. formacion permanente como derecho y obligacion programas de actualizacion cientifica, didactica y profesional responsabilidad compartida de administracion y centros articulos 102 y 103 articulo 105.2.d) modificada de forma relevante por la ley organica 3/2020 (lomloe)"
+    },
+    {
+      "id": "lomloe-3-2020",
+      "titulo": "Ley Orgánica 3/2020, de modificación de la LOE (LOMLOE)",
+      "bloque": "marco_general",
+      "tipo": "Ley orgánica",
+      "fecha": "2020-12-29",
+      "curso": null,
+      "organoEmisor": "Jefatura del Estado",
+      "estado": "Vigente",
+      "ambito": "Estatal",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "formación permanente",
+        "competencia digital",
+        "innovación educativa"
+      ],
+      "naturaleza": "Norma con rango de ley",
+      "relacionSIFE": "Actualiza la LOE y refuerza la formación docente vinculada a digitalización, inclusión y mejora educativa.",
+      "resumenTecnico": "Reforma la LOE e incorpora nuevas prioridades del sistema educativo que deben reflejarse en los planes de formación del profesorado.",
+      "aspectosClave": [
+        "Modifica la LOE",
+        "Actualización de competencias docentes",
+        "Transformación digital e innovación"
+      ],
+      "articulosApartadosRelevantes": [
+        "Modificaciones de los artículos 102 y 111 bis de la LOE"
+      ],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "loe-2-2006",
+        "plan-marco-2016",
+        "plan-regional-2025-2026"
+      ],
+      "tipoFuente": "BOE",
+      "fuenteOficial": "https://www.boe.es/buscar/doc.php?id=BOE-A-2020-17264",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/01_marco_general/LOMLOE-3-2020.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/01_marco_general/LOMLOE-3-2020.pdf",
+      "sha256": "73e83117768af12e335f36f7f50119b184cbe64c1ec445f62fe5e247a2a9298c",
+      "textoIndexable": "ley organica 3/2020, de modificacion de la loe (lomloe) marco_general ley organica jefatura del estado vigente estatal imprescindible formacion permanente competencia digital innovacion educativa norma con rango de ley actualiza la loe y refuerza la formacion docente vinculada a digitalizacion, inclusion y mejora educativa. reforma la loe e incorpora nuevas prioridades del sistema educativo que deben reflejarse en los planes de formacion del profesorado. modifica la loe actualizacion de competencias docentes transformacion digital e innovacion modificaciones de los articulos 102 y 111 bis de la loe"
+    },
+    {
+      "id": "ley-4-2011-extremadura",
+      "titulo": "Ley 4/2011, de Educación de Extremadura (texto consolidado)",
+      "bloque": "marco_general",
+      "tipo": "Ley autonómica",
+      "fecha": "2011-03-07",
+      "curso": null,
+      "organoEmisor": "Asamblea de Extremadura",
+      "estado": "Vigente, modificada",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "formación permanente",
+        "innovación educativa",
+        "licencias por estudios"
+      ],
+      "naturaleza": "Norma con rango de ley",
+      "relacionSIFE": "Marco autonómico de la formación permanente, la innovación y el desarrollo profesional docente.",
+      "resumenTecnico": "Ordena los fines y características de la formación permanente del profesorado en Extremadura y prevé planes, licencias y colaboración institucional.",
+      "aspectosClave": [
+        "Proyección de la formación sobre la práctica docente",
+        "Organización mediante planes",
+        "Licencias, innovación y colaboración"
+      ],
+      "articulosApartadosRelevantes": [
+        "Artículo 158 y siguientes",
+        "Artículo 162",
+        "Artículo 191.4"
+      ],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "loe-2-2006",
+        "decreto-69-2007",
+        "plan-marco-2016"
+      ],
+      "tipoFuente": "BOE / DOE",
+      "fuenteOficial": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-5297",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/01_marco_general/Ley-4-2011-educacion-extremadura-consolidada.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/01_marco_general/Ley-4-2011-educacion-extremadura-consolidada.pdf",
+      "sha256": "36a2d8fd67e6ddb35e5c229bc1f4e5a63bccb62f02d71ac5a17414f98303050d",
+      "textoIndexable": "ley 4/2011, de educacion de extremadura (texto consolidado) marco_general ley autonomica asamblea de extremadura vigente, modificada autonomico — extremadura imprescindible formacion permanente innovacion educativa licencias por estudios norma con rango de ley marco autonomico de la formacion permanente, la innovacion y el desarrollo profesional docente. ordena los fines y caracteristicas de la formacion permanente del profesorado en extremadura y preve planes, licencias y colaboracion institucional. proyeccion de la formacion sobre la practica docente organizacion mediante planes licencias, innovacion y colaboracion articulo 158 y siguientes articulo 162 articulo 191.4"
+    },
+    {
+      "id": "decreto-69-2007",
+      "titulo": "Decreto 69/2007, sistema de formación permanente del profesorado",
+      "bloque": "sistema_formacion",
+      "tipo": "Decreto",
+      "fecha": "2007-04-10",
+      "curso": null,
+      "organoEmisor": "Junta de Extremadura",
+      "estado": "Vigente",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "sistema de formación",
+        "CPR",
+        "planificación",
+        "modalidades formativas"
+      ],
+      "naturaleza": "Disposición general",
+      "relacionSIFE": "Norma matriz del sistema extremeño de formación permanente del profesorado.",
+      "resumenTecnico": "Define la estructura del sistema, los Centros de Profesores y de Recursos, la Comisión Regional y los instrumentos de planificación de la formación permanente.",
+      "aspectosClave": [
+        "Estructura del sistema de formación",
+        "CPR como instituciones preferentes",
+        "Plan Marco plurianual y Plan Regional anual",
+        "Evaluación de la formación"
+      ],
+      "articulosApartadosRelevantes": [
+        "Artículo 6",
+        "Artículos 9 a 15",
+        "Artículos 21 y 22"
+      ],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "ley-4-2011-extremadura",
+        "plan-marco-2016",
+        "plan-regional-2025-2026",
+        "decreto-112-2026"
+      ],
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/eli/es-ex/d/2007/04/10/69",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/02_sistema_formacion/Decreto-69-2007-sistema-formacion-permanente.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/02_sistema_formacion/Decreto-69-2007-sistema-formacion-permanente.pdf",
+      "sha256": "f5dbf482388f5d220845e4eb857f3bd6876d2e3b34e013dcdc2940fcb181d3fd",
+      "textoIndexable": "decreto 69/2007, sistema de formacion permanente del profesorado sistema_formacion decreto junta de extremadura vigente autonomico — extremadura imprescindible sistema de formacion cpr planificacion modalidades formativas disposicion general norma matriz del sistema extremeno de formacion permanente del profesorado. define la estructura del sistema, los centros de profesores y de recursos, la comision regional y los instrumentos de planificacion de la formacion permanente. estructura del sistema de formacion cpr como instituciones preferentes plan marco plurianual y plan regional anual evaluacion de la formacion articulo 6 articulos 9 a 15 articulos 21 y 22"
+    },
+    {
+      "id": "orden-31-10-2000",
+      "titulo": "Orden de 31 de octubre de 2000 sobre actividades de formación permanente",
+      "bloque": "registro_reconocimiento",
+      "tipo": "Orden",
+      "fecha": "2000-10-31",
+      "curso": null,
+      "organoEmisor": "Consejería de Educación, Ciencia y Tecnología",
+      "estado": "Vigente, modificada",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "reconocimiento",
+        "certificación",
+        "registro",
+        "equivalencias",
+        "modalidades formativas"
+      ],
+      "naturaleza": "Disposición general",
+      "relacionSIFE": "Regula la convocatoria, reconocimiento, certificación y registro de las actividades de formación permanente.",
+      "resumenTecnico": "Establece requisitos, modalidades, evaluación, certificación, registro y equivalencias de actividades y titulaciones a efectos de formación permanente.",
+      "aspectosClave": [
+        "Modalidades de formación",
+        "Reconocimiento y certificación",
+        "Registro General",
+        "Equivalencias"
+      ],
+      "articulosApartadosRelevantes": [
+        "Artículo 1",
+        "Artículo 10",
+        "Artículo 25"
+      ],
+      "modificacionesPosteriores": [
+        "Corrección de errores de 11 de noviembre de 2000",
+        "Orden de 21 de mayo de 2002"
+      ],
+      "normativaRelacionada": [
+        "correccion-orden-2000",
+        "orden-21-05-2002",
+        "registro-solicitudes",
+        "plan-regional-2025-2026"
+      ],
+      "tipoFuente": "DOE / Educarex",
+      "fuenteOficial": "https://doe.juntaex.es/ultimosdoe/mostrardoe.php?fecha=20001104",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/04_registro_reconocimiento/Orden-31-octubre-2000-registro-formacion.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/04_registro_reconocimiento/Orden-31-octubre-2000-registro-formacion.pdf",
+      "sha256": "7476d76605c2d62d8211dc88504bd39868f5e9bf7e3d35dab7eb850bda921a99",
+      "textoIndexable": "orden de 31 de octubre de 2000 sobre actividades de formacion permanente registro_reconocimiento orden consejeria de educacion, ciencia y tecnologia vigente, modificada autonomico — extremadura imprescindible reconocimiento certificacion registro equivalencias modalidades formativas disposicion general regula la convocatoria, reconocimiento, certificacion y registro de las actividades de formacion permanente. establece requisitos, modalidades, evaluacion, certificacion, registro y equivalencias de actividades y titulaciones a efectos de formacion permanente. modalidades de formacion reconocimiento y certificacion registro general equivalencias articulo 1 articulo 10 articulo 25 correccion de errores de 11 de noviembre de 2000 orden de 21 de mayo de 2002"
+    },
+    {
+      "id": "correccion-orden-2000",
+      "titulo": "Corrección de errores de la Orden de 31 de octubre de 2000",
+      "bloque": "registro_reconocimiento",
+      "tipo": "Corrección de errores",
+      "fecha": "2000-11-11",
+      "curso": null,
+      "organoEmisor": "Consejería de Educación, Ciencia y Tecnología",
+      "estado": "Aplicable junto con la orden",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Muy relevante",
+      "materias": [
+        "reconocimiento",
+        "certificación",
+        "registro"
+      ],
+      "naturaleza": "Corrección oficial",
+      "relacionSIFE": "Corrige el texto publicado de la orden reguladora del Registro de Formación.",
+      "resumenTecnico": "Debe consultarse conjuntamente con la Orden de 31 de octubre de 2000.",
+      "aspectosClave": [
+        "Corrección del texto oficial"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "orden-31-10-2000"
+      ],
+      "tipoFuente": "DOE / Educarex",
+      "fuenteOficial": "https://doe.juntaex.es/ultimosdoe/mostrardoe.php?fecha=20001111",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/04_registro_reconocimiento/Correccion-errores-Orden-31-octubre-2000.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/04_registro_reconocimiento/Correccion-errores-Orden-31-octubre-2000.pdf",
+      "sha256": "dae1ed349339875500193d54661f2d95cda547020829184273dd6c777859413f",
+      "textoIndexable": "correccion de errores de la orden de 31 de octubre de 2000 registro_reconocimiento correccion de errores consejeria de educacion, ciencia y tecnologia aplicable junto con la orden autonomico — extremadura muy relevante reconocimiento certificacion registro correccion oficial corrige el texto publicado de la orden reguladora del registro de formacion. debe consultarse conjuntamente con la orden de 31 de octubre de 2000. correccion del texto oficial"
+    },
+    {
+      "id": "orden-21-05-2002",
+      "titulo": "Orden de 21 de mayo de 2002 que modifica la Orden de 31 de octubre de 2000",
+      "bloque": "registro_reconocimiento",
+      "tipo": "Orden",
+      "fecha": "2002-05-21",
+      "curso": null,
+      "organoEmisor": "Consejería de Educación, Ciencia y Tecnología",
+      "estado": "Vigente",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "reconocimiento",
+        "certificación",
+        "registro",
+        "equivalencias"
+      ],
+      "naturaleza": "Disposición general modificadora",
+      "relacionSIFE": "Actualiza la orden reguladora de las actividades de formación permanente.",
+      "resumenTecnico": "Modifica determinados preceptos de la Orden de 31 de octubre de 2000 y forma parte de su régimen vigente.",
+      "aspectosClave": [
+        "Modificación del régimen de reconocimiento y registro"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "orden-31-10-2000"
+      ],
+      "tipoFuente": "DOE / Educarex",
+      "fuenteOficial": "https://doe.juntaex.es/ultimosdoe/mostrardoe.php?fecha=20020530",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/04_registro_reconocimiento/Orden-21-mayo-2002-modificacion-registro.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/04_registro_reconocimiento/Orden-21-mayo-2002-modificacion-registro.pdf",
+      "sha256": "bbb5e2c2bc33973c6b8fde66229f1210ba994d163457b1e93d58be163e8054af",
+      "textoIndexable": "orden de 21 de mayo de 2002 que modifica la orden de 31 de octubre de 2000 registro_reconocimiento orden consejeria de educacion, ciencia y tecnologia vigente autonomico — extremadura imprescindible reconocimiento certificacion registro equivalencias disposicion general modificadora actualiza la orden reguladora de las actividades de formacion permanente. modifica determinados preceptos de la orden de 31 de octubre de 2000 y forma parte de su regimen vigente. modificacion del regimen de reconocimiento y registro"
+    },
+    {
+      "id": "plan-marco-2016",
+      "titulo": "Plan Marco de Formación Permanente del Profesorado de Extremadura",
+      "bloque": "planificacion",
+      "tipo": "Orden y plan",
+      "fecha": "2016-11-25",
+      "curso": "Plurianual",
+      "organoEmisor": "Consejería de Educación y Empleo",
+      "estado": "Vigente como marco de referencia",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "planificación",
+        "líneas directrices",
+        "competencias profesionales docentes",
+        "CPR"
+      ],
+      "naturaleza": "Instrumento de planificación aprobado por orden",
+      "relacionSIFE": "Define las líneas directrices plurianuales para los planes regionales y los planes de actuación de los CPR.",
+      "resumenTecnico": "Conecta las prioridades educativas de Extremadura con la planificación de la Red de Formación y sirve de marco para el Plan Regional anual.",
+      "aspectosClave": [
+        "Carácter plurianual",
+        "Líneas directrices",
+        "Competencias profesionales docentes",
+        "Referencia para CPR"
+      ],
+      "articulosApartadosRelevantes": [
+        "Anexo del Plan Marco"
+      ],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "decreto-69-2007",
+        "plan-regional-2025-2026"
+      ],
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/pdfs/doe/2016/2300o/16050410.pdf",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/02_sistema_formacion/Plan-Marco-Formacion-Permanente-2016.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/02_sistema_formacion/Plan-Marco-Formacion-Permanente-2016.pdf",
+      "sha256": "be2e931ebd63e7e459356c4c4774e8f76850f731b601a5701cedcd820b702c8e",
+      "textoIndexable": "plan marco de formacion permanente del profesorado de extremadura planificacion orden y plan plurianual consejeria de educacion y empleo vigente como marco de referencia autonomico — extremadura imprescindible planificacion lineas directrices competencias profesionales docentes cpr instrumento de planificacion aprobado por orden define las lineas directrices plurianuales para los planes regionales y los planes de actuacion de los cpr. conecta las prioridades educativas de extremadura con la planificacion de la red de formacion y sirve de marco para el plan regional anual. caracter plurianual lineas directrices competencias profesionales docentes referencia para cpr anexo del plan marco"
+    },
+    {
+      "id": "plan-regional-2025-2026",
+      "titulo": "Plan Regional de Formación Permanente del Profesorado 2025/2026",
+      "bloque": "planificacion",
+      "tipo": "Orden y plan anual",
+      "fecha": "2026-03-11",
+      "curso": "2025/2026",
+      "organoEmisor": "Consejería de Educación, Ciencia y Formación Profesional",
+      "estado": "Vigencia temporal finalizada",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "planificación",
+        "modalidades formativas",
+        "CPR",
+        "innovación",
+        "competencia digital"
+      ],
+      "naturaleza": "Instrumento anual aprobado por orden",
+      "relacionSIFE": "Último Plan Regional localizado a la fecha de cierre; ordena la oferta y prioridades del curso 2025/2026.",
+      "resumenTecnico": "Recoge principios, objetivos, líneas prioritarias, modalidades, programas y actividades de la Red de Formación durante el curso 2025/2026.",
+      "aspectosClave": [
+        "Planificación anual",
+        "Oferta de los CPR",
+        "CqAE y Muévete",
+        "Redes e innovación",
+        "CDD y formación profesional"
+      ],
+      "articulosApartadosRelevantes": [
+        "Apartados 1 a 5 del anexo"
+      ],
+      "modificacionesPosteriores": [
+        "No se ha localizado Plan Regional 2026/2027 a 3 de septiembre de 2026"
+      ],
+      "normativaRelacionada": [
+        "decreto-69-2007",
+        "plan-marco-2016",
+        "pfc-2025-2026",
+        "innovacion-2025-2026",
+        "redes-2025-2026"
+      ],
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2026&doe=530o&xml=2026050028",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/02_sistema_formacion/Plan-Regional-Formacion-2025-2026.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/02_sistema_formacion/Plan-Regional-Formacion-2025-2026.pdf",
+      "sha256": "18a512c97ef7db1b197dc09faf89752ea007c4f90fb73f571c9103f98616a332",
+      "textoIndexable": "plan regional de formacion permanente del profesorado 2025/2026 planificacion orden y plan anual 2025/2026 consejeria de educacion, ciencia y formacion profesional vigencia temporal finalizada autonomico — extremadura imprescindible planificacion modalidades formativas cpr innovacion competencia digital instrumento anual aprobado por orden ultimo plan regional localizado a la fecha de cierre; ordena la oferta y prioridades del curso 2025/2026. recoge principios, objetivos, lineas prioritarias, modalidades, programas y actividades de la red de formacion durante el curso 2025/2026. planificacion anual oferta de los cpr cqae y muevete redes e innovacion cdd y formacion profesional apartados 1 a 5 del anexo no se ha localizado plan regional 2026/2027 a 3 de septiembre de 2026"
+    },
+    {
+      "id": "decreto-112-2026",
+      "titulo": "Decreto 112/2026, estructura orgánica de la Consejería de Educación y Formación Profesional",
+      "bloque": "organizacion_cpr",
+      "tipo": "Decreto",
+      "fecha": "2026-05-26",
+      "curso": null,
+      "organoEmisor": "Junta de Extremadura",
+      "estado": "Vigente",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "organización",
+        "SIFE",
+        "CPR",
+        "innovación",
+        "emprendimiento"
+      ],
+      "naturaleza": "Disposición organizativa",
+      "relacionSIFE": "Adscribe el Servicio de Innovación, Formación del Profesorado y Emprendimiento a la Dirección General de Innovación e Inclusión Educativa.",
+      "resumenTecnico": "Atribuye a la Dirección General la gestión de los planes de formación, la innovación y emprendimiento educativos y la ordenación de los CPR.",
+      "aspectosClave": [
+        "Denominación vigente del servicio",
+        "Gestión de planes de formación",
+        "Ordenación de CPR",
+        "Innovación y emprendimiento"
+      ],
+      "articulosApartadosRelevantes": [
+        "Artículo 7"
+      ],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "decreto-69-2007",
+        "portal-sife",
+        "red-cpr"
+      ],
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/pdfs/doe/2026/1050o/26040135.pdf",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/03_organizacion_cpr/Decreto-112-2026-estructura-consejeria.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/03_organizacion_cpr/Decreto-112-2026-estructura-consejeria.pdf",
+      "sha256": "2bfddb208505327cfcb1e1ab85900338b5cee485ed994b6c26c29b3895b02fad",
+      "textoIndexable": "decreto 112/2026, estructura organica de la consejeria de educacion y formacion profesional organizacion_cpr decreto junta de extremadura vigente autonomico — extremadura imprescindible organizacion sife cpr innovacion emprendimiento disposicion organizativa adscribe el servicio de innovacion, formacion del profesorado y emprendimiento a la direccion general de innovacion e inclusion educativa. atribuye a la direccion general la gestion de los planes de formacion, la innovacion y emprendimiento educativos y la ordenacion de los cpr. denominacion vigente del servicio gestion de planes de formacion ordenacion de cpr innovacion y emprendimiento articulo 7"
+    },
+    {
+      "id": "portal-sife",
+      "titulo": "Portal del Servicio de Innovación, Formación del Profesorado y Emprendimiento",
+      "bloque": "guias_modelos",
+      "tipo": "Portal institucional",
+      "fecha": "2026-09-03",
+      "curso": null,
+      "organoEmisor": "Consejería de Educación y Formación Profesional",
+      "estado": "Servicio activo",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "SIFE",
+        "formación",
+        "innovación",
+        "CPR",
+        "registro"
+      ],
+      "naturaleza": "Fuente institucional operativa",
+      "relacionSIFE": "Mapa oficial de servicios, programas, noticias y accesos de la Red de Formación.",
+      "resumenTecnico": "Portal institucional que agrupa Plan Marco y Plan Regional, formación, innovación, CPR y Registro de Formación del Profesorado.",
+      "aspectosClave": [
+        "Mapa operativo",
+        "Accesos a trámites",
+        "Publicación de convocatorias y resultados"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "decreto-112-2026",
+        "registro-rfp",
+        "red-cpr"
+      ],
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://formacion.educarex.es/",
+      "verificadoEn": "2026-09-03",
+      "textoIndexable": "portal del servicio de innovacion, formacion del profesorado y emprendimiento guias_modelos portal institucional consejeria de educacion y formacion profesional servicio activo autonomico — extremadura imprescindible sife formacion innovacion cpr registro fuente institucional operativa mapa oficial de servicios, programas, noticias y accesos de la red de formacion. portal institucional que agrupa plan marco y plan regional, formacion, innovacion, cpr y registro de formacion del profesorado. mapa operativo accesos a tramites publicacion de convocatorias y resultados"
+    },
+    {
+      "id": "registro-rfp",
+      "titulo": "Registro de Formación del Profesorado de Extremadura",
+      "bloque": "registro_reconocimiento",
+      "tipo": "Servicio electrónico",
+      "fecha": "2026-09-03",
+      "curso": null,
+      "organoEmisor": "Consejería de Educación y Formación Profesional",
+      "estado": "Servicio activo",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "registro",
+        "historial formativo",
+        "certificación",
+        "Rayuela"
+      ],
+      "naturaleza": "Servicio electrónico con autenticación",
+      "relacionSIFE": "Permite al profesorado consultar su historial de formación registrado.",
+      "resumenTecnico": "Acceso autenticado al historial personal de actividades reconocidas; el repositorio SIFE solo enlaza el servicio y no trata credenciales ni datos personales.",
+      "aspectosClave": [
+        "Consulta con credenciales de Rayuela",
+        "Descarga de historial",
+        "Datos personales fuera del repositorio"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "orden-31-10-2000",
+        "registro-solicitudes",
+        "complemento-formacion"
+      ],
+      "tipoFuente": "RFP Educarex",
+      "fuenteOficial": "https://rfp.educarex.es/",
+      "verificadoEn": "2026-09-03",
+      "textoIndexable": "registro de formacion del profesorado de extremadura registro_reconocimiento servicio electronico consejeria de educacion y formacion profesional servicio activo autonomico — extremadura imprescindible registro historial formativo certificacion rayuela servicio electronico con autenticacion permite al profesorado consultar su historial de formacion registrado. acceso autenticado al historial personal de actividades reconocidas; el repositorio sife solo enlaza el servicio y no trata credenciales ni datos personales. consulta con credenciales de rayuela descarga de historial datos personales fuera del repositorio"
+    },
+    {
+      "id": "buscador-actividades",
+      "titulo": "Buscador oficial de actividades de formación",
+      "bloque": "modalidades_formativas",
+      "tipo": "Servicio electrónico",
+      "fecha": "2026-09-03",
+      "curso": null,
+      "organoEmisor": "Red de Formación del Profesorado",
+      "estado": "Servicio activo",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "oferta formativa",
+        "inscripción",
+        "CPR"
+      ],
+      "naturaleza": "Servicio electrónico",
+      "relacionSIFE": "Buscador público de la oferta formativa de la Red.",
+      "resumenTecnico": "Consulta de actividades formativas publicadas por la Red de Formación; la inscripción y sus requisitos se rigen por cada ficha o convocatoria.",
+      "aspectosClave": [
+        "Búsqueda de actividades",
+        "Oferta de CPR",
+        "Condiciones por actividad"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "decreto-69-2007",
+        "plan-regional-2025-2026",
+        "red-cpr"
+      ],
+      "tipoFuente": "RFP Educarex",
+      "fuenteOficial": "https://rfp.educarex.es/planformacion",
+      "verificadoEn": "2026-09-03",
+      "textoIndexable": "buscador oficial de actividades de formacion modalidades_formativas servicio electronico red de formacion del profesorado servicio activo autonomico — extremadura imprescindible oferta formativa inscripcion cpr servicio electronico buscador publico de la oferta formativa de la red. consulta de actividades formativas publicadas por la red de formacion; la inscripcion y sus requisitos se rigen por cada ficha o convocatoria. busqueda de actividades oferta de cpr condiciones por actividad"
+    },
+    {
+      "id": "registro-solicitudes",
+      "titulo": "Reconocimiento e inscripción de actividades en el Registro de Formación",
+      "bloque": "registro_reconocimiento",
+      "tipo": "Procedimiento operativo",
+      "fecha": "2026-06-02",
+      "curso": null,
+      "organoEmisor": "Servicio de Innovación, Formación del Profesorado y Emprendimiento",
+      "estado": "Plazo permanentemente abierto según el portal",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "reconocimiento",
+        "registro",
+        "certificados",
+        "DIR3"
+      ],
+      "naturaleza": "Información operativa institucional",
+      "relacionSIFE": "Describe cuándo procede solicitar reconocimiento e inscripción y la documentación que debe presentarse.",
+      "resumenTecnico": "Distingue actividades inscritas de oficio de las que requieren solicitud, e informa sobre documentación, registro y consulta posterior del historial.",
+      "aspectosClave": [
+        "Una solicitud para las actividades aportadas",
+        "Certificados y traducción oficial cuando proceda",
+        "Presentación por registro, no por correo ordinario o electrónico",
+        "DIR3 provinciales"
+      ],
+      "articulosApartadosRelevantes": [
+        "Artículo 25 de la Orden de 31 de octubre de 2000",
+        "Artículo 16.4 de la Ley 39/2015"
+      ],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "orden-31-10-2000",
+        "orden-21-05-2002",
+        "modelo-reconocimiento-badajoz",
+        "modelo-reconocimiento-caceres"
+      ],
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://formacion.educarex.es/resgistrosolicitud/",
+      "verificadoEn": "2026-09-03",
+      "textoIndexable": "reconocimiento e inscripcion de actividades en el registro de formacion registro_reconocimiento procedimiento operativo servicio de innovacion, formacion del profesorado y emprendimiento plazo permanentemente abierto segun el portal autonomico — extremadura imprescindible reconocimiento registro certificados dir3 informacion operativa institucional describe cuando procede solicitar reconocimiento e inscripcion y la documentacion que debe presentarse. distingue actividades inscritas de oficio de las que requieren solicitud, e informa sobre documentacion, registro y consulta posterior del historial. una solicitud para las actividades aportadas certificados y traduccion oficial cuando proceda presentacion por registro, no por correo ordinario o electronico dir3 provinciales articulo 25 de la orden de 31 de octubre de 2000 articulo 16.4 de la ley 39/2015"
+    },
+    {
+      "id": "modelo-reconocimiento-badajoz",
+      "titulo": "Modelo de solicitud de reconocimiento — provincia de Badajoz",
+      "bloque": "guias_modelos",
+      "tipo": "Modelo oficial",
+      "fecha": "2025-07-01",
+      "curso": null,
+      "organoEmisor": "Unidad de Programas Educativos de Badajoz",
+      "estado": "Publicado en el procedimiento vigente",
+      "ambito": "Provincia de Badajoz",
+      "prioridad": "Operativa",
+      "materias": [
+        "reconocimiento",
+        "registro",
+        "modelo"
+      ],
+      "naturaleza": "Formulario operativo",
+      "relacionSIFE": "Modelo enlazado por el portal para solicitudes dirigidas a la provincia de Badajoz.",
+      "resumenTecnico": "Formulario que debe verificarse de nuevo en el portal antes de su presentación.",
+      "aspectosClave": [
+        "Elegir el modelo según la provincia del puesto de trabajo"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "registro-solicitudes"
+      ],
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://portales.educarex.es/formacion/wp-content/uploads/sites/13/2025/07/Solicitud_Reconocimiento_BADAJOZ.pdf",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/06_guias_modelos/Solicitud-Reconocimiento-Badajoz.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/06_guias_modelos/Solicitud-Reconocimiento-Badajoz.pdf",
+      "sha256": "1c9dd4b4b0cd8ab63e226ce2218b93ceaf868e1df963713e974ce7561f924341",
+      "textoIndexable": "modelo de solicitud de reconocimiento — provincia de badajoz guias_modelos modelo oficial unidad de programas educativos de badajoz publicado en el procedimiento vigente provincia de badajoz operativa reconocimiento registro modelo formulario operativo modelo enlazado por el portal para solicitudes dirigidas a la provincia de badajoz. formulario que debe verificarse de nuevo en el portal antes de su presentacion. elegir el modelo segun la provincia del puesto de trabajo"
+    },
+    {
+      "id": "modelo-reconocimiento-caceres",
+      "titulo": "Modelo de solicitud de reconocimiento — provincia de Cáceres",
+      "bloque": "guias_modelos",
+      "tipo": "Modelo oficial",
+      "fecha": "2025-07-01",
+      "curso": null,
+      "organoEmisor": "Unidad de Programas Educativos de Cáceres",
+      "estado": "Publicado en el procedimiento vigente",
+      "ambito": "Provincia de Cáceres",
+      "prioridad": "Operativa",
+      "materias": [
+        "reconocimiento",
+        "registro",
+        "modelo"
+      ],
+      "naturaleza": "Formulario operativo",
+      "relacionSIFE": "Modelo enlazado por el portal para solicitudes dirigidas a la provincia de Cáceres.",
+      "resumenTecnico": "Formulario que debe verificarse de nuevo en el portal antes de su presentación.",
+      "aspectosClave": [
+        "Elegir el modelo según la provincia del puesto de trabajo"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "registro-solicitudes"
+      ],
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://portales.educarex.es/formacion/wp-content/uploads/sites/13/2025/07/Solicitud_Reconocimiento_CACERES.pdf",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/06_guias_modelos/Solicitud-Reconocimiento-Caceres.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/06_guias_modelos/Solicitud-Reconocimiento-Caceres.pdf",
+      "sha256": "0178117fd9dde725896da9fe09c5053b42c2485bd6b95dbc39dfc3eb87149f4d",
+      "textoIndexable": "modelo de solicitud de reconocimiento — provincia de caceres guias_modelos modelo oficial unidad de programas educativos de caceres publicado en el procedimiento vigente provincia de caceres operativa reconocimiento registro modelo formulario operativo modelo enlazado por el portal para solicitudes dirigidas a la provincia de caceres. formulario que debe verificarse de nuevo en el portal antes de su presentacion. elegir el modelo segun la provincia del puesto de trabajo"
+    },
+    {
+      "id": "complemento-formacion",
+      "titulo": "Complemento de Formación Permanente del Profesorado",
+      "bloque": "registro_reconocimiento",
+      "tipo": "Guía operativa",
+      "fecha": "2026-06-02",
+      "curso": null,
+      "organoEmisor": "Servicio de Innovación, Formación del Profesorado y Emprendimiento",
+      "estado": "Referencia operativa publicada",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Muy relevante",
+      "materias": [
+        "complemento de formación",
+        "sexenios",
+        "historial formativo"
+      ],
+      "naturaleza": "Información operativa institucional",
+      "relacionSIFE": "Explica la relación entre tiempo de servicio, horas inscritas y reconocimiento del complemento.",
+      "resumenTecnico": "El portal informa de 6 años de servicio y 100 horas de formación inscritas por nivel, sin perjuicio de la comprobación administrativa y la normativa retributiva aplicable.",
+      "aspectosClave": [
+        "Comprobación del historial en RFP",
+        "100 horas por periodo de seis años según la guía",
+        "Reconocimiento administrativo"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "registro-rfp",
+        "circular-sexenios-2025"
+      ],
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://formacion.educarex.es/resgistrocomplemento/",
+      "verificadoEn": "2026-09-03",
+      "textoIndexable": "complemento de formacion permanente del profesorado registro_reconocimiento guia operativa servicio de innovacion, formacion del profesorado y emprendimiento referencia operativa publicada autonomico — extremadura muy relevante complemento de formacion sexenios historial formativo informacion operativa institucional explica la relacion entre tiempo de servicio, horas inscritas y reconocimiento del complemento. el portal informa de 6 anos de servicio y 100 horas de formacion inscritas por nivel, sin perjuicio de la comprobacion administrativa y la normativa retributiva aplicable. comprobacion del historial en rfp 100 horas por periodo de seis anos segun la guia reconocimiento administrativo"
+    },
+    {
+      "id": "circular-sexenios-2025",
+      "titulo": "Circular n.º 1 sobre reconocimiento de niveles del complemento de formación permanente",
+      "bloque": "registro_reconocimiento",
+      "tipo": "Circular",
+      "fecha": "2025-08-01",
+      "curso": null,
+      "organoEmisor": "Consejería de Educación",
+      "estado": "Referencia operativa; comprobar antes de tramitar",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Muy relevante",
+      "materias": [
+        "complemento de formación",
+        "sexenios",
+        "reconocimiento"
+      ],
+      "naturaleza": "Instrucción interna publicada",
+      "relacionSIFE": "Desarrolla el circuito operativo de reconocimiento del complemento.",
+      "resumenTecnico": "Documento publicado por el portal SIFE para orientar la comprobación y reconocimiento de los niveles del complemento específico de formación permanente.",
+      "aspectosClave": [
+        "Comprobación de horas inscritas",
+        "Intervención de las Unidades de Programas Educativos"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "complemento-formacion",
+        "registro-rfp"
+      ],
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://portales.educarex.es/formacion/wp-content/uploads/sites/13/2025/08/CIRCULAR_n_1_SEXENIO_DEFINITIVAF_1.pdf",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/04_registro_reconocimiento/Circular-1-2025-complemento-formacion.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/04_registro_reconocimiento/Circular-1-2025-complemento-formacion.pdf",
+      "sha256": "335d1f59242a967df4c3474ff901ede32fdb40764a549767ef95f19e8132b2ba",
+      "textoIndexable": "circular n.º 1 sobre reconocimiento de niveles del complemento de formacion permanente registro_reconocimiento circular consejeria de educacion referencia operativa; comprobar antes de tramitar autonomico — extremadura muy relevante complemento de formacion sexenios reconocimiento instruccion interna publicada desarrolla el circuito operativo de reconocimiento del complemento. documento publicado por el portal sife para orientar la comprobacion y reconocimiento de los niveles del complemento especifico de formacion permanente. comprobacion de horas inscritas intervencion de las unidades de programas educativos"
+    },
+    {
+      "id": "sello-rfp-2022",
+      "titulo": "Resolución de 30 de agosto de 2022 sobre actuación administrativa automatizada del RFP",
+      "bloque": "registro_reconocimiento",
+      "tipo": "Resolución",
+      "fecha": "2022-08-30",
+      "curso": null,
+      "organoEmisor": "Secretaría General de Educación",
+      "estado": "Vigente salvo disposición posterior",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Muy relevante",
+      "materias": [
+        "registro",
+        "certificación",
+        "administración electrónica"
+      ],
+      "naturaleza": "Resolución administrativa",
+      "relacionSIFE": "Regula actuaciones automatizadas para certificados del Registro General de Formación Permanente.",
+      "resumenTecnico": "Define el uso del sello electrónico en la expedición automatizada de determinados certificados de formación.",
+      "aspectosClave": [
+        "Actuación administrativa automatizada",
+        "Sello electrónico",
+        "Certificados del RFP"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "registro-rfp",
+        "orden-31-10-2000"
+      ],
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2022&doe=1690o&xml=2022062592",
+      "verificadoEn": "2026-09-03",
+      "textoIndexable": "resolucion de 30 de agosto de 2022 sobre actuacion administrativa automatizada del rfp registro_reconocimiento resolucion secretaria general de educacion vigente salvo disposicion posterior autonomico — extremadura muy relevante registro certificacion administracion electronica resolucion administrativa regula actuaciones automatizadas para certificados del registro general de formacion permanente. define el uso del sello electronico en la expedicion automatizada de determinados certificados de formacion. actuacion administrativa automatizada sello electronico certificados del rfp"
+    },
+    {
+      "id": "red-cpr",
+      "titulo": "Red de Centros de Profesores y de Recursos de Extremadura",
+      "bloque": "organizacion_cpr",
+      "tipo": "Directorio institucional",
+      "fecha": "2026-09-03",
+      "curso": null,
+      "organoEmisor": "Servicio de Innovación, Formación del Profesorado y Emprendimiento",
+      "estado": "Servicio activo",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "CPR",
+        "red de formación",
+        "asesorías",
+        "oferta formativa"
+      ],
+      "naturaleza": "Directorio y fuente operativa",
+      "relacionSIFE": "Acceso a los Centros de Profesores y de Recursos y a su oferta territorial.",
+      "resumenTecnico": "La Red de Formación articula la oferta presencial y el apoyo a centros mediante los CPR distribuidos por la comunidad autónoma.",
+      "aspectosClave": [
+        "Oferta territorial",
+        "Asesoramiento a centros",
+        "Planes de actuación de CPR"
+      ],
+      "articulosApartadosRelevantes": [
+        "Artículos 6 y siguientes del Decreto 69/2007"
+      ],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "decreto-69-2007",
+        "decreto-112-2026",
+        "cpr-direcciones-2026",
+        "cpr-asesorias-2026"
+      ],
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://formacion.educarex.es/cprsite/",
+      "verificadoEn": "2026-09-03",
+      "textoIndexable": "red de centros de profesores y de recursos de extremadura organizacion_cpr directorio institucional servicio de innovacion, formacion del profesorado y emprendimiento servicio activo autonomico — extremadura imprescindible cpr red de formacion asesorias oferta formativa directorio y fuente operativa acceso a los centros de profesores y de recursos y a su oferta territorial. la red de formacion articula la oferta presencial y el apoyo a centros mediante los cpr distribuidos por la comunidad autonoma. oferta territorial asesoramiento a centros planes de actuacion de cpr articulos 6 y siguientes del decreto 69/2007"
+    },
+    {
+      "id": "cpr-direcciones-2026",
+      "titulo": "Convocatoria 2026 de Direcciones de Centros de Profesores y de Recursos",
+      "bloque": "convocatorias_temporales",
+      "tipo": "Resolución",
+      "fecha": "2026-07-17",
+      "curso": "2026/2027",
+      "organoEmisor": "Dirección General de Innovación e Inclusión Educativa",
+      "estado": "Plazo cerrado; referencia histórica del procedimiento",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Muy relevante",
+      "materias": [
+        "CPR",
+        "dirección",
+        "concurso de méritos"
+      ],
+      "naturaleza": "Convocatoria temporal",
+      "relacionSIFE": "Convoca plazas vacantes de Dirección en CPR y refleja la estructura vigente tras el Decreto 112/2026.",
+      "resumenTecnico": "Convocatoria temporal de concurso de méritos para Direcciones de CPR, con requisitos, baremo, proyecto y procedimiento de selección.",
+      "aspectosClave": [
+        "Concurso de méritos",
+        "Proyecto de dirección",
+        "Publicación de listas en el portal SIFE"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "decreto-69-2007",
+        "decreto-112-2026",
+        "red-cpr"
+      ],
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2026&doe=1400o&xml=2026061924",
+      "verificadoEn": "2026-09-03",
+      "textoIndexable": "convocatoria 2026 de direcciones de centros de profesores y de recursos convocatorias_temporales resolucion 2026/2027 direccion general de innovacion e inclusion educativa plazo cerrado; referencia historica del procedimiento autonomico — extremadura muy relevante cpr direccion concurso de meritos convocatoria temporal convoca plazas vacantes de direccion en cpr y refleja la estructura vigente tras el decreto 112/2026. convocatoria temporal de concurso de meritos para direcciones de cpr, con requisitos, baremo, proyecto y procedimiento de seleccion. concurso de meritos proyecto de direccion publicacion de listas en el portal sife"
+    },
+    {
+      "id": "cpr-asesorias-2026",
+      "titulo": "Convocatoria 2026 de Asesorías de Formación Permanente en CPR",
+      "bloque": "convocatorias_temporales",
+      "tipo": "Resolución",
+      "fecha": "2026-07-17",
+      "curso": "2026/2027",
+      "organoEmisor": "Dirección General de Innovación e Inclusión Educativa",
+      "estado": "Plazo cerrado; referencia histórica del procedimiento",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Muy relevante",
+      "materias": [
+        "CPR",
+        "asesorías",
+        "concurso de méritos",
+        "CDD"
+      ],
+      "naturaleza": "Convocatoria temporal",
+      "relacionSIFE": "Convoca plazas vacantes de Asesorías de Formación Permanente en los CPR.",
+      "resumenTecnico": "Convocatoria temporal con requisitos docentes, proyecto de asesoría, baremo y acreditación de competencia digital.",
+      "aspectosClave": [
+        "Concurso de méritos",
+        "Proyecto de asesoría",
+        "Requisito de competencia digital"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "decreto-69-2007",
+        "decreto-112-2026",
+        "red-cpr",
+        "cdd-2023"
+      ],
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2026&doe=1400o&xml=2026061925",
+      "verificadoEn": "2026-09-03",
+      "textoIndexable": "convocatoria 2026 de asesorias de formacion permanente en cpr convocatorias_temporales resolucion 2026/2027 direccion general de innovacion e inclusion educativa plazo cerrado; referencia historica del procedimiento autonomico — extremadura muy relevante cpr asesorias concurso de meritos cdd convocatoria temporal convoca plazas vacantes de asesorias de formacion permanente en los cpr. convocatoria temporal con requisitos docentes, proyecto de asesoria, baremo y acreditacion de competencia digital. concurso de meritos proyecto de asesoria requisito de competencia digital"
+    },
+    {
+      "id": "orden-pfc-2024",
+      "titulo": "Orden de 31 de octubre de 2024 sobre proyectos de formación en centros",
+      "bloque": "modalidades_formativas",
+      "tipo": "Orden",
+      "fecha": "2024-10-31",
+      "curso": null,
+      "organoEmisor": "Consejería de Educación, Ciencia y Formación Profesional",
+      "estado": "Vigente",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "formación en centros",
+        "proyectos",
+        "CPR"
+      ],
+      "naturaleza": "Disposición general",
+      "relacionSIFE": "Regula el procedimiento de los proyectos de formación en centros docentes.",
+      "resumenTecnico": "Establece la organización, convocatoria, seguimiento, evaluación y certificación de proyectos de formación vinculados a necesidades reales de los centros.",
+      "aspectosClave": [
+        "Formación contextualizada en el centro",
+        "Acompañamiento del CPR",
+        "Evaluación y certificación"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "orden-31-10-2000",
+        "pfc-2025-2026",
+        "decreto-69-2007"
+      ],
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2024&doe=2180o&xml=2024050178",
+      "verificadoEn": "2026-09-03",
+      "textoIndexable": "orden de 31 de octubre de 2024 sobre proyectos de formacion en centros modalidades_formativas orden consejeria de educacion, ciencia y formacion profesional vigente autonomico — extremadura imprescindible formacion en centros proyectos cpr disposicion general regula el procedimiento de los proyectos de formacion en centros docentes. establece la organizacion, convocatoria, seguimiento, evaluacion y certificacion de proyectos de formacion vinculados a necesidades reales de los centros. formacion contextualizada en el centro acompanamiento del cpr evaluacion y certificacion"
+    },
+    {
+      "id": "pfc-2025-2026",
+      "titulo": "Proyectos de formación en centros 2025/2026",
+      "bloque": "convocatorias_temporales",
+      "tipo": "Resolución",
+      "fecha": "2025-08-26",
+      "curso": "2025/2026",
+      "organoEmisor": "Dirección General de Formación Profesional, Innovación e Inclusión Educativa",
+      "estado": "Vigencia temporal finalizada",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Muy relevante",
+      "materias": [
+        "formación en centros",
+        "proyectos",
+        "certificación"
+      ],
+      "naturaleza": "Convocatoria temporal",
+      "relacionSIFE": "Concreta para 2025/2026 la modalidad regulada por la Orden de 31 de octubre de 2024.",
+      "resumenTecnico": "Convoca proyectos basados en necesidades reales de centros o EOEP, con participación del claustro, seguimiento del CPR y memoria final.",
+      "aspectosClave": [
+        "Aprobación del claustro",
+        "Participación mínima",
+        "Itinerario formativo",
+        "Memoria final"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "orden-pfc-2024",
+        "plan-regional-2025-2026"
+      ],
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2025&doe=1700o&xml=2025063214",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/05_programas_convocatorias/Proyectos-Formacion-Centros-2025-2026.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/05_programas_convocatorias/Proyectos-Formacion-Centros-2025-2026.pdf",
+      "sha256": "89d27811c28445f680016de12b3a95fee0ec067ab0a1fc88fb35cbc1b30332fa",
+      "textoIndexable": "proyectos de formacion en centros 2025/2026 convocatorias_temporales resolucion 2025/2026 direccion general de formacion profesional, innovacion e inclusion educativa vigencia temporal finalizada autonomico — extremadura muy relevante formacion en centros proyectos certificacion convocatoria temporal concreta para 2025/2026 la modalidad regulada por la orden de 31 de octubre de 2024. convoca proyectos basados en necesidades reales de centros o eoep, con participacion del claustro, seguimiento del cpr y memoria final. aprobacion del claustro participacion minima itinerario formativo memoria final"
+    },
+    {
+      "id": "orden-innovacion-2024",
+      "titulo": "Orden de 13 de noviembre de 2024 sobre proyectos de innovación educativa",
+      "bloque": "innovacion_programas",
+      "tipo": "Orden",
+      "fecha": "2024-11-13",
+      "curso": null,
+      "organoEmisor": "Consejería de Educación, Ciencia y Formación Profesional",
+      "estado": "Vigente",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Imprescindible",
+      "materias": [
+        "innovación educativa",
+        "proyectos",
+        "certificación"
+      ],
+      "naturaleza": "Disposición general",
+      "relacionSIFE": "Regula la selección de proyectos de innovación educativa en centros sostenidos con fondos públicos.",
+      "resumenTecnico": "Fija objeto, participantes, características, convocatoria, seguimiento, difusión y reconocimiento de proyectos de innovación.",
+      "aspectosClave": [
+        "Innovación aplicada y evaluable",
+        "Transferencia de buenas prácticas",
+        "Reconocimiento del profesorado"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "innovacion-2025-2026",
+        "plan-regional-2025-2026"
+      ],
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2024&doe=2180o&xml=2024050180",
+      "verificadoEn": "2026-09-03",
+      "textoIndexable": "orden de 13 de noviembre de 2024 sobre proyectos de innovacion educativa innovacion_programas orden consejeria de educacion, ciencia y formacion profesional vigente autonomico — extremadura imprescindible innovacion educativa proyectos certificacion disposicion general regula la seleccion de proyectos de innovacion educativa en centros sostenidos con fondos publicos. fija objeto, participantes, caracteristicas, convocatoria, seguimiento, difusion y reconocimiento de proyectos de innovacion. innovacion aplicada y evaluable transferencia de buenas practicas reconocimiento del profesorado"
+    },
+    {
+      "id": "innovacion-2025-2026",
+      "titulo": "Proyectos de innovación educativa 2025/2026",
+      "bloque": "convocatorias_temporales",
+      "tipo": "Resolución",
+      "fecha": "2025-09-05",
+      "curso": "2025/2026",
+      "organoEmisor": "Dirección General de Formación Profesional, Innovación e Inclusión Educativa",
+      "estado": "Resuelta; referencia histórica",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Muy relevante",
+      "materias": [
+        "innovación educativa",
+        "proyectos",
+        "centros"
+      ],
+      "naturaleza": "Convocatoria temporal",
+      "relacionSIFE": "Concreta la selección de proyectos de innovación para el curso 2025/2026.",
+      "resumenTecnico": "Convocatoria anual de proyectos de innovación educativa; su plazo y resultados no deben extrapolarse a cursos posteriores.",
+      "aspectosClave": [
+        "Curso 2025/2026",
+        "Convocatoria resuelta",
+        "Publicación y transferencia"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [
+        "Resuelta por Resolución de 2 de diciembre de 2025"
+      ],
+      "normativaRelacionada": [
+        "orden-innovacion-2024",
+        "plan-regional-2025-2026"
+      ],
+      "tipoFuente": "DOE / Educarex",
+      "fuenteOficial": "https://www.juntaex.es/w/0702524",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/05_programas_convocatorias/Proyectos-Innovacion-2025-2026.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/05_programas_convocatorias/Proyectos-Innovacion-2025-2026.pdf",
+      "sha256": "6c1adb817036742f4006c68a6f43af56823f274495731f7b0a607069e42d8a62",
+      "textoIndexable": "proyectos de innovacion educativa 2025/2026 convocatorias_temporales resolucion 2025/2026 direccion general de formacion profesional, innovacion e inclusion educativa resuelta; referencia historica autonomico — extremadura muy relevante innovacion educativa proyectos centros convocatoria temporal concreta la seleccion de proyectos de innovacion para el curso 2025/2026. convocatoria anual de proyectos de innovacion educativa; su plazo y resultados no deben extrapolarse a cursos posteriores. curso 2025/2026 convocatoria resuelta publicacion y transferencia resuelta por resolucion de 2 de diciembre de 2025"
+    },
+    {
+      "id": "redes-2025-2026",
+      "titulo": "Redes de Innovación y Educación para el Desarrollo Sostenible 2025/2026",
+      "bloque": "convocatorias_temporales",
+      "tipo": "Orden",
+      "fecha": "2025-08-27",
+      "curso": "2025/2026",
+      "organoEmisor": "Consejería de Educación, Ciencia y Formación Profesional",
+      "estado": "Vigencia temporal finalizada",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Muy relevante",
+      "materias": [
+        "redes de innovación",
+        "desarrollo sostenible",
+        "centros",
+        "certificación"
+      ],
+      "naturaleza": "Convocatoria temporal",
+      "relacionSIFE": "Convoca la incorporación de centros a las Redes y articula objetivos, modalidades y seguimiento.",
+      "resumenTecnico": "Convocatoria anual para la participación de centros en las Redes de Innovación y Educación para el Desarrollo Sostenible.",
+      "aspectosClave": [
+        "Participación de centros",
+        "Proyecto de red",
+        "Seguimiento y certificación"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "plan-regional-2025-2026"
+      ],
+      "tipoFuente": "DOE / Juntaex",
+      "fuenteOficial": "https://www.juntaex.es/es/w/0728525",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/05_programas_convocatorias/Orden-Redes-2025-2026.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/05_programas_convocatorias/Orden-Redes-2025-2026.pdf",
+      "sha256": "c98944b15633e9b8d858d1d0191c477fae9ae334fa5499f52a96ef3e681793ce",
+      "textoIndexable": "redes de innovacion y educacion para el desarrollo sostenible 2025/2026 convocatorias_temporales orden 2025/2026 consejeria de educacion, ciencia y formacion profesional vigencia temporal finalizada autonomico — extremadura muy relevante redes de innovacion desarrollo sostenible centros certificacion convocatoria temporal convoca la incorporacion de centros a las redes y articula objetivos, modalidades y seguimiento. convocatoria anual para la participacion de centros en las redes de innovacion y educacion para el desarrollo sostenible. participacion de centros proyecto de red seguimiento y certificacion"
+    },
+    {
+      "id": "estancias-2026",
+      "titulo": "Estancias formativas en empresas o instituciones para profesorado de FP 2026",
+      "bloque": "ayudas_estancias_convenios",
+      "tipo": "Resolución",
+      "fecha": "2026-05-28",
+      "curso": "2026",
+      "organoEmisor": "Dirección General de Innovación e Inclusión Educativa",
+      "estado": "Convocatoria 2026; comprobar plazo",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Muy relevante",
+      "materias": [
+        "estancias formativas",
+        "formación profesional",
+        "empresas"
+      ],
+      "naturaleza": "Convocatoria temporal",
+      "relacionSIFE": "Convoca estancias para actualización científico-técnica de profesorado vinculado a FP.",
+      "resumenTecnico": "Regula destinatarios, proyecto, solicitud, selección, realización y justificación de estancias formativas en empresas o instituciones.",
+      "aspectosClave": [
+        "Actualización científico-técnica",
+        "Vinculación con la práctica docente",
+        "Procedimiento electrónico"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "ley-4-2011-extremadura",
+        "decreto-69-2007"
+      ],
+      "tipoFuente": "Juntaex / Educarex",
+      "fuenteOficial": "https://www.juntaex.es/w/0735226",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/05_programas_convocatorias/Estancias-Formativas-2026.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/05_programas_convocatorias/Estancias-Formativas-2026.pdf",
+      "sha256": "a3a4183a4366f4f71abe985f3a7e9087334c6dc5aa1619451076d47c2fe779e0",
+      "textoIndexable": "estancias formativas en empresas o instituciones para profesorado de fp 2026 ayudas_estancias_convenios resolucion 2026 direccion general de innovacion e inclusion educativa convocatoria 2026; comprobar plazo autonomico — extremadura muy relevante estancias formativas formacion profesional empresas convocatoria temporal convoca estancias para actualizacion cientifico-tecnica de profesorado vinculado a fp. regula destinatarios, proyecto, solicitud, seleccion, realizacion y justificacion de estancias formativas en empresas o instituciones. actualizacion cientifico-tecnica vinculacion con la practica docente procedimiento electronico"
+    },
+    {
+      "id": "licencias-2026-2027",
+      "titulo": "Licencias por estudios para personal docente 2026/2027",
+      "bloque": "ayudas_estancias_convenios",
+      "tipo": "Resolución",
+      "fecha": "2026-04-24",
+      "curso": "2026/2027",
+      "organoEmisor": "Dirección General de Personal Docente",
+      "estado": "Convocatoria temporal; comprobar plazo y resolución",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Muy relevante",
+      "materias": [
+        "licencias por estudios",
+        "investigación",
+        "formación",
+        "personal docente"
+      ],
+      "naturaleza": "Convocatoria temporal",
+      "relacionSIFE": "Instrumento de formación permanente previsto en la normativa educativa y en el Decreto 69/2007.",
+      "resumenTecnico": "Convoca licencias para estudios académicos y actividades de interés para el sistema educativo durante 2026/2027.",
+      "aspectosClave": [
+        "Personal funcionario de carrera",
+        "Proyecto obligatorio",
+        "Méritos del RFP"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "loe-2-2006",
+        "ley-4-2011-extremadura",
+        "decreto-69-2007",
+        "registro-rfp"
+      ],
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2026&doe=830o&xml=2026061035",
+      "verificadoEn": "2026-09-03",
+      "textoIndexable": "licencias por estudios para personal docente 2026/2027 ayudas_estancias_convenios resolucion 2026/2027 direccion general de personal docente convocatoria temporal; comprobar plazo y resolucion autonomico — extremadura muy relevante licencias por estudios investigacion formacion personal docente convocatoria temporal instrumento de formacion permanente previsto en la normativa educativa y en el decreto 69/2007. convoca licencias para estudios academicos y actividades de interes para el sistema educativo durante 2026/2027. personal funcionario de carrera proyecto obligatorio meritos del rfp"
+    },
+    {
+      "id": "cdd-2023",
+      "titulo": "Normativa autonómica de acreditación de la Competencia Digital Docente",
+      "bloque": "innovacion_programas",
+      "tipo": "Resolución",
+      "fecha": "2023-11-29",
+      "curso": null,
+      "organoEmisor": "Dirección General competente en formación del profesorado",
+      "estado": "Vigente salvo disposición posterior",
+      "ambito": "Autonómico — Extremadura",
+      "prioridad": "Muy relevante",
+      "materias": [
+        "competencia digital docente",
+        "acreditación",
+        "formación"
+      ],
+      "naturaleza": "Resolución administrativa",
+      "relacionSIFE": "Establece el marco autonómico publicado por el portal SIFE para acreditación de niveles de CDD.",
+      "resumenTecnico": "Regula procedimientos y evidencias para la acreditación de la competencia digital docente en Extremadura.",
+      "aspectosClave": [
+        "Niveles de competencia",
+        "Vías de acreditación",
+        "Registro y efectos"
+      ],
+      "articulosApartadosRelevantes": [],
+      "modificacionesPosteriores": [],
+      "normativaRelacionada": [
+        "plan-regional-2025-2026",
+        "cpr-asesorias-2026"
+      ],
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/pdfs/doe/2023/2360o/23064162.pdf",
+      "verificadoEn": "2026-09-03",
+      "fuenteLocal": "SIFE normativa/05_programas_convocatorias/Normativa-Competencia-Digital-Docente-2023.pdf",
+      "archivoServido": "/repository/SIFE%20normativa/05_programas_convocatorias/Normativa-Competencia-Digital-Docente-2023.pdf",
+      "sha256": "b9cdc3753000500898f1d84f7b8df01934761931edacca98506bb73039526489",
+      "textoIndexable": "normativa autonomica de acreditacion de la competencia digital docente innovacion_programas resolucion direccion general competente en formacion del profesorado vigente salvo disposicion posterior autonomico — extremadura muy relevante competencia digital docente acreditacion formacion resolucion administrativa establece el marco autonomico publicado por el portal sife para acreditacion de niveles de cdd. regula procedimientos y evidencias para la acreditacion de la competencia digital docente en extremadura. niveles de competencia vias de acreditacion registro y efectos"
+    }
+  ],
+  "procedures": [
+    {
+      "id": "buscar-actividad",
+      "title": "Buscar una actividad formativa",
+      "categoria": "Oferta e inscripción",
+      "materias": [
+        "oferta formativa",
+        "inscripción",
+        "CPR"
+      ],
+      "summary": "Localizar actividades de la Red y comprobar sus condiciones antes de inscribirse.",
+      "steps": [
+        "Abrir el buscador oficial de actividades.",
+        "Filtrar por CPR, modalidad, fechas o temática.",
+        "Abrir la ficha de la actividad y comprobar destinatarios, plazo, horario y criterios de admisión.",
+        "Usar exclusivamente el sistema de inscripción indicado en la ficha.",
+        "Conservar la confirmación y revisar comunicaciones del CPR organizador."
+      ],
+      "caution": "El repositorio no realiza inscripciones ni solicita credenciales. Los plazos y requisitos son los de cada actividad.",
+      "documents": [
+        {
+          "label": "Buscador oficial",
+          "url": "https://rfp.educarex.es/planformacion"
+        },
+        {
+          "label": "Red de CPR",
+          "url": "https://formacion.educarex.es/cprsite/"
+        }
+      ]
+    },
+    {
+      "id": "consultar-historial",
+      "title": "Consultar y descargar el historial formativo",
+      "categoria": "Registro y certificación",
+      "materias": [
+        "historial formativo",
+        "RFP",
+        "Rayuela"
+      ],
+      "summary": "Consultar las actividades que constan inscritas en el Registro de Formación del Profesorado.",
+      "steps": [
+        "Acceder al RFP desde su dirección oficial.",
+        "Identificarse en el servicio con las credenciales habilitadas por la Administración.",
+        "Revisar los datos personales y el centro de destino que figuran en el sistema.",
+        "Consultar las actividades reconocidas y descargar el historial o las diligencias disponibles.",
+        "Si falta una actividad, comprobar primero si era de inscripción de oficio o si exige solicitud."
+      ],
+      "caution": "Las credenciales y los datos del historial permanecen en RFP; esta aplicación no los recibe ni almacena.",
+      "documents": [
+        {
+          "label": "Acceso al RFP",
+          "url": "https://rfp.educarex.es/"
+        },
+        {
+          "label": "Información del Registro",
+          "url": "https://formacion.educarex.es/resgistrosite/"
+        }
+      ]
+    },
+    {
+      "id": "reconocer-actividad",
+      "title": "Solicitar reconocimiento e inscripción de actividades",
+      "categoria": "Registro y certificación",
+      "materias": [
+        "reconocimiento",
+        "registro",
+        "certificados"
+      ],
+      "summary": "Tramitar actividades que no se inscriben de oficio y cumplen los requisitos del RFP.",
+      "steps": [
+        "Confirmar que la actividad es susceptible de inscripción y que no debe inscribirse de oficio.",
+        "Elegir el modelo de Badajoz o Cáceres según la provincia del puesto de trabajo.",
+        "Preparar la solicitud y los certificados; aportar traducción oficial cuando proceda.",
+        "Presentar la documentación por uno de los registros admitidos en el artículo 16.4 de la Ley 39/2015.",
+        "Dirigirla a la Delegación Provincial correspondiente y conservar el justificante.",
+        "Consultar posteriormente el resultado o la diligencia en RFP."
+      ],
+      "caution": "El portal indica que no se tramitan solicitudes recibidas por correo ordinario ni por correo electrónico.",
+      "documents": [
+        {
+          "label": "Procedimiento oficial",
+          "url": "https://formacion.educarex.es/resgistrosolicitud/"
+        },
+        {
+          "label": "Modelo Badajoz",
+          "url": "https://portales.educarex.es/formacion/wp-content/uploads/sites/13/2025/07/Solicitud_Reconocimiento_BADAJOZ.pdf"
+        },
+        {
+          "label": "Modelo Cáceres",
+          "url": "https://portales.educarex.es/formacion/wp-content/uploads/sites/13/2025/07/Solicitud_Reconocimiento_CACERES.pdf"
+        }
+      ]
+    },
+    {
+      "id": "complemento-sexenio",
+      "title": "Comprobar el complemento de formación permanente",
+      "categoria": "Registro y certificación",
+      "materias": [
+        "sexenios",
+        "complemento",
+        "horas de formación"
+      ],
+      "summary": "Revisar si las horas formativas necesarias constan correctamente inscritas.",
+      "steps": [
+        "Consultar el historial personal en RFP.",
+        "Comprobar las horas inscritas dentro del periodo de servicio relevante.",
+        "Revisar la guía y la Circular n.º 1 publicadas por el SIFE.",
+        "Si existen omisiones, distinguir entre rectificación de datos y solicitud de reconocimiento de actividades.",
+        "Contactar con la unidad competente cuando el historial no permita resolver la incidencia."
+      ],
+      "caution": "La guía informa de 100 horas y seis años por nivel; el reconocimiento económico depende de la comprobación administrativa y del régimen aplicable a cada persona.",
+      "documents": [
+        {
+          "label": "Guía de complemento",
+          "url": "https://formacion.educarex.es/resgistrocomplemento/"
+        },
+        {
+          "label": "Circular n.º 1",
+          "url": "https://portales.educarex.es/formacion/wp-content/uploads/sites/13/2025/08/CIRCULAR_n_1_SEXENIO_DEFINITIVAF_1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "formacion-centros",
+      "title": "Preparar un proyecto de formación en centros",
+      "categoria": "Modalidades formativas",
+      "materias": [
+        "formación en centros",
+        "proyecto",
+        "claustro",
+        "CPR"
+      ],
+      "summary": "Organizar una propuesta vinculada a necesidades reales del centro o del EOEP.",
+      "steps": [
+        "Detectar y justificar la necesidad formativa del centro.",
+        "Contactar con la asesoría del CPR de referencia.",
+        "Definir itinerario, objetivos, participantes, calendario, metodología y evaluación.",
+        "Obtener la aprobación y participación exigidas por la convocatoria anual.",
+        "Presentar la solicitud por el cauce y dentro del plazo de la convocatoria.",
+        "Desarrollar el proyecto con seguimiento del CPR y entregar la memoria final."
+      ],
+      "caution": "Las condiciones de participación y los plazos cambian por curso; no reutilizar los de 2025/2026 sin una convocatoria nueva.",
+      "documents": [
+        {
+          "label": "Orden reguladora",
+          "url": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2024&doe=2180o&xml=2024050178"
+        },
+        {
+          "label": "Convocatoria 2025/2026",
+          "url": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2025&doe=1700o&xml=2025063214"
+        }
+      ]
+    },
+    {
+      "id": "grupos-seminarios",
+      "title": "Proponer un grupo de trabajo o seminario",
+      "categoria": "Modalidades formativas",
+      "materias": [
+        "grupo de trabajo",
+        "seminario",
+        "CPR"
+      ],
+      "summary": "Canalizar una iniciativa colaborativa de formación a través del CPR.",
+      "steps": [
+        "Precisar el problema profesional o producto compartido que se quiere abordar.",
+        "Consultar al CPR la convocatoria y el calendario del curso vigente.",
+        "Definir participantes, coordinación, horas, sesiones, resultados y evaluación.",
+        "Presentar la propuesta por el cauce del CPR.",
+        "Registrar el trabajo y entregar la memoria o materiales exigidos para su evaluación."
+      ],
+      "caution": "El Plan Regional describe las modalidades, pero cada CPR puede concretar calendario, documentación y seguimiento.",
+      "documents": [
+        {
+          "label": "Plan Regional 2025/2026",
+          "url": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2026&doe=530o&xml=2026050028"
+        },
+        {
+          "label": "Formación",
+          "url": "https://formacion.educarex.es/formacionsite/"
+        }
+      ]
+    },
+    {
+      "id": "ayudas-formacion",
+      "title": "Solicitar ayudas para actividades de formación",
+      "categoria": "Ayudas y estancias",
+      "materias": [
+        "ayudas",
+        "formación individual",
+        "convocatorias"
+      ],
+      "summary": "Comprobar la convocatoria vigente antes de financiar una iniciativa individual.",
+      "steps": [
+        "Localizar la convocatoria vigente en DOE o Juntaex.",
+        "Comprobar destinatarios, actividad subvencionable, fechas y gastos admitidos.",
+        "Preparar solicitud, presupuesto y documentación acreditativa.",
+        "Presentar por el canal electrónico establecido.",
+        "Conservar justificantes y atender subsanaciones.",
+        "Justificar la actividad y el gasto en la forma prevista."
+      ],
+      "caution": "A la fecha de cierre se había sometido a información pública un nuevo proyecto de bases para 2026; no debe tratarse un proyecto normativo como norma vigente.",
+      "documents": [
+        {
+          "label": "Sección de ayudas SIFE",
+          "url": "https://formacion.educarex.es/ayudasindividualizadassite/"
+        },
+        {
+          "label": "Buscador DOE",
+          "url": "https://doe.juntaex.es/"
+        }
+      ]
+    },
+    {
+      "id": "estancia-fp",
+      "title": "Solicitar una estancia formativa en empresa o institución",
+      "categoria": "Ayudas y estancias",
+      "materias": [
+        "estancias formativas",
+        "FP",
+        "empresa"
+      ],
+      "summary": "Preparar una estancia de actualización vinculada a la actividad docente de Formación Profesional.",
+      "steps": [
+        "Comprobar que se reúne el perfil destinatario de la convocatoria.",
+        "Acordar con la entidad de acogida un proyecto relacionado con la docencia.",
+        "Preparar solicitud, proyecto y documentación de la entidad.",
+        "Presentar dentro del plazo y por el medio electrónico previsto.",
+        "Realizar la estancia conforme a la resolución de concesión.",
+        "Entregar memoria y justificantes para reconocimiento y, en su caso, compensación."
+      ],
+      "caution": "Usar la convocatoria del año correspondiente; la ficha 2026 no fija condiciones para ediciones futuras.",
+      "documents": [
+        {
+          "label": "Trámite Juntaex",
+          "url": "https://www.juntaex.es/w/0735226"
+        },
+        {
+          "label": "Resolución 2026",
+          "url": "https://portales.educarex.es/formacion/wp-content/uploads/sites/13/2026/06/estancias-formativas-2026.pdf"
+        }
+      ]
+    },
+    {
+      "id": "entidad-colaboradora",
+      "title": "Comprobar una entidad colaboradora o actividad homologada",
+      "categoria": "Entidades y convenios",
+      "materias": [
+        "entidades colaboradoras",
+        "homologación",
+        "convenios"
+      ],
+      "summary": "Verificar que la actividad dispone de reconocimiento válido antes de realizarla.",
+      "steps": [
+        "Identificar con precisión la entidad organizadora y la actividad.",
+        "Comprobar si existe convenio o resolución de homologación aplicable.",
+        "Verificar que la edición, fechas y número de registro están cubiertos.",
+        "Conservar programa, certificado y diligencia cuando proceda.",
+        "Si se cursó fuera de Extremadura, comprobar el registro previo de la administración educativa correspondiente."
+      ],
+      "caution": "Que una universidad o entidad imparta una actividad no implica por sí solo que pueda inscribirse en el RFP.",
+      "documents": [
+        {
+          "label": "Convenios publicados",
+          "url": "https://formacion.educarex.es/convenios/"
+        },
+        {
+          "label": "Reconocimiento e inscripción",
+          "url": "https://formacion.educarex.es/resgistrosolicitud/"
+        }
+      ]
+    },
+    {
+      "id": "innovacion-educativa",
+      "title": "Preparar un proyecto de innovación educativa",
+      "categoria": "Innovación y programas",
+      "materias": [
+        "innovación educativa",
+        "proyectos",
+        "transferencia"
+      ],
+      "summary": "Diseñar una innovación aplicable, evaluable y transferible desde el centro.",
+      "steps": [
+        "Definir el problema educativo y la mejora que se pretende contrastar.",
+        "Alinear el proyecto con la orden reguladora y la convocatoria anual.",
+        "Informar al claustro y obtener el informe favorable de la dirección cuando proceda.",
+        "Detallar objetivos, metodología, participantes, calendario, indicadores y difusión.",
+        "Presentar por el canal de la convocatoria.",
+        "Documentar resultados, evaluar impacto y compartir las prácticas transferibles."
+      ],
+      "caution": "La convocatoria 2025/2026 está resuelta; debe localizarse una convocatoria nueva para participar en otro curso.",
+      "documents": [
+        {
+          "label": "Trámite y normativa",
+          "url": "https://www.juntaex.es/w/0702524"
+        },
+        {
+          "label": "Portal de innovación",
+          "url": "https://formacion.educarex.es/pinnovacionsite/"
+        }
+      ]
+    },
+    {
+      "id": "redes-innovacion",
+      "title": "Participar en las Redes de Innovación y Educación para el Desarrollo Sostenible",
+      "categoria": "Innovación y programas",
+      "materias": [
+        "redes",
+        "innovación",
+        "sostenibilidad",
+        "centros"
+      ],
+      "summary": "Preparar la incorporación o continuidad de un centro en una red temática.",
+      "steps": [
+        "Revisar las modalidades de red y la convocatoria del curso.",
+        "Seleccionar una línea coherente con el proyecto educativo del centro.",
+        "Preparar el proyecto, compromisos, coordinación e indicadores.",
+        "Formalizar los acuerdos internos exigidos.",
+        "Presentar la solicitud y atender la valoración.",
+        "Desarrollar, documentar y evaluar el proyecto de red."
+      ],
+      "caution": "Las redes, requisitos y plazos pueden cambiar en cada convocatoria.",
+      "documents": [
+        {
+          "label": "Trámite Juntaex",
+          "url": "https://www.juntaex.es/es/w/0728525"
+        },
+        {
+          "label": "Portal Redes",
+          "url": "https://formacion.educarex.es/redessite/"
+        }
+      ]
+    },
+    {
+      "id": "acreditar-cdd",
+      "title": "Consultar la acreditación de Competencia Digital Docente",
+      "categoria": "Innovación y programas",
+      "materias": [
+        "CDD",
+        "acreditación",
+        "competencia digital"
+      ],
+      "summary": "Identificar la vía de acreditación aplicable y sus evidencias.",
+      "steps": [
+        "Consultar la normativa y las convocatorias vigentes de CDD.",
+        "Identificar el nivel y la vía de acreditación que corresponden.",
+        "Comprobar si el reconocimiento es de oficio o requiere solicitud o prueba.",
+        "Preparar únicamente las evidencias admitidas por la convocatoria.",
+        "Revisar el resultado y su reflejo en los sistemas de la Administración."
+      ],
+      "caution": "Las campañas y ediciones del portal no sustituyen a la resolución reguladora ni a la convocatoria aplicable.",
+      "documents": [
+        {
+          "label": "Normativa CDD",
+          "url": "https://formacion.educarex.es/normativa-competencia-digital-docente/"
+        },
+        {
+          "label": "Portal CDD",
+          "url": "https://formacion.educarex.es/cddsite-2025/"
+        }
+      ]
+    },
+    {
+      "id": "licencia-estudios",
+      "title": "Solicitar una licencia por estudios",
+      "categoria": "Ayudas y estancias",
+      "materias": [
+        "licencias por estudios",
+        "personal docente",
+        "proyecto"
+      ],
+      "summary": "Preparar la solicitud anual para estudios o actividades de interés educativo.",
+      "steps": [
+        "Comprobar cuerpo, situación administrativa y demás requisitos.",
+        "Elegir la modalidad de licencia adecuada.",
+        "Redactar el proyecto con todos los apartados del anexo de la convocatoria.",
+        "Revisar los méritos incorporados de oficio y aportar las discrepancias justificadas.",
+        "Presentar la solicitud y anexos dentro del plazo.",
+        "Atender la resolución y las obligaciones posteriores de la licencia."
+      ],
+      "caution": "La convocatoria 2026/2027 es temporal y contiene límites de tamaño y documentación específicos.",
+      "documents": [
+        {
+          "label": "Convocatoria 2026/2027",
+          "url": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2026&doe=830o&xml=2026061035"
+        }
+      ]
+    },
+    {
+      "id": "contactar-cpr",
+      "title": "Localizar el CPR de referencia",
+      "categoria": "Red de formación",
+      "materias": [
+        "CPR",
+        "asesoramiento",
+        "territorio"
+      ],
+      "summary": "Encontrar el centro y la asesoría adecuados para una necesidad formativa.",
+      "steps": [
+        "Abrir el directorio oficial de la Red de CPR.",
+        "Identificar el CPR correspondiente al centro o zona.",
+        "Consultar su web y catálogo de actividades.",
+        "Localizar la asesoría relacionada con la temática.",
+        "Plantear la necesidad con contexto, destinatarios y objetivo formativo."
+      ],
+      "caution": "Los contactos y ámbitos territoriales deben consultarse siempre en el directorio vigente.",
+      "documents": [
+        {
+          "label": "Red de CPR",
+          "url": "https://formacion.educarex.es/cprsite/"
+        },
+        {
+          "label": "Buscador de actividades",
+          "url": "https://rfp.educarex.es/planformacion"
+        }
+      ]
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Plan Regional 2026/2027 no localizado",
+      "type": "Vacío temporal",
+      "body": "A 3 de septiembre de 2026 no se ha localizado en DOE ni en el portal SIFE un Plan Regional correspondiente a 2026/2027. El plan 2025/2026 se conserva como antecedente y no se extrapola."
+    },
+    {
+      "title": "Norma y página operativa no tienen la misma fuerza",
+      "type": "Jerarquía de fuentes",
+      "body": "BOE y DOE son la referencia normativa. Las páginas Educarex y Juntaex aportan instrucciones operativas, modelos y accesos, pero no sustituyen el texto oficial."
+    },
+    {
+      "title": "Convocatorias por curso",
+      "type": "Vigencia temporal",
+      "body": "Plazos, personas destinatarias, anexos, baremos y canales deben verificarse en la convocatoria del curso correspondiente."
+    },
+    {
+      "title": "Contenido histórico del portal",
+      "type": "Archivo web",
+      "body": "El WordPress conserva campañas y páginas antiguas. Su presencia en línea no acredita que sigan vigentes."
+    },
+    {
+      "title": "Registro y credenciales fuera de la aplicación",
+      "type": "Protección de datos",
+      "body": "La aplicación enlaza RFP y Rayuela, pero no solicita, transmite ni almacena credenciales o historiales personales."
+    },
+    {
+      "title": "Proyectos normativos",
+      "type": "Tramitación",
+      "body": "Una audiencia pública o un proyecto de decreto se identifica como borrador y no se incorpora como norma vigente hasta su publicación oficial."
+    }
+  ],
+  "relations": [
+    {
+      "source": "lomloe-3-2020",
+      "target": "loe-2-2006",
+      "tipo": "modifica"
+    },
+    {
+      "source": "loe-2-2006",
+      "target": "ley-4-2011-extremadura",
+      "tipo": "fundamenta"
+    },
+    {
+      "source": "ley-4-2011-extremadura",
+      "target": "decreto-69-2007",
+      "tipo": "fundamenta"
+    },
+    {
+      "source": "decreto-69-2007",
+      "target": "plan-marco-2016",
+      "tipo": "regula"
+    },
+    {
+      "source": "plan-marco-2016",
+      "target": "plan-regional-2025-2026",
+      "tipo": "fundamenta"
+    },
+    {
+      "source": "decreto-69-2007",
+      "target": "plan-regional-2025-2026",
+      "tipo": "regula"
+    },
+    {
+      "source": "decreto-112-2026",
+      "target": "portal-sife",
+      "tipo": "regula"
+    },
+    {
+      "source": "decreto-112-2026",
+      "target": "red-cpr",
+      "tipo": "regula"
+    },
+    {
+      "source": "decreto-69-2007",
+      "target": "red-cpr",
+      "tipo": "regula"
+    },
+    {
+      "source": "orden-21-05-2002",
+      "target": "orden-31-10-2000",
+      "tipo": "modifica"
+    },
+    {
+      "source": "correccion-orden-2000",
+      "target": "orden-31-10-2000",
+      "tipo": "modifica"
+    },
+    {
+      "source": "orden-31-10-2000",
+      "target": "registro-rfp",
+      "tipo": "regula"
+    },
+    {
+      "source": "orden-31-10-2000",
+      "target": "registro-solicitudes",
+      "tipo": "regula"
+    },
+    {
+      "source": "registro-solicitudes",
+      "target": "modelo-reconocimiento-badajoz",
+      "tipo": "ejecuta"
+    },
+    {
+      "source": "registro-solicitudes",
+      "target": "modelo-reconocimiento-caceres",
+      "tipo": "ejecuta"
+    },
+    {
+      "source": "registro-rfp",
+      "target": "complemento-formacion",
+      "tipo": "ejecuta"
+    },
+    {
+      "source": "circular-sexenios-2025",
+      "target": "complemento-formacion",
+      "tipo": "desarrolla"
+    },
+    {
+      "source": "sello-rfp-2022",
+      "target": "registro-rfp",
+      "tipo": "desarrolla"
+    },
+    {
+      "source": "orden-pfc-2024",
+      "target": "pfc-2025-2026",
+      "tipo": "regula"
+    },
+    {
+      "source": "plan-regional-2025-2026",
+      "target": "pfc-2025-2026",
+      "tipo": "ejecuta"
+    },
+    {
+      "source": "orden-innovacion-2024",
+      "target": "innovacion-2025-2026",
+      "tipo": "regula"
+    },
+    {
+      "source": "plan-regional-2025-2026",
+      "target": "innovacion-2025-2026",
+      "tipo": "ejecuta"
+    },
+    {
+      "source": "plan-regional-2025-2026",
+      "target": "redes-2025-2026",
+      "tipo": "ejecuta"
+    },
+    {
+      "source": "decreto-69-2007",
+      "target": "estancias-2026",
+      "tipo": "fundamenta"
+    },
+    {
+      "source": "ley-4-2011-extremadura",
+      "target": "licencias-2026-2027",
+      "tipo": "fundamenta"
+    },
+    {
+      "source": "plan-regional-2025-2026",
+      "target": "cdd-2023",
+      "tipo": "desarrolla"
+    },
+    {
+      "source": "red-cpr",
+      "target": "cpr-direcciones-2026",
+      "tipo": "convoca"
+    },
+    {
+      "source": "red-cpr",
+      "target": "cpr-asesorias-2026",
+      "tipo": "convoca"
+    }
+  ],
+  "sourceManifest": [
+    {
+      "id": "loe-2-2006",
+      "tipoFuente": "BOE",
+      "fuenteOficial": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-7899",
+      "verificadoEn": "2026-09-03",
+      "sha256": "05a78a7cec05ac8d9e2e91824d7f9399d9a54603285bd1374dd648cf0fcb0ce7",
+      "archivoServido": "/repository/SIFE%20normativa/01_marco_general/LOE-2-2006-consolidada.pdf"
+    },
+    {
+      "id": "lomloe-3-2020",
+      "tipoFuente": "BOE",
+      "fuenteOficial": "https://www.boe.es/buscar/doc.php?id=BOE-A-2020-17264",
+      "verificadoEn": "2026-09-03",
+      "sha256": "73e83117768af12e335f36f7f50119b184cbe64c1ec445f62fe5e247a2a9298c",
+      "archivoServido": "/repository/SIFE%20normativa/01_marco_general/LOMLOE-3-2020.pdf"
+    },
+    {
+      "id": "ley-4-2011-extremadura",
+      "tipoFuente": "BOE / DOE",
+      "fuenteOficial": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-5297",
+      "verificadoEn": "2026-09-03",
+      "sha256": "36a2d8fd67e6ddb35e5c229bc1f4e5a63bccb62f02d71ac5a17414f98303050d",
+      "archivoServido": "/repository/SIFE%20normativa/01_marco_general/Ley-4-2011-educacion-extremadura-consolidada.pdf"
+    },
+    {
+      "id": "decreto-69-2007",
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/eli/es-ex/d/2007/04/10/69",
+      "verificadoEn": "2026-09-03",
+      "sha256": "f5dbf482388f5d220845e4eb857f3bd6876d2e3b34e013dcdc2940fcb181d3fd",
+      "archivoServido": "/repository/SIFE%20normativa/02_sistema_formacion/Decreto-69-2007-sistema-formacion-permanente.pdf"
+    },
+    {
+      "id": "orden-31-10-2000",
+      "tipoFuente": "DOE / Educarex",
+      "fuenteOficial": "https://doe.juntaex.es/ultimosdoe/mostrardoe.php?fecha=20001104",
+      "verificadoEn": "2026-09-03",
+      "sha256": "7476d76605c2d62d8211dc88504bd39868f5e9bf7e3d35dab7eb850bda921a99",
+      "archivoServido": "/repository/SIFE%20normativa/04_registro_reconocimiento/Orden-31-octubre-2000-registro-formacion.pdf"
+    },
+    {
+      "id": "correccion-orden-2000",
+      "tipoFuente": "DOE / Educarex",
+      "fuenteOficial": "https://doe.juntaex.es/ultimosdoe/mostrardoe.php?fecha=20001111",
+      "verificadoEn": "2026-09-03",
+      "sha256": "dae1ed349339875500193d54661f2d95cda547020829184273dd6c777859413f",
+      "archivoServido": "/repository/SIFE%20normativa/04_registro_reconocimiento/Correccion-errores-Orden-31-octubre-2000.pdf"
+    },
+    {
+      "id": "orden-21-05-2002",
+      "tipoFuente": "DOE / Educarex",
+      "fuenteOficial": "https://doe.juntaex.es/ultimosdoe/mostrardoe.php?fecha=20020530",
+      "verificadoEn": "2026-09-03",
+      "sha256": "bbb5e2c2bc33973c6b8fde66229f1210ba994d163457b1e93d58be163e8054af",
+      "archivoServido": "/repository/SIFE%20normativa/04_registro_reconocimiento/Orden-21-mayo-2002-modificacion-registro.pdf"
+    },
+    {
+      "id": "plan-marco-2016",
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/pdfs/doe/2016/2300o/16050410.pdf",
+      "verificadoEn": "2026-09-03",
+      "sha256": "be2e931ebd63e7e459356c4c4774e8f76850f731b601a5701cedcd820b702c8e",
+      "archivoServido": "/repository/SIFE%20normativa/02_sistema_formacion/Plan-Marco-Formacion-Permanente-2016.pdf"
+    },
+    {
+      "id": "plan-regional-2025-2026",
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2026&doe=530o&xml=2026050028",
+      "verificadoEn": "2026-09-03",
+      "sha256": "18a512c97ef7db1b197dc09faf89752ea007c4f90fb73f571c9103f98616a332",
+      "archivoServido": "/repository/SIFE%20normativa/02_sistema_formacion/Plan-Regional-Formacion-2025-2026.pdf"
+    },
+    {
+      "id": "decreto-112-2026",
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/pdfs/doe/2026/1050o/26040135.pdf",
+      "verificadoEn": "2026-09-03",
+      "sha256": "2bfddb208505327cfcb1e1ab85900338b5cee485ed994b6c26c29b3895b02fad",
+      "archivoServido": "/repository/SIFE%20normativa/03_organizacion_cpr/Decreto-112-2026-estructura-consejeria.pdf"
+    },
+    {
+      "id": "portal-sife",
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://formacion.educarex.es/",
+      "verificadoEn": "2026-09-03"
+    },
+    {
+      "id": "registro-rfp",
+      "tipoFuente": "RFP Educarex",
+      "fuenteOficial": "https://rfp.educarex.es/",
+      "verificadoEn": "2026-09-03"
+    },
+    {
+      "id": "buscador-actividades",
+      "tipoFuente": "RFP Educarex",
+      "fuenteOficial": "https://rfp.educarex.es/planformacion",
+      "verificadoEn": "2026-09-03"
+    },
+    {
+      "id": "registro-solicitudes",
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://formacion.educarex.es/resgistrosolicitud/",
+      "verificadoEn": "2026-09-03"
+    },
+    {
+      "id": "modelo-reconocimiento-badajoz",
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://portales.educarex.es/formacion/wp-content/uploads/sites/13/2025/07/Solicitud_Reconocimiento_BADAJOZ.pdf",
+      "verificadoEn": "2026-09-03",
+      "sha256": "1c9dd4b4b0cd8ab63e226ce2218b93ceaf868e1df963713e974ce7561f924341",
+      "archivoServido": "/repository/SIFE%20normativa/06_guias_modelos/Solicitud-Reconocimiento-Badajoz.pdf"
+    },
+    {
+      "id": "modelo-reconocimiento-caceres",
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://portales.educarex.es/formacion/wp-content/uploads/sites/13/2025/07/Solicitud_Reconocimiento_CACERES.pdf",
+      "verificadoEn": "2026-09-03",
+      "sha256": "0178117fd9dde725896da9fe09c5053b42c2485bd6b95dbc39dfc3eb87149f4d",
+      "archivoServido": "/repository/SIFE%20normativa/06_guias_modelos/Solicitud-Reconocimiento-Caceres.pdf"
+    },
+    {
+      "id": "complemento-formacion",
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://formacion.educarex.es/resgistrocomplemento/",
+      "verificadoEn": "2026-09-03"
+    },
+    {
+      "id": "circular-sexenios-2025",
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://portales.educarex.es/formacion/wp-content/uploads/sites/13/2025/08/CIRCULAR_n_1_SEXENIO_DEFINITIVAF_1.pdf",
+      "verificadoEn": "2026-09-03",
+      "sha256": "335d1f59242a967df4c3474ff901ede32fdb40764a549767ef95f19e8132b2ba",
+      "archivoServido": "/repository/SIFE%20normativa/04_registro_reconocimiento/Circular-1-2025-complemento-formacion.pdf"
+    },
+    {
+      "id": "sello-rfp-2022",
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2022&doe=1690o&xml=2022062592",
+      "verificadoEn": "2026-09-03"
+    },
+    {
+      "id": "red-cpr",
+      "tipoFuente": "Educarex",
+      "fuenteOficial": "https://formacion.educarex.es/cprsite/",
+      "verificadoEn": "2026-09-03"
+    },
+    {
+      "id": "cpr-direcciones-2026",
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2026&doe=1400o&xml=2026061924",
+      "verificadoEn": "2026-09-03"
+    },
+    {
+      "id": "cpr-asesorias-2026",
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2026&doe=1400o&xml=2026061925",
+      "verificadoEn": "2026-09-03"
+    },
+    {
+      "id": "orden-pfc-2024",
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2024&doe=2180o&xml=2024050178",
+      "verificadoEn": "2026-09-03"
+    },
+    {
+      "id": "pfc-2025-2026",
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2025&doe=1700o&xml=2025063214",
+      "verificadoEn": "2026-09-03",
+      "sha256": "89d27811c28445f680016de12b3a95fee0ec067ab0a1fc88fb35cbc1b30332fa",
+      "archivoServido": "/repository/SIFE%20normativa/05_programas_convocatorias/Proyectos-Formacion-Centros-2025-2026.pdf"
+    },
+    {
+      "id": "orden-innovacion-2024",
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2024&doe=2180o&xml=2024050180",
+      "verificadoEn": "2026-09-03"
+    },
+    {
+      "id": "innovacion-2025-2026",
+      "tipoFuente": "DOE / Educarex",
+      "fuenteOficial": "https://www.juntaex.es/w/0702524",
+      "verificadoEn": "2026-09-03",
+      "sha256": "6c1adb817036742f4006c68a6f43af56823f274495731f7b0a607069e42d8a62",
+      "archivoServido": "/repository/SIFE%20normativa/05_programas_convocatorias/Proyectos-Innovacion-2025-2026.pdf"
+    },
+    {
+      "id": "redes-2025-2026",
+      "tipoFuente": "DOE / Juntaex",
+      "fuenteOficial": "https://www.juntaex.es/es/w/0728525",
+      "verificadoEn": "2026-09-03",
+      "sha256": "c98944b15633e9b8d858d1d0191c477fae9ae334fa5499f52a96ef3e681793ce",
+      "archivoServido": "/repository/SIFE%20normativa/05_programas_convocatorias/Orden-Redes-2025-2026.pdf"
+    },
+    {
+      "id": "estancias-2026",
+      "tipoFuente": "Juntaex / Educarex",
+      "fuenteOficial": "https://www.juntaex.es/w/0735226",
+      "verificadoEn": "2026-09-03",
+      "sha256": "a3a4183a4366f4f71abe985f3a7e9087334c6dc5aa1619451076d47c2fe779e0",
+      "archivoServido": "/repository/SIFE%20normativa/05_programas_convocatorias/Estancias-Formativas-2026.pdf"
+    },
+    {
+      "id": "licencias-2026-2027",
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/otrosFormatos/html.php?anio=2026&doe=830o&xml=2026061035",
+      "verificadoEn": "2026-09-03"
+    },
+    {
+      "id": "cdd-2023",
+      "tipoFuente": "DOE",
+      "fuenteOficial": "https://doe.juntaex.es/pdfs/doe/2023/2360o/23064162.pdf",
+      "verificadoEn": "2026-09-03",
+      "sha256": "b9cdc3753000500898f1d84f7b8df01934761931edacca98506bb73039526489",
+      "archivoServido": "/repository/SIFE%20normativa/05_programas_convocatorias/Normativa-Competencia-Digital-Docente-2023.pdf"
+    }
+  ]
+}

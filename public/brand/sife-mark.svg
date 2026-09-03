@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">SIFE</title>
+  <desc id="desc">Marca geométrica verde y coral de SIFE Normativa</desc>
+  <rect width="512" height="512" rx="112" fill="#143e3a"/>
+  <path d="M104 122h304v72H104z" fill="#f5f1e8"/>
+  <path d="M104 220h214v72H104z" fill="#f5f1e8"/>
+  <path d="M104 318h304v72H104z" fill="#e57255"/>
+  <circle cx="374" cy="256" r="38" fill="#d9c66d"/>
+</svg>
