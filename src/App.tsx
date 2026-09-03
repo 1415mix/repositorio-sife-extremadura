@@ -46,8 +46,11 @@ const blockLabels: Record<string, string> = {
   innovacion_programas: "Innovación y programas",
   ayudas_estancias_convenios: "Ayudas, estancias y convenios",
   convocatorias_temporales: "Convocatorias temporales",
-  guias_modelos: "Guías y modelos"
+  guias_modelos: "Guías y modelos",
+  comparacion_marcos: "Comparación y marcos internacionales"
 };
+
+type StateKind = "current" | "temporary" | "historical" | "reference";
 
 function App() {
   const [data, setData] = useState<RepositoryData | null>(null);
@@ -243,6 +246,7 @@ function RepositorySection({ data, query, setQuery }: { data: RepositoryData; qu
   const [block, setBlock] = useState("all");
   const [status, setStatus] = useState("all");
   const [sourceType, setSourceType] = useState("all");
+  const [collection, setCollection] = useState("all");
   const [view, setView] = useState<"grid" | "list">("grid");
   const [selected, setSelected] = useState<DocumentRecord | null>(null);
   const detailRef = useRef<HTMLDivElement>(null);
@@ -254,25 +258,42 @@ function RepositorySection({ data, query, setQuery }: { data: RepositoryData; qu
     return (!normalizedQuery || document.textoIndexable.includes(normalizedQuery))
       && (block === "all" || document.bloque === block)
       && (status === "all" || stateKind(document.estado) === status)
-      && (sourceType === "all" || document.tipoFuente === sourceType);
-  }), [data.documents, query, block, status, sourceType]);
+      && (sourceType === "all" || document.tipoFuente === sourceType)
+      && (collection === "all" || (collection === "master" ? Boolean(document.informeMaestro) : !document.informeMaestro));
+  }), [data.documents, query, block, status, sourceType, collection]);
 
-  const clear = () => { setQuery(""); setBlock("all"); setStatus("all"); setSourceType("all"); };
-  const hasFilters = Boolean(query || block !== "all" || status !== "all" || sourceType !== "all");
+  const clear = () => { setQuery(""); setBlock("all"); setStatus("all"); setSourceType("all"); setCollection("all"); };
+  const hasFilters = Boolean(query || block !== "all" || status !== "all" || sourceType !== "all" || collection !== "all");
   const openDetail = (document: DocumentRecord) => {
     setSelected(document);
     requestAnimationFrame(() => detailRef.current?.focus());
+  };
+  const showMasterReport = () => {
+    setQuery("");
+    setBlock("all");
+    setStatus("all");
+    setSourceType("all");
+    setCollection("master");
   };
 
   return (
     <section aria-labelledby="repo-title">
       <PageHeading eyebrow="Fuentes públicas verificadas" title="Repositorio documental" description="Busca por materia, órgano, título o contenido. Cada ficha distingue fuente, curso, estado y copia local preservada cuando existe." />
+      <aside className="master-report-panel" aria-label="Cobertura del Informe maestro SIFE">
+        <div>
+          <p className="overline">Colección auditada · corte {formatDate(data.masterReport.cutoff)}</p>
+          <h2>Informe maestro SIFE incorporado</h2>
+          <p>Sus <strong>{data.masterReport.integrated} referencias</strong> tienen ficha funcional: {data.masterReport.preserved} con PDF oficial preservado y {data.masterReport.linkOnly} como enlace contextual. La confianza documental no equivale a vigencia jurídica.</p>
+        </div>
+        <button className="button secondary" onClick={showMasterReport}><FileCheck2 size={17} aria-hidden="true" /> Ver las {data.masterReport.references} referencias</button>
+      </aside>
       <div className="filter-panel">
         <label className="search-field"><span>Buscar en el catálogo</span><div><Search size={19} aria-hidden="true" /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ej.: reconocimiento, CPR, Decreto 69/2007…" /></div></label>
         <div className="filter-row">
           <SelectFilter label="Bloque" value={block} onChange={setBlock} options={blocks.map((value) => ({ value, label: blockLabels[value] ?? value }))} />
-          <SelectFilter label="Estado" value={status} onChange={setStatus} options={[{ value: "current", label: "Vigente o activo" }, { value: "temporary", label: "Temporal / comprobar" }, { value: "historical", label: "Finalizado o histórico" }]} />
+          <SelectFilter label="Estado" value={status} onChange={setStatus} options={[{ value: "current", label: "Vigente o activo" }, { value: "temporary", label: "Temporal / comprobar" }, { value: "historical", label: "Finalizado o histórico" }, { value: "reference", label: "Referencia / contexto" }]} />
           <SelectFilter label="Tipo de fuente" value={sourceType} onChange={setSourceType} options={sources.map((value) => ({ value, label: value }))} />
+          <SelectFilter label="Colección" value={collection} onChange={setCollection} options={[{ value: "master", label: "Informe maestro" }, { value: "other", label: "Catálogo complementario" }]} />
           {hasFilters && <button className="clear-button" onClick={clear}><X size={16} aria-hidden="true" /> Limpiar</button>}
         </div>
       </div>
@@ -402,6 +423,7 @@ function CautionsSection({ data }: { data: RepositoryData }) {
         <StateCard kind="current" value={stateCounts.current ?? 0} title="Vigente o activo" body="Norma vigente, marco aplicable o servicio operativo en la fecha de comprobación." />
         <StateCard kind="temporary" value={stateCounts.temporary ?? 0} title="Temporal o a comprobar" body="Convocatoria o referencia cuyo plazo o efecto exige revisión en la fuente oficial." />
         <StateCard kind="historical" value={stateCounts.historical ?? 0} title="Finalizado o histórico" body="Útil como antecedente, pero no acredita plazo, oferta o requisitos actuales." />
+        <StateCard kind="reference" value={stateCounts.reference ?? 0} title="Referencia o contexto" body="Marco comparado, portal u orientación que no constituye normativa SIFE aplicable." />
       </div>
       <div className="caution-list">
         {data.cautions.map((caution) => <article key={caution.title}><AlertTriangle aria-hidden="true" /><div><p className="overline">{caution.type}</p><h2>{caution.title}</h2><p>{caution.body}</p></div></article>)}
@@ -415,7 +437,7 @@ function DocumentCard({ document, onOpen }: { document: DocumentRecord; onOpen: 
   const kind = stateKind(document.estado);
   return (
     <article className="document-card">
-      <div className="card-top"><span className={`pill ${kind}`}>{stateLabel(kind)}</span>{document.curso && <span className="course">{document.curso}</span>}</div>
+      <div className="card-top"><span className={`pill ${kind}`}>{stateLabel(kind)}</span>{document.informeMaestro ? <span className="report-id">{document.informeMaestro.id}</span> : document.curso && <span className="course">{document.curso}</span>}</div>
       <p className="document-type">{document.tipo} · {document.tipoFuente}</p>
       <h2>{document.titulo}</h2>
       <p>{document.resumenTecnico}</p>
@@ -439,7 +461,10 @@ function DocumentDetail({ document, onClose, detailRef }: { document: DocumentRe
           <div><dt>Órgano</dt><dd>{document.organoEmisor}</dd></div>
           <div><dt>Fuente</dt><dd>{document.tipoFuente}</dd></div>
           <div><dt>Verificado</dt><dd>{formatDate(document.verificadoEn)}</dd></div>
+          {document.informeMaestro && <div><dt>Informe maestro</dt><dd>{document.informeMaestro.id} · cola {document.informeMaestro.cola}</dd></div>}
+          {document.informeMaestro && <div><dt>Confianza documental</dt><dd>{document.informeMaestro.confianza} · corpus {document.informeMaestro.origenCorpus}</dd></div>}
         </dl>
+        {document.informeMaestro?.nota && <div className="notice audit"><Info size={19} aria-hidden="true" /><p>{document.informeMaestro.nota}</p></div>}
         <h3>Relevancia para SIFE</h3><p>{document.relacionSIFE}</p>
         {document.aspectosClave.length > 0 && <><h3>Aspectos clave</h3><ul>{document.aspectosClave.map((item) => <li key={item}>{item}</li>)}</ul></>}
         {document.articulosApartadosRelevantes.length > 0 && <><h3>Referencias concretas</h3><ul>{document.articulosApartadosRelevantes.map((item) => <li key={item}>{item}</li>)}</ul></>}
@@ -512,14 +537,15 @@ function normalize(value: string) { return value.normalize("NFD").replace(/[\u03
 
 function unique(values: string[]) { return [...new Set(values)].sort((a, b) => a.localeCompare(b, "es")); }
 
-function stateKind(state: string): "current" | "temporary" | "historical" {
+function stateKind(state: string): StateKind {
   const value = normalize(state);
-  if (value.includes("finalizada") || value.includes("historica") || value.includes("cerrado") || value.includes("resuelta")) return "historical";
+  if (value.includes("referencia comparada") || value.includes("marco de referencia") || value.includes("portal normativo comparado")) return "reference";
+  if (value.includes("finalizada") || value.includes("historica") || value.includes("cerrado") || value.includes("resuelta") || value.includes("derogad")) return "historical";
   if (value.includes("comprobar") || value.includes("temporal")) return "temporary";
   return "current";
 }
 
-function stateLabel(kind: "current" | "temporary" | "historical") { return kind === "current" ? "Vigente / activo" : kind === "temporary" ? "Comprobar" : "Histórico / finalizado"; }
+function stateLabel(kind: StateKind) { return kind === "current" ? "Vigente / activo" : kind === "temporary" ? "Comprobar" : kind === "reference" ? "Referencia / contexto" : "Histórico / finalizado"; }
 
 function shortTitle(title: string) { return title.length > 58 ? `${title.slice(0, 55)}…` : title; }
 

@@ -45,6 +45,23 @@ test("marca SIFE y búsqueda global", async ({ page }) => {
   await expect(page.getByText("3 resultados", { exact: false })).toBeVisible();
 });
 
+test("Informe maestro: cobertura, filtro y ficha auditada", async ({ page }) => {
+  await page.goto("/#repositorio");
+  await expect(page.getByLabel("Cobertura del Informe maestro SIFE")).toContainText("47 referencias");
+  await expect(page.getByLabel("Cobertura del Informe maestro SIFE")).toContainText("38 con PDF oficial preservado");
+  await page.getByRole("button", { name: "Ver las 47 referencias" }).click();
+  await expect(page.getByText("47 resultados", { exact: false })).toBeVisible();
+  await expect(page.getByLabel("Colección")).toHaveValue("master");
+  await page.getByLabel("Buscar en el catálogo").fill("ES-02");
+  await expect(page.getByText("1 resultado", { exact: false })).toBeVisible();
+  await page.getByRole("button", { name: "Ver ficha trazable" }).click();
+  const dialog = page.getByRole("dialog");
+  await expect(dialog).toContainText("Informe maestro");
+  await expect(dialog).toContainText("ES-02 · cola C");
+  await expect(dialog).toContainText("Clasificación corregida");
+  await expect(dialog.getByRole("link", { name: "Copia preservada" })).toBeVisible();
+});
+
 test("tokens esenciales del sistema de diseño", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/#inicio");

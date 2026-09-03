@@ -8,6 +8,10 @@ const urls = [...new Set([
   ...data.procedures.flatMap((procedure) => procedure.documents.map((document) => document.url))
 ])];
 const failures = [];
+const restricted = [];
+const documentedRestrictions = new Set(data.documents
+  .filter((document) => document.informeMaestro?.nota?.includes("impidió la descarga automatizada"))
+  .map((document) => document.fuenteOficial));
 const results = [];
 let cursor = 0;
 async function worker() {
@@ -15,7 +19,8 @@ async function worker() {
     const url = urls[cursor++];
     const result = await check(url);
     results.push(result);
-    if (!result.ok) failures.push(result);
+    if (!result.ok && documentedRestrictions.has(url) && result.status === 403) restricted.push(result);
+    else if (!result.ok) failures.push(result);
   }
 }
 await Promise.all(Array.from({ length: Math.min(6, urls.length) }, () => worker()));
@@ -32,6 +37,6 @@ async function check(url) {
   }
 }
 results.sort((a, b) => a.url.localeCompare(b.url));
-fs.writeFileSync(path.join(root, "link-check-report.json"), `${JSON.stringify({ checkedAt: new Date().toISOString(), total: urls.length, failures, results }, null, 2)}\n`);
-console.log(`Enlaces comprobados: ${urls.length}; incidencias: ${failures.length}.`);
+fs.writeFileSync(path.join(root, "link-check-report.json"), `${JSON.stringify({ checkedAt: new Date().toISOString(), total: urls.length, failures, restricted, results }, null, 2)}\n`);
+console.log(`Enlaces comprobados: ${urls.length}; incidencias: ${failures.length}; restricciones documentadas: ${restricted.length}.`);
 if (failures.length) process.exitCode = 2;

@@ -1,17 +1,14 @@
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
+import { loadCatalog } from "./catalog-loader.mjs";
 
 const appRoot = path.resolve(import.meta.dirname, "..");
-const workspaceRoot = path.resolve(appRoot, "..");
-const sourceRoot = path.join(workspaceRoot, "SIFE normativa");
-const sourceFile = path.join(sourceRoot, "00_indice", "catalogo-fuente.json");
 const publicRoot = path.join(appRoot, "public");
 const repositoryTarget = path.join(publicRoot, "repository", "SIFE normativa");
 const dataTarget = path.join(publicRoot, "data", "repository.json");
 
-const raw = fs.readFileSync(sourceFile, "utf8");
-const source = JSON.parse(raw);
+const { sourceRoot, catalog: source } = loadCatalog(appRoot);
 validateSource(source);
 
 if (!repositoryTarget.startsWith(path.join(appRoot, "public", "repository"))) {
@@ -61,10 +58,20 @@ const documents = source.documents.map((document) => {
       document.resumenTecnico,
       document.aspectosClave.join(" "),
       document.articulosApartadosRelevantes.join(" "),
-      document.modificacionesPosteriores.join(" ")
+      document.modificacionesPosteriores.join(" "),
+      document.informeMaestro?.id,
+      document.informeMaestro?.confianza,
+      document.informeMaestro?.cola,
+      document.informeMaestro?.origenCorpus,
+      document.informeMaestro?.nota
     ].filter(Boolean).join(" "))
   };
 });
+
+const documentsById = new Map(documents.map((document) => [document.id, document]));
+const reportEntries = source.masterReport?.entries ?? [];
+const reportIntegrated = reportEntries.filter((entry) => documentsById.has(entry.appId)).length;
+const reportPreserved = reportEntries.filter((entry) => documentsById.get(entry.appId)?.archivoServido).length;
 
 const versionMaterial = JSON.stringify({ source, hashes: documents.map(({ id, sha256 }) => [id, sha256 ?? null]) });
 const catalogVersion = crypto.createHash("sha256").update(versionMaterial).digest("hex").slice(0, 12);
@@ -75,6 +82,23 @@ const payload = {
   catalogVersion,
   officialPortal: source.officialPortal,
   assistant: { status: "knowledge_prepared", url: null },
+  masterReport: {
+    title: source.masterReport.title,
+    fileName: source.masterReport.fileName,
+    sha256: source.masterReport.sha256,
+    cutoff: source.masterReport.cutoff,
+    analyzedAt: source.masterReport.analyzedAt,
+    references: reportEntries.length,
+    integrated: reportIntegrated,
+    preserved: reportPreserved,
+    linkOnly: reportEntries.length - reportPreserved,
+    supplemental: source.masterReport.supplemental,
+    discrepancies: source.masterReport.discrepancies.map((item, index) => ({
+      id: `AUD-${String(index + 1).padStart(2, "0")}`,
+      title: item.title,
+      note: item.body
+    }))
+  },
   documents,
   procedures: source.procedures,
   cautions: source.cautions,

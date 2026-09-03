@@ -8,6 +8,12 @@ if (!fs.existsSync(file)) throw new Error('Falta public/data/repository.json; ej
 const data = JSON.parse(fs.readFileSync(file, "utf8"));
 const ids = new Set(data.documents.map((document) => document.id));
 if (ids.size !== data.documents.length) throw new Error("Hay IDs documentales duplicados.");
+if (data.masterReport.references !== 47 || data.masterReport.integrated !== 47) throw new Error("Cobertura incompleta del informe maestro.");
+const reportDocuments = data.documents.filter((document) => document.informeMaestro);
+const reportIds = new Set(reportDocuments.map((document) => document.informeMaestro.id));
+if (reportDocuments.length !== 47 || reportIds.size !== 47) throw new Error("Las referencias del informe maestro no son 47 fichas únicas.");
+const reportPreserved = reportDocuments.filter((document) => document.archivoServido).length;
+if (reportPreserved !== data.masterReport.preserved || data.masterReport.linkOnly !== 47 - reportPreserved) throw new Error("El resumen de preservación del informe no coincide con las fichas.");
 for (const required of ["decreto-69-2007", "plan-regional-2025-2026", "orden-31-10-2000", "registro-rfp", "red-cpr", "complemento-formacion"]) {
   if (!ids.has(required)) throw new Error(`Falta documento crítico: ${required}`);
 }
@@ -23,6 +29,7 @@ for (const required of ["buscar-actividad", "consultar-historial", "reconocer-ac
 for (const document of data.documents) {
   if (!document.tipoFuente || !document.verificadoEn) throw new Error(`Trazabilidad incompleta: ${document.id}`);
   if ((document.bloque === "convocatorias_temporales" || document.id === "plan-regional-2025-2026") && !document.curso) throw new Error(`Curso ausente en referencia temporal: ${document.id}`);
+  if (document.informeMaestro && (!document.informeMaestro.confianza || !document.informeMaestro.cola || !document.informeMaestro.origenCorpus)) throw new Error(`Metadatos del informe incompletos: ${document.id}`);
   if (document.archivoServido) {
     const relative = decodeURIComponent(document.archivoServido).replace(/^\/+/, "");
     const local = path.resolve(root, "public", relative);
