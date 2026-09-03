@@ -36,11 +36,42 @@ test("secciones principales y procedimientos", async ({ page }) => {
 test("marca SIFE y búsqueda global", async ({ page }) => {
   await page.goto("/#inicio");
   await expect(page.getByRole("img", { name: "Servicio de Innovación, Formación del Profesorado y Emprendimiento" })).toHaveAttribute("src", "/brand/sife-logo.png");
+  await page.keyboard.press("Control+k");
+  await expect(page.getByLabel("Buscar normativa")).toBeFocused();
   await page.getByLabel("Buscar normativa").fill("Decreto 69/2007");
   await page.getByRole("button", { name: "Buscar", exact: true }).click();
   await expect(page.getByRole("heading", { name: "Repositorio documental" })).toBeVisible();
   await expect(page.getByLabel("Buscar en el catálogo")).toHaveValue("Decreto 69/2007");
   await expect(page.getByText("3 resultados", { exact: false })).toBeVisible();
+});
+
+test("tokens esenciales del sistema de diseño", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/#inicio");
+  const tokens = await page.evaluate(() => {
+    const hero = getComputedStyle(document.querySelector(".hero h1")!);
+    const button = getComputedStyle(document.querySelector(".button.primary")!);
+    const search = getComputedStyle(document.querySelector(".global-search")!);
+    const card = getComputedStyle(document.querySelector(".access-card")!);
+    return {
+      heroSize: hero.fontSize,
+      heroLine: hero.lineHeight,
+      headingFont: hero.fontFamily,
+      buttonHeight: button.minHeight,
+      buttonRadius: button.borderRadius,
+      searchHeight: search.height,
+      cardRadius: card.borderRadius
+    };
+  });
+  expect(tokens).toEqual({
+    heroSize: "40px",
+    heroLine: "48px",
+    headingFont: expect.stringContaining("Plus Jakarta Sans"),
+    buttonHeight: "42px",
+    buttonRadius: "6px",
+    searchHeight: "40px",
+    cardRadius: "8px"
+  });
 });
 
 test("sin infracciones axe automáticas en inicio y repositorio", async ({ page }) => {

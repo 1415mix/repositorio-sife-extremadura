@@ -15,8 +15,8 @@ export default defineConfig({
         lang: "es",
         start_url: "/",
         display: "standalone",
-        theme_color: "#741525",
-        background_color: "#f8f7f9",
+        theme_color: "#651020",
+        background_color: "#fbfbfd",
         icons: [
           { src: "/brand/sife-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
           { src: "/brand/sife-512.png", sizes: "512x512", type: "image/png", purpose: "any" },

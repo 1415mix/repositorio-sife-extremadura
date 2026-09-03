@@ -55,6 +55,7 @@ function App() {
   const [active, setActive] = useState<SectionId>(() => sectionFromHash());
   const [repositoryQuery, setRepositoryQuery] = useState("");
   const [globalQuery, setGlobalQuery] = useState("");
+  const globalSearchRef = useRef<HTMLInputElement>(null);
   const mainRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -71,6 +72,17 @@ function App() {
     const onHashChange = () => setActive(sectionFromHash());
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
+  }, []);
+
+  useEffect(() => {
+    const onShortcut = (event: KeyboardEvent) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        globalSearchRef.current?.focus();
+      }
+    };
+    window.addEventListener("keydown", onShortcut);
+    return () => window.removeEventListener("keydown", onShortcut);
   }, []);
 
   const navigate = (section: SectionId) => {
@@ -95,7 +107,8 @@ function App() {
         <form className="global-search" role="search" onSubmit={searchRepository}>
           <Search size={19} aria-hidden="true" />
           <label className="visually-hidden" htmlFor="global-search">Buscar normativa</label>
-          <input id="global-search" value={globalQuery} onChange={(event) => setGlobalQuery(event.target.value)} placeholder="Buscar normativa SIFE…" />
+          <input ref={globalSearchRef} id="global-search" value={globalQuery} onChange={(event) => setGlobalQuery(event.target.value)} placeholder="Buscar normativa SIFE…" />
+          <kbd aria-hidden="true">⌘ K</kbd>
           <button type="submit">Buscar</button>
         </form>
         <a className="topbar-status" href="https://formacion.educarex.es/" target="_blank" rel="noreferrer" title={data ? `Catálogo ${data.catalogVersion}` : "Cargando catálogo"}>
