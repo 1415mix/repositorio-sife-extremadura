@@ -10,16 +10,16 @@ La carpeta tiene historial Git propio. No se debe copiar `.git` ni ramas del pro
 
 - URL de producción: https://repositorio-sife-extremadura.pages.dev/
 - Nombre: `repositorio-sife-extremadura`
-- Comando de compilación: `npm run build:web`
+- Comando de compilación: `pnpm run build:web`
 - Directorio de salida: `dist`
 - Versión de Node recomendada: 22
 
-La primera compilación completa (`npm run build`) debe realizarse antes de enviar cambios para que `public/data/repository.json` y las copias documentales estén versionadas. En Cloudflare se usa `build:web` porque el corpus canónico y los paquetes Knowledge viven fuera de la raíz del repositorio web.
+La primera compilación completa (`pnpm run build`) debe realizarse antes de enviar cambios para que `public/data/repository.json` y las copias documentales estén versionadas. En Cloudflare se usa `build:web` porque el corpus canónico y los paquetes Knowledge viven fuera de la raíz del repositorio web.
 
 ## Verificación posterior
 
 1. Abrir `https://repositorio-sife-extremadura.pages.dev/?v=<commit>`.
-2. Confirmar versión del catálogo, 30 fichas, 14 procedimientos y 28 relaciones.
+2. Confirmar versión del catálogo, 59 fichas, 46 PDF, 14 procedimientos, 46 relaciones y las 47 referencias del Informe maestro.
 3. Buscar `Decreto 69/2007`, `Plan Regional`, `registro`, `reconocimiento`, `CPR` y `complemento`.
 4. Abrir una fuente oficial y una copia PDF preservada.
 5. Recargar sin red una página ya visitada y comprobar el catálogo cacheado.
@@ -29,7 +29,7 @@ No anunciar el despliegue como publicado hasta que estos pasos hayan sido compro
 
 ## Estado verificado
 
-Primera publicación comprobada el 3 de septiembre de 2026. La interfaz, `repository.json`, el manifest, el service worker y una copia PDF respondieron con HTTP 200. El catálogo remoto coincidió con el SHA-256 local y declaró 30 fichas, 18 PDF, 14 procedimientos y 28 relaciones. El Knowledge del GPT continúa siendo una carga manual separada.
+Ampliación del Informe maestro comprobada en producción el 4 de septiembre de 2026. La interfaz móvil y de escritorio, `repository.json`, el manifest, el service worker y cuatro copias PDF —incluidas DigCompEdu y la referencia de Galicia— respondieron correctamente. El catálogo remoto coincidió con el SHA-256 local y declaró 59 fichas, 46 PDF, 14 procedimientos, 46 relaciones y 47/47 referencias del informe. El Knowledge del GPT continúa siendo una carga manual separada.
 
 ### Cautela sobre el disparador Git
 
