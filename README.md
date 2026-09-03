@@ -2,6 +2,8 @@
 
 PWA de consulta jurídico-operativa sobre el Servicio de Innovación, Formación del Profesorado y Emprendimiento (SIFE). La aplicación se genera desde un corpus canónico externo a la web para mantener sincronizadas las fichas, los PDF y el paquete Knowledge.
 
+Web pública: https://repositorio-sife-extremadura.pages.dev/
+
 ## Desarrollo
 
 Requiere Node.js 20 o posterior.
