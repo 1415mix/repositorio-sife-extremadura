@@ -30,3 +30,7 @@ No anunciar el despliegue como publicado hasta que estos pasos hayan sido compro
 ## Estado verificado
 
 Primera publicación comprobada el 3 de septiembre de 2026. La interfaz, `repository.json`, el manifest, el service worker y una copia PDF respondieron con HTTP 200. El catálogo remoto coincidió con el SHA-256 local y declaró 30 fichas, 18 PDF, 14 procedimientos y 28 relaciones. El Knowledge del GPT continúa siendo una carga manual separada.
+
+### Cautela sobre el disparador Git
+
+El proyecto conserva GitHub como fuente y tiene activados los despliegues de producción para `main`. Durante la primera publicación, el webhook no reaccionó al `push`; los dos primeros builds se iniciaron mediante el API oficial de Pages tomando el `HEAD` limpio de `main`. Si un futuro `push` no genera un despliegue, hay que revisar que la aplicación **Cloudflare Pages** tenga acceso al repositorio nuevo en la configuración de aplicaciones instaladas de GitHub y, hasta entonces, iniciar el build desde Pages sin subir `dist` manualmente.
