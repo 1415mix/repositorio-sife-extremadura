@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
 import {
   AlertTriangle,
   ArrowRight,
@@ -27,13 +27,13 @@ import {
 } from "lucide-react";
 import type { DocumentRecord, ProcedureRecord, RelationRecord, RepositoryData, SectionId } from "./types";
 
-const sections: Array<{ id: SectionId; label: string; icon: typeof Home }> = [
-  { id: "inicio", label: "Inicio", icon: Home },
-  { id: "repositorio", label: "Repositorio", icon: BookOpen },
-  { id: "asistente", label: "GPT SIFE Normativa", icon: Sparkles },
-  { id: "procedimientos", label: "Procedimientos", icon: FileCheck2 },
-  { id: "relaciones", label: "Relaciones", icon: Network },
-  { id: "cautelas", label: "Vigencia y cautelas", icon: ShieldCheck }
+const sections: Array<{ id: SectionId; label: string; shortLabel: string; icon: typeof Home }> = [
+  { id: "inicio", label: "Inicio", shortLabel: "Inicio", icon: Home },
+  { id: "repositorio", label: "Repositorio", shortLabel: "Repositorio", icon: BookOpen },
+  { id: "asistente", label: "GPT SIFE Normativa", shortLabel: "GPT SIFE", icon: Sparkles },
+  { id: "procedimientos", label: "Procedimientos", shortLabel: "Trámites", icon: FileCheck2 },
+  { id: "relaciones", label: "Relaciones", shortLabel: "Relaciones", icon: Network },
+  { id: "cautelas", label: "Vigencia y cautelas", shortLabel: "Vigencia", icon: ShieldCheck }
 ];
 
 const blockLabels: Record<string, string> = {
@@ -53,6 +53,8 @@ function App() {
   const [data, setData] = useState<RepositoryData | null>(null);
   const [error, setError] = useState("");
   const [active, setActive] = useState<SectionId>(() => sectionFromHash());
+  const [repositoryQuery, setRepositoryQuery] = useState("");
+  const [globalQuery, setGlobalQuery] = useState("");
   const mainRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -78,54 +80,85 @@ function App() {
     requestAnimationFrame(() => mainRef.current?.focus());
   };
 
+  const searchRepository = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setRepositoryQuery(globalQuery.trim());
+    navigate("repositorio");
+  };
+
   return (
     <div className="app-shell">
       <header className="topbar">
         <a className="brand" href="#inicio" onClick={(event) => { event.preventDefault(); navigate("inicio"); }} aria-label="SIFE Normativa, ir al inicio">
-          <img src="/brand/sife-mark.svg" width="42" height="42" alt="" />
-          <span><strong>SIFE</strong><small>Normativa Extremadura</small></span>
+          <img src="/brand/sife-logo.png" width="360" height="61" alt="Servicio de Innovación, Formación del Profesorado y Emprendimiento" />
         </a>
-        <div className="topbar-status" title={data ? `Versión ${data.catalogVersion}` : "Cargando catálogo"}>
+        <form className="global-search" role="search" onSubmit={searchRepository}>
+          <Search size={19} aria-hidden="true" />
+          <label className="visually-hidden" htmlFor="global-search">Buscar normativa</label>
+          <input id="global-search" value={globalQuery} onChange={(event) => setGlobalQuery(event.target.value)} placeholder="Buscar normativa SIFE…" />
+          <button type="submit">Buscar</button>
+        </form>
+        <a className="topbar-status" href="https://formacion.educarex.es/" target="_blank" rel="noreferrer" title={data ? `Catálogo ${data.catalogVersion}` : "Cargando catálogo"}>
           <span className="status-dot" aria-hidden="true" />
-          {data ? `Comprobado ${formatDate(data.checkedAt)}` : "Cargando"}
-        </div>
+          <span>{data ? `Verificado ${formatDate(data.checkedAt)}` : "Cargando"}</span>
+          <ExternalLink size={15} aria-hidden="true" />
+        </a>
       </header>
 
-      <nav className="section-nav" aria-label="Secciones principales">
-        {sections.map((section) => {
-          const Icon = section.icon;
-          return (
-            <a
-              key={section.id}
-              href={`#${section.id}`}
-              className={active === section.id ? "active" : ""}
-              aria-current={active === section.id ? "page" : undefined}
-              onClick={(event) => { event.preventDefault(); navigate(section.id); }}
-            >
-              <Icon size={19} aria-hidden="true" />
-              <span>{section.label}</span>
-            </a>
-          );
-        })}
+      <aside className="sidebar">
+        <p className="sidebar-label">Menú principal</p>
+        <SectionLinks active={active} navigate={navigate} />
+        <div className="sidebar-source">
+          <ShieldCheck size={23} aria-hidden="true" />
+          <p>Fuentes oficiales</p>
+          <strong>BOE · DOE · Junta</strong>
+          <span>{data ? `Comprobado el ${formatDate(data.checkedAt)}` : "Cargando catálogo…"}</span>
+        </div>
+      </aside>
+
+      <div className="page-region">
+        <main id="contenido" tabIndex={-1} ref={mainRef}>
+          {error && <LoadError message={error} />}
+          {!error && !data && <Loading />}
+          {data && active === "inicio" && <HomeSection data={data} navigate={navigate} />}
+          {data && active === "repositorio" && <RepositorySection data={data} query={repositoryQuery} setQuery={setRepositoryQuery} />}
+          {data && active === "asistente" && <AssistantSection data={data} navigate={navigate} />}
+          {data && active === "procedimientos" && <ProceduresSection procedures={data.procedures} />}
+          {data && active === "relaciones" && <RelationsSection data={data} />}
+          {data && active === "cautelas" && <CautionsSection data={data} />}
+        </main>
+
+        <footer>
+          <p>Herramienta independiente de consulta. No sustituye al BOE, DOE, la sede electrónica ni al órgano gestor.</p>
+          <a href="https://formacion.educarex.es/" target="_blank" rel="noreferrer">Portal oficial SIFE <ExternalLink size={14} aria-hidden="true" /></a>
+        </footer>
+      </div>
+
+      <nav className="mobile-nav" aria-label="Secciones principales">
+        <SectionLinks active={active} navigate={navigate} />
       </nav>
-
-      <main id="contenido" tabIndex={-1} ref={mainRef}>
-        {error && <LoadError message={error} />}
-        {!error && !data && <Loading />}
-        {data && active === "inicio" && <HomeSection data={data} navigate={navigate} />}
-        {data && active === "repositorio" && <RepositorySection data={data} />}
-        {data && active === "asistente" && <AssistantSection data={data} navigate={navigate} />}
-        {data && active === "procedimientos" && <ProceduresSection procedures={data.procedures} />}
-        {data && active === "relaciones" && <RelationsSection data={data} />}
-        {data && active === "cautelas" && <CautionsSection data={data} />}
-      </main>
-
-      <footer>
-        <p>Herramienta independiente de consulta. No sustituye al BOE, DOE, la sede electrónica ni al órgano gestor.</p>
-        <a href="https://formacion.educarex.es/" target="_blank" rel="noreferrer">Portal oficial SIFE <ExternalLink size={14} aria-hidden="true" /></a>
-      </footer>
     </div>
   );
+}
+
+function SectionLinks({ active, navigate }: { active: SectionId; navigate: (id: SectionId) => void }) {
+  return <>{sections.map((section) => {
+    const Icon = section.icon;
+    return (
+      <a
+        key={section.id}
+        href={`#${section.id}`}
+        className={active === section.id ? "active" : ""}
+        aria-label={section.label}
+        aria-current={active === section.id ? "page" : undefined}
+        onClick={(event) => { event.preventDefault(); navigate(section.id); }}
+      >
+        <Icon size={20} aria-hidden="true" />
+        <span className="nav-label" aria-hidden="true">{section.label}</span>
+        <span className="mobile-label" aria-hidden="true">{section.shortLabel}</span>
+      </a>
+    );
+  })}</>;
 }
 
 function HomeSection({ data, navigate }: { data: RepositoryData; navigate: (id: SectionId) => void }) {
@@ -193,8 +226,7 @@ function HomeSection({ data, navigate }: { data: RepositoryData; navigate: (id: 
   );
 }
 
-function RepositorySection({ data }: { data: RepositoryData }) {
-  const [query, setQuery] = useState("");
+function RepositorySection({ data, query, setQuery }: { data: RepositoryData; query: string; setQuery: (value: string) => void }) {
   const [block, setBlock] = useState("all");
   const [status, setStatus] = useState("all");
   const [sourceType, setSourceType] = useState("all");

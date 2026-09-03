@@ -33,6 +33,16 @@ test("secciones principales y procedimientos", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Vigencia y cautelas" })).toBeVisible();
 });
 
+test("marca SIFE y búsqueda global", async ({ page }) => {
+  await page.goto("/#inicio");
+  await expect(page.getByRole("img", { name: "Servicio de Innovación, Formación del Profesorado y Emprendimiento" })).toHaveAttribute("src", "/brand/sife-logo.png");
+  await page.getByLabel("Buscar normativa").fill("Decreto 69/2007");
+  await page.getByRole("button", { name: "Buscar", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Repositorio documental" })).toBeVisible();
+  await expect(page.getByLabel("Buscar en el catálogo")).toHaveValue("Decreto 69/2007");
+  await expect(page.getByText("3 resultados", { exact: false })).toBeVisible();
+});
+
 test("sin infracciones axe automáticas en inicio y repositorio", async ({ page }) => {
   for (const hash of ["inicio", "repositorio", "asistente", "procedimientos", "relaciones", "cautelas"]) {
     await page.goto(`/#${hash}`);

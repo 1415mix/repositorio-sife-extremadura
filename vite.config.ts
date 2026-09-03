@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["brand/sife-mark.svg", "brand/favicon.svg", "brand/sife-192.png", "brand/sife-512.png", "brand/sife-maskable-512.png"],
+      includeAssets: ["brand/sife-logo.png", "brand/sife-mark.svg", "brand/favicon.svg", "brand/sife-192.png", "brand/sife-512.png", "brand/sife-maskable-512.png"],
       manifest: {
         name: "SIFE Normativa Extremadura",
         short_name: "SIFE",
@@ -15,8 +15,8 @@ export default defineConfig({
         lang: "es",
         start_url: "/",
         display: "standalone",
-        theme_color: "#143e3a",
-        background_color: "#f5f1e8",
+        theme_color: "#741525",
+        background_color: "#f8f7f9",
         icons: [
           { src: "/brand/sife-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
           { src: "/brand/sife-512.png", sizes: "512x512", type: "image/png", purpose: "any" },
