@@ -28,11 +28,11 @@ import {
 } from "lucide-react";
 import type { DocumentRecord, LibraryResource, ProcedureRecord, RelationRecord, RepositoryData, SectionId } from "./types";
 
-const sections: Array<{ id: SectionId; label: string; shortLabel: string; icon: typeof Home }> = [
+const sections: Array<{ id: SectionId; label: string; shortLabel: string; icon: typeof Home; showInMenu?: boolean }> = [
   { id: "inicio", label: "Inicio", shortLabel: "Inicio", icon: Home },
   { id: "repositorio", label: "Repositorio", shortLabel: "Repositorio", icon: BookOpen },
   { id: "biblioteca", label: "Biblioteca", shortLabel: "Biblioteca", icon: Library },
-  { id: "asistente", label: "GPT SIFE Normativa", shortLabel: "GPT SIFE", icon: Sparkles },
+  { id: "asistente", label: "GPT SIFE Normativa", shortLabel: "GPT SIFE", icon: Sparkles, showInMenu: false },
   { id: "procedimientos", label: "Procedimientos", shortLabel: "Trámites", icon: FileCheck2 },
   { id: "relaciones", label: "Relaciones", shortLabel: "Relaciones", icon: Network },
   { id: "cautelas", label: "Vigencia y cautelas", shortLabel: "Vigencia", icon: ShieldCheck }
@@ -161,7 +161,7 @@ function App() {
 }
 
 function SectionLinks({ active, navigate }: { active: SectionId; navigate: (id: SectionId) => void }) {
-  return <>{sections.map((section) => {
+  return <>{sections.filter((section) => section.showInMenu !== false).map((section) => {
     const Icon = section.icon;
     return (
       <a

@@ -33,6 +33,13 @@ test("secciones principales y procedimientos", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Vigencia y cautelas" })).toBeVisible();
 });
 
+test("GPT SIFE no aparece en el menú pero conserva su ruta directa", async ({ page }) => {
+  await page.goto("/#inicio");
+  await expect(page.getByRole("link", { name: "GPT SIFE Normativa" })).toHaveCount(0);
+  await page.goto("/#asistente");
+  await expect(page.getByRole("heading", { name: "GPT SIFE Normativa" })).toBeVisible();
+});
+
 test("Biblioteca: búsqueda temática, selector y ficha con documento", async ({ page }) => {
   await page.goto("/#biblioteca");
   await expect(page.getByRole("heading", { name: "Biblioteca internacional" })).toBeVisible();
