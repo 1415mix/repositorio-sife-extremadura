@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["brand/sife-logo.png", "brand/sife-mark.svg", "brand/favicon.svg", "brand/sife-192.png", "brand/sife-512.png", "brand/sife-maskable-512.png"],
+      includeAssets: ["brand/sife-logo.png", "brand/sife-mark.svg", "brand/favicon.svg", "brand/sife-192.png", "brand/sife-512.png", "brand/sife-maskable-512.png", "brand/hero-documentos-sife.jpg"],
       manifest: {
         name: "SIFE Normativa Extremadura",
         short_name: "SIFE",
@@ -27,7 +27,7 @@ export default defineConfig({
         cleanupOutdatedCaches: true,
         clientsClaim: true,
         skipWaiting: true,
-        globPatterns: ["**/*.{js,css,html,svg,png,json}"],
+        globPatterns: ["**/*.{js,css,html,svg,png,jpg,json}"],
         globIgnores: ["repository/**"],
         navigateFallback: "/index.html",
         navigateFallbackDenylist: [/^\/repository\//, /^\/data\//],

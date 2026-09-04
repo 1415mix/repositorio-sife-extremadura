@@ -105,10 +105,7 @@ footer a { display: inline-flex; align-items: center; gap: 6px; align-self: flex
 .section-heading h2 { margin: 0; font-size: 24px; font-weight: 600; line-height: 32px; letter-spacing: -.02em; }
 .count-label { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
 
-.hero { position: relative; display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(280px, .65fr); gap: clamp(32px, 6vw, 88px); align-items: center; min-height: 430px; padding: clamp(40px, 5vw, 64px); overflow: hidden; background: linear-gradient(115deg, #fff 5%, #f8fafc 54%, #edf3ff 100%); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow-soft); }
-.hero::before, .hero::after { content: ""; position: absolute; border-radius: 50%; pointer-events: none; }
-.hero::before { right: -70px; top: -135px; width: 440px; height: 440px; background: rgba(232,77,5,.09); box-shadow: -95px 120px 0 rgba(41,77,134,.08), -190px 35px 0 rgba(41,104,79,.08); }
-.hero::after { right: 40%; bottom: -210px; width: 370px; height: 370px; border: 1px solid rgba(41,77,134,.13); box-shadow: 0 0 0 58px rgba(41,77,134,.025), 0 0 0 116px rgba(41,77,134,.018); }
+.hero { position: relative; display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(280px, .65fr); gap: clamp(32px, 6vw, 88px); align-items: center; min-height: 430px; padding: clamp(40px, 5vw, 64px); overflow: hidden; background-color: #f8fafc; background-image: url("/brand/hero-documentos-sife.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow-soft); }
 .hero-copy, .verification-card { position: relative; z-index: 1; }
 .hero h1 { max-width: 720px; margin-bottom: 16px; color: var(--ink); font-size: 40px; font-weight: 700; line-height: 48px; letter-spacing: -.03em; }
 .hero-lead { max-width: 690px; margin-bottom: 24px; color: var(--muted); font-size: 16px; line-height: 26px; }
@@ -362,7 +359,7 @@ button.access-card { width: 100%; text-align: left; cursor: pointer; }
   .mobile-nav .mobile-label { display: block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .mobile-nav a.active { color: var(--primary-action); background: var(--primary-50); }
   .mobile-nav a.active::before { content: ""; position: absolute; top: 0; right: 18px; left: 18px; height: 3px; background: var(--primary-700); border-radius: 0 0 4px 4px; }
-  .hero { grid-template-columns: 1fr; min-height: 0; }
+  .hero { grid-template-columns: 1fr; min-height: 0; background-position: 64% center; }
   .verification-card { max-width: 550px; }
   .assistant-layout, .graph-layout { grid-template-columns: 1fr; }
   .relation-detail { position: static; }

@@ -91,6 +91,7 @@ test("tokens esenciales del sistema de diseño", async ({ page }) => {
   await page.goto("/#inicio");
   const tokens = await page.evaluate(() => {
     const hero = getComputedStyle(document.querySelector(".hero h1")!);
+    const heroPanel = getComputedStyle(document.querySelector(".hero")!);
     const button = getComputedStyle(document.querySelector(".button.primary")!);
     const search = getComputedStyle(document.querySelector(".global-search")!);
     const card = getComputedStyle(document.querySelector(".access-card")!);
@@ -98,6 +99,7 @@ test("tokens esenciales del sistema de diseño", async ({ page }) => {
       heroSize: hero.fontSize,
       heroLine: hero.lineHeight,
       headingFont: hero.fontFamily,
+      heroBackground: heroPanel.backgroundImage,
       buttonHeight: button.minHeight,
       buttonRadius: button.borderRadius,
       searchHeight: search.height,
@@ -108,6 +110,7 @@ test("tokens esenciales del sistema de diseño", async ({ page }) => {
     heroSize: "40px",
     heroLine: "48px",
     headingFont: expect.stringContaining("Plus Jakarta Sans"),
+    heroBackground: expect.stringContaining("/brand/hero-documentos-sife.jpg"),
     buttonHeight: "42px",
     buttonRadius: "6px",
     searchHeight: "40px",
