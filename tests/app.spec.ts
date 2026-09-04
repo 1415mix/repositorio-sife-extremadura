@@ -115,6 +115,37 @@ test("tokens esenciales del sistema de diseño", async ({ page }) => {
   });
 });
 
+test("paleta cromática distribuida por función", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/#inicio");
+  const palette = await page.evaluate(() => {
+    const root = getComputedStyle(document.documentElement);
+    const activeNav = getComputedStyle(document.querySelector(".sidebar > a.active")!);
+    const sourcePanel = getComputedStyle(document.querySelector(".sidebar-source")!);
+    const status = getComputedStyle(document.querySelector(".status-dot")!);
+    return {
+      primary: root.getPropertyValue("--primary-800").trim(),
+      primaryAction: root.getPropertyValue("--primary-action").trim(),
+      secondary: root.getPropertyValue("--secondary").trim(),
+      tertiary: root.getPropertyValue("--success").trim(),
+      canvas: root.getPropertyValue("--surface").trim(),
+      activeNav: activeNav.backgroundColor,
+      sourcePanel: sourcePanel.backgroundColor,
+      verified: status.backgroundColor
+    };
+  });
+  expect(palette).toEqual({
+    primary: "#e84d05",
+    primaryAction: "#a73400",
+    secondary: "#294d86",
+    tertiary: "#29684f",
+    canvas: "#f5faff",
+    activeNav: "rgb(167, 52, 0)",
+    sourcePanel: "rgb(41, 77, 134)",
+    verified: "rgb(41, 104, 79)"
+  });
+});
+
 test("sin infracciones axe automáticas en las secciones", async ({ page }) => {
   for (const hash of ["inicio", "repositorio", "biblioteca", "asistente", "procedimientos", "relaciones", "cautelas"]) {
     await page.goto(`/#${hash}`);
