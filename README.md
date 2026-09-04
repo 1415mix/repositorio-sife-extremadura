@@ -10,6 +10,7 @@ Requiere Node.js 20 o posterior.
 
 ```bash
 pnpm install
+pnpm run import:library
 pnpm run build:data
 pnpm run dev
 ```
@@ -37,12 +38,24 @@ pnpm run build
 
 El importador no sobrescribe un archivo si su contenido remoto cambia: exige revisión manual. Consulta [`ANALISIS_INFORME_MAESTRO.md`](./ANALISIS_INFORME_MAESTRO.md) para las correcciones de contraste.
 
+## Biblioteca internacional
+
+La sección «Biblioteca» incorpora las 37 referencias de `Informe_recursos_internacionales_SIFE.docx` como fichas consultables por texto, tema, colección, nivel de autoridad y prioridad. Se preservan 23 PDF oficiales en 19 fichas; los 18 servicios vivos o fuentes sin descarga automatizada admitida se mantienen como enlaces oficiales.
+
+```bash
+pnpm run import:library
+pnpm run build
+```
+
+La colección se define en [`catalog/biblioteca-internacional-2026-09-03.json`](./catalog/biblioteca-internacional-2026-09-03.json). El criterio de clasificación y los límites jurídicos se documentan en [`ANALISIS_RECURSOS_INTERNACIONALES.md`](./ANALISIS_RECURSOS_INTERNACIONALES.md).
+
 ## Principios editoriales
 
 - BOE, DOE y Junta son las fuentes jurídicas primarias.
 - El portal SIFE y RFP son fuentes operativas.
 - Curso, vigencia y fecha de comprobación son visibles.
 - La confianza del informe es trazabilidad documental y no equivale a vigencia jurídica.
+- La Biblioteca internacional es orientación y comparación; no se presenta como normativa autonómica aplicable.
 - Las relaciones se declaran manualmente; no se infieren por coincidencia textual.
 - No se tratan datos personales ni se simulan trámites.
 

@@ -18,6 +18,7 @@ import {
   Home,
   Info,
   LayoutList,
+  Library,
   Link2,
   Network,
   Search,
@@ -25,11 +26,12 @@ import {
   Sparkles,
   X
 } from "lucide-react";
-import type { DocumentRecord, ProcedureRecord, RelationRecord, RepositoryData, SectionId } from "./types";
+import type { DocumentRecord, LibraryResource, ProcedureRecord, RelationRecord, RepositoryData, SectionId } from "./types";
 
 const sections: Array<{ id: SectionId; label: string; shortLabel: string; icon: typeof Home }> = [
   { id: "inicio", label: "Inicio", shortLabel: "Inicio", icon: Home },
   { id: "repositorio", label: "Repositorio", shortLabel: "Repositorio", icon: BookOpen },
+  { id: "biblioteca", label: "Biblioteca", shortLabel: "Biblioteca", icon: Library },
   { id: "asistente", label: "GPT SIFE Normativa", shortLabel: "GPT SIFE", icon: Sparkles },
   { id: "procedimientos", label: "Procedimientos", shortLabel: "Trámites", icon: FileCheck2 },
   { id: "relaciones", label: "Relaciones", shortLabel: "Relaciones", icon: Network },
@@ -138,6 +140,7 @@ function App() {
           {!error && !data && <Loading />}
           {data && active === "inicio" && <HomeSection data={data} navigate={navigate} />}
           {data && active === "repositorio" && <RepositorySection data={data} query={repositoryQuery} setQuery={setRepositoryQuery} />}
+          {data && active === "biblioteca" && <LibrarySection data={data} />}
           {data && active === "asistente" && <AssistantSection data={data} navigate={navigate} />}
           {data && active === "procedimientos" && <ProceduresSection procedures={data.procedures} />}
           {data && active === "relaciones" && <RelationsSection data={data} />}
@@ -207,9 +210,9 @@ function HomeSection({ data, navigate }: { data: RepositoryData; navigate: (id: 
 
       <section className="stats" aria-label="Cifras del repositorio">
         <Stat value={data.documents.length} label="fichas trazables" />
-        <Stat value={localDocuments.length} label="PDF preservados" />
+        <Stat value={localDocuments.length + data.library.report.preservedFiles} label="PDF preservados" />
+        <Stat value={data.library.resources.length} label="recursos internacionales" />
         <Stat value={data.procedures.length} label="procedimientos" />
-        <Stat value={data.relations.length} label="relaciones explícitas" />
       </section>
 
       <section className="quick-access" aria-labelledby="accesos-title">
@@ -220,6 +223,7 @@ function HomeSection({ data, navigate }: { data: RepositoryData; navigate: (id: 
           <AccessCard icon={<Search />} title="Oferta formativa" body="Busca actividades por CPR, modalidad, fechas o temática." href="https://rfp.educarex.es/planformacion" />
           <AccessCard icon={<FileCheck2 />} title="Historial RFP" body="Consulta el historial personal en el servicio oficial." href="https://rfp.educarex.es/" />
           <AccessCard icon={<Boxes />} title="Red de CPR" body="Localiza el centro de profesores y recursos de referencia." href="https://formacion.educarex.es/cprsite/" />
+          <button className="access-card" onClick={() => navigate("biblioteca")}><span className="access-icon"><Library /></span><span><strong>Biblioteca internacional</strong><small>Explora marcos, evidencias y modelos comparables.</small></span><ArrowRight size={17} aria-hidden="true" /></button>
         </div>
       </section>
 
@@ -239,6 +243,120 @@ function HomeSection({ data, navigate }: { data: RepositoryData; navigate: (id: 
         <button className="text-button" onClick={() => navigate("cautelas")}>Ver cautelas <ArrowRight size={16} aria-hidden="true" /></button>
       </section>
     </>
+  );
+}
+
+function LibrarySection({ data }: { data: RepositoryData }) {
+  const [query, setQuery] = useState("");
+  const [theme, setTheme] = useState("all");
+  const [group, setGroup] = useState("all");
+  const [authority, setAuthority] = useState("all");
+  const [priority, setPriority] = useState("all");
+  const [selected, setSelected] = useState<LibraryResource | null>(null);
+  const detailRef = useRef<HTMLDivElement>(null);
+  const priorities = useMemo(() => unique(data.library.resources.map((resource) => resource.prioridad)), [data.library.resources]);
+  const themes = useMemo(() => new Map(data.library.themes.map((item) => [item.id, item.label])), [data.library.themes]);
+  const groups = useMemo(() => new Map(data.library.groups.map((item) => [item.id, item.label])), [data.library.groups]);
+  const authorities = useMemo(() => new Map(data.library.authorityLevels.map((item) => [item.id, item])), [data.library.authorityLevels]);
+  const filtered = useMemo(() => data.library.resources.filter((resource) => {
+    const normalizedQuery = normalize(query);
+    return (!normalizedQuery || resource.textoIndexable.includes(normalizedQuery))
+      && (theme === "all" || resource.temas.includes(theme))
+      && (group === "all" || resource.grupo === group)
+      && (authority === "all" || resource.nivelAutoridad === authority)
+      && (priority === "all" || resource.prioridad === priority);
+  }), [data.library.resources, query, theme, group, authority, priority]);
+  const hasFilters = Boolean(query || theme !== "all" || group !== "all" || authority !== "all" || priority !== "all");
+  const clear = () => { setQuery(""); setTheme("all"); setGroup("all"); setAuthority("all"); setPriority("all"); };
+  const openDetail = (resource: LibraryResource) => {
+    setSelected(resource);
+    requestAnimationFrame(() => detailRef.current?.focus());
+  };
+
+  return (
+    <section aria-labelledby="library-title">
+      <PageHeading eyebrow="Evidencia, marcos y comparación" title="Biblioteca internacional" description="Recursos seleccionados para modernizar la formación, la innovación y el apoyo al profesorado, con lectura crítica y transferencia al contexto SIFE." />
+      <aside className="library-report-panel" aria-label="Cobertura del informe de recursos internacionales">
+        <div>
+          <p className="overline">Informe analizado · corte {formatDate(data.library.report.cutoff)}</p>
+          <h2>{data.library.report.references} recursos con ficha funcional</h2>
+          <p>{data.library.report.preservedFiles} documentos oficiales preservados en {data.library.report.preservedResources} fichas; {data.library.report.linkOnly} recursos se mantienen como enlace a la fuente o servicio vivo.</p>
+        </div>
+        <div className="library-boundary"><Info size={20} aria-hidden="true" /><p><strong>Biblioteca de orientación.</strong> Estos recursos no amplían por sí mismos la normativa SIFE aplicable.</p></div>
+      </aside>
+
+      <div className="filter-panel library-filters">
+        <label className="search-field"><span>Buscar en la biblioteca</span><div><Search size={19} aria-hidden="true" /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ej.: IA, inclusión, microcredenciales, evaluación…" /></div></label>
+        <div className="filter-row library-filter-row">
+          <SelectFilter label="Tema" value={theme} onChange={setTheme} options={data.library.themes.map((item) => ({ value: item.id, label: item.label }))} />
+          <SelectFilter label="Colección" value={group} onChange={setGroup} options={data.library.groups.map((item) => ({ value: item.id, label: item.label }))} />
+          <SelectFilter label="Autoridad" value={authority} onChange={setAuthority} options={data.library.authorityLevels.map((item) => ({ value: item.id, label: item.label }))} />
+          <SelectFilter label="Prioridad" value={priority} onChange={setPriority} options={priorities.map((value) => ({ value, label: value }))} />
+          {hasFilters && <button className="clear-button" onClick={clear}><X size={16} aria-hidden="true" /> Limpiar</button>}
+        </div>
+      </div>
+
+      <div className="results-bar" aria-live="polite"><p><strong>{filtered.length}</strong> {filtered.length === 1 ? "recurso" : "recursos"}</p></div>
+      {filtered.length ? (
+        <div className="library-grid">
+          {filtered.map((resource) => (
+            <LibraryCard key={resource.id} resource={resource} themes={themes} groupLabel={groups.get(resource.grupo) ?? resource.grupo} authorityLabel={authorities.get(resource.nivelAutoridad)?.label ?? resource.nivelAutoridad} onOpen={() => openDetail(resource)} />
+          ))}
+        </div>
+      ) : (
+        <div className="empty-state"><CircleHelp aria-hidden="true" /><h2>No hay coincidencias</h2><p>Prueba con otro tema, colección o término de búsqueda.</p><button className="button secondary" onClick={clear}>Limpiar filtros</button></div>
+      )}
+      {selected && <LibraryDetail resource={selected} themes={themes} groupLabel={groups.get(selected.grupo) ?? selected.grupo} authority={authorities.get(selected.nivelAutoridad)} onClose={() => setSelected(null)} detailRef={detailRef} />}
+    </section>
+  );
+}
+
+function LibraryCard({ resource, themes, groupLabel, authorityLabel, onOpen }: { resource: LibraryResource; themes: Map<string, string>; groupLabel: string; authorityLabel: string; onOpen: () => void }) {
+  return (
+    <article className="library-card">
+      <div className="card-top"><span className={`priority-badge ${normalize(resource.prioridad)}`}>{resource.prioridad}</span><span className="report-id">{resource.id}</span></div>
+      <p className="document-type">{groupLabel}</p>
+      <h2>{resource.titulo}</h2>
+      <p className="library-meta">{resource.emisor} · {resource.fecha}</p>
+      <p>{resource.resumen}</p>
+      <div className="tag-row">{resource.temas.slice(0, 3).map((id) => <span key={id}>{themes.get(id) ?? id}</span>)}</div>
+      <div className="library-card-footer"><span>{authorityLabel}</span>{resource.archivosServidos.length > 0 && <span><Download size={14} aria-hidden="true" /> {resource.archivosServidos.length} {resource.archivosServidos.length === 1 ? "archivo" : "archivos"}</span>}</div>
+      <button className="card-link" onClick={onOpen}>Ver ficha completa <ArrowRight size={16} aria-hidden="true" /></button>
+    </article>
+  );
+}
+
+function LibraryDetail({ resource, themes, groupLabel, authority, onClose, detailRef }: { resource: LibraryResource; themes: Map<string, string>; groupLabel: string; authority?: { id: string; label: string; rule: string }; onClose: () => void; detailRef: React.RefObject<HTMLDivElement | null> }) {
+  return (
+    <div className="detail-backdrop" role="presentation" onMouseDown={(event) => { if (event.currentTarget === event.target) onClose(); }}>
+      <div className="document-detail library-detail" role="dialog" aria-modal="true" aria-labelledby="library-detail-title" tabIndex={-1} ref={detailRef} onKeyDown={(event) => { if (event.key === "Escape") onClose(); }}>
+        <button className="close-button" aria-label="Cerrar ficha de biblioteca" onClick={onClose}><X /></button>
+        <div className="card-top"><span className={`priority-badge ${normalize(resource.prioridad)}`}>Prioridad {resource.prioridad}</span><span className="report-id">{resource.id}</span></div>
+        <p className="document-type">{groupLabel}</p>
+        <h2 id="library-detail-title">{resource.titulo}</h2>
+        <p className="detail-summary">{resource.resumen}</p>
+        <dl className="metadata">
+          <div><dt>Emisor</dt><dd>{resource.emisor}</dd></div>
+          <div><dt>Fecha</dt><dd>{resource.fecha}</dd></div>
+          <div><dt>Naturaleza</dt><dd>{resource.naturaleza}</dd></div>
+          <div><dt>Transferibilidad</dt><dd>{resource.transferibilidad}</dd></div>
+          <div><dt>Nivel de autoridad</dt><dd>{authority?.label ?? resource.nivelAutoridad}</dd></div>
+          <div><dt>Verificado</dt><dd>{formatDate(resource.verificadoEn)}</dd></div>
+        </dl>
+        {authority && <div className="notice neutral"><ShieldCheck size={19} aria-hidden="true" /><p><strong>Criterio de lectura:</strong> {authority.rule}</p></div>}
+        <h3>Temas</h3><div className="tag-row detail-tags">{resource.temas.map((id) => <span key={id}>{themes.get(id) ?? id}</span>)}</div>
+        <h3>Relevancia para SIFE</h3><p>{resource.relevanciaSife}</p>
+        <div className="notice warning"><AlertTriangle size={19} aria-hidden="true" /><p><strong>Cautela:</strong> {resource.cautela}</p></div>
+        <h3>Consulta y documentos</h3>
+        <div className="detail-actions">
+          <a className="button primary" href={resource.fuenteOficial} target="_blank" rel="noreferrer">Fuente oficial <ExternalLink size={17} aria-hidden="true" /></a>
+          {resource.archivosServidos.map((file) => <a className="button secondary" key={file.archivoServido} href={file.archivoServido} target="_blank" rel="noreferrer">{file.label} <Download size={17} aria-hidden="true" /></a>)}
+        </div>
+        {resource.archivosServidos.length === 0 && <p className="library-link-note">No se conserva una copia local: la ficha enlaza el servicio vivo o la fuente oficial disponible.</p>}
+        {resource.restriccionAutomatizada && <p className="library-link-note">La fuente limitó alguna comprobación o descarga automatizada; utiliza el enlace oficial para la versión más reciente.</p>}
+        {resource.archivosServidos.map((file) => <p className="hash" key={file.sha256}><strong>{file.label} · SHA-256</strong><code>{file.sha256}</code></p>)}
+      </div>
+    </div>
   );
 }
 
@@ -339,7 +457,7 @@ function AssistantSection({ data, navigate }: { data: RepositoryData; navigate: 
             <li><Check aria-hidden="true" /> No accede a RFP, Rayuela ni expedientes</li>
           </ul>
           <div className="package-facts">
-            <div><strong>{data.documents.filter((item) => item.archivoServido).length}</strong><span>documentos preservados</span></div>
+            <div><strong>{data.documents.filter((item) => item.archivoServido).length + data.library.report.preservedFiles}</strong><span>PDF en paquete completo</span></div>
             <div><strong>20</strong><span>archivos en variante compacta</span></div>
           </div>
         </div>
@@ -505,7 +623,7 @@ function PageHeading({ eyebrow, title, description }: { eyebrow: string; title: 
 }
 
 function SelectFilter({ label, value, onChange, options }: { label: string; value: string; onChange: (value: string) => void; options: Array<{ value: string; label: string }> }) {
-  return <label className="select-filter"><span>{label}</span><div><Filter size={16} aria-hidden="true" /><select value={value} onChange={(event) => onChange(event.target.value)}><option value="all">Todos</option>{options.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}</select></div></label>;
+  return <label className="select-filter"><span>{label}</span><div><Filter size={16} aria-hidden="true" /><select aria-label={label} value={value} onChange={(event) => onChange(event.target.value)}><option value="all">Todos</option>{options.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}</select></div></label>;
 }
 
 function DocumentSummary({ document }: { document: DocumentRecord }) {

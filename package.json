@@ -6,6 +6,7 @@
   "packageManager": "pnpm@11.19.0",
   "scripts": {
     "import:master-report": "node scripts/import-master-report.mjs",
+    "import:library": "node scripts/import-library-report.mjs",
     "build:data": "node scripts/build-data.mjs",
     "build:knowledge": "node scripts/build-knowledge.mjs",
     "validate": "node scripts/validate-data.mjs",

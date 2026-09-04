@@ -8,7 +8,7 @@ const publicRoot = path.join(appRoot, "public");
 const repositoryTarget = path.join(publicRoot, "repository", "SIFE normativa");
 const dataTarget = path.join(publicRoot, "data", "repository.json");
 
-const { sourceRoot, catalog: source } = loadCatalog(appRoot);
+const { sourceRoot, catalog: source, library: librarySource } = loadCatalog(appRoot);
 validateSource(source);
 
 if (!repositoryTarget.startsWith(path.join(appRoot, "public", "repository"))) {
@@ -68,12 +68,60 @@ const documents = source.documents.map((document) => {
   };
 });
 
+const libraryResources = librarySource.resources.map((resource) => {
+  const archivosServidos = (resource.archivos ?? []).map((file) => {
+    const sourcePath = resolveInside(sourceRoot, file.file);
+    if (!fs.existsSync(sourcePath)) throw new Error(`Archivo de Biblioteca ausente: ${file.file}. Ejecuta npm run import:library.`);
+    const bytes = fs.readFileSync(sourcePath);
+    if (bytes.subarray(0, 5).toString("ascii") !== "%PDF-") throw new Error(`Archivo de Biblioteca no válido: ${file.file}`);
+    const targetPath = resolveInside(repositoryTarget, file.file);
+    fs.mkdirSync(path.dirname(targetPath), { recursive: true });
+    fs.copyFileSync(sourcePath, targetPath);
+    const fuenteLocal = `SIFE normativa/${file.file}`;
+    return {
+      label: file.label,
+      language: file.language,
+      fuenteLocal,
+      archivoServido: `/repository/${encodePath(fuenteLocal)}`,
+      sha256: crypto.createHash("sha256").update(bytes).digest("hex")
+    };
+  });
+  const { archivos: _archivos, ...clean } = resource;
+  return {
+    ...clean,
+    archivosServidos,
+    verificadoEn: librarySource.checkedAt,
+    textoIndexable: normalize([
+      resource.id,
+      resource.titulo,
+      resource.emisor,
+      resource.fecha,
+      resource.naturaleza,
+      resource.prioridad,
+      resource.transferibilidad,
+      resource.resumen,
+      resource.relevanciaSife,
+      resource.cautela,
+      ...resource.temas.map((id) => librarySource.themes.find((theme) => theme.id === id)?.label ?? id),
+      librarySource.groups.find((group) => group.id === resource.grupo)?.label,
+      librarySource.authorityLevels.find((level) => level.id === resource.nivelAutoridad)?.label
+    ].filter(Boolean).join(" "))
+  };
+});
+
 const documentsById = new Map(documents.map((document) => [document.id, document]));
 const reportEntries = source.masterReport?.entries ?? [];
 const reportIntegrated = reportEntries.filter((entry) => documentsById.has(entry.appId)).length;
 const reportPreserved = reportEntries.filter((entry) => documentsById.get(entry.appId)?.archivoServido).length;
 
-const versionMaterial = JSON.stringify({ source, hashes: documents.map(({ id, sha256 }) => [id, sha256 ?? null]) });
+const libraryPreservedResources = libraryResources.filter((resource) => resource.archivosServidos.length).length;
+const libraryPreservedFiles = libraryResources.reduce((total, resource) => total + resource.archivosServidos.length, 0);
+const versionMaterial = JSON.stringify({
+  source,
+  librarySource,
+  hashes: documents.map(({ id, sha256 }) => [id, sha256 ?? null]),
+  libraryHashes: libraryResources.flatMap((resource) => resource.archivosServidos.map((file) => [resource.id, file.sha256]))
+});
 const catalogVersion = crypto.createHash("sha256").update(versionMaterial).digest("hex").slice(0, 12);
 const payload = {
   generatedAt: `${source.checkedAt}T00:00:00+02:00`,
@@ -99,6 +147,24 @@ const payload = {
       note: item.body
     }))
   },
+  library: {
+    report: {
+      title: librarySource.report.title,
+      fileName: librarySource.report.fileName,
+      sha256: librarySource.report.sha256,
+      cutoff: librarySource.report.cutoff,
+      analyzedAt: librarySource.report.analyzedAt,
+      references: libraryResources.length,
+      preservedResources: libraryPreservedResources,
+      linkOnly: libraryResources.length - libraryPreservedResources,
+      preservedFiles: libraryPreservedFiles,
+      note: librarySource.report.note
+    },
+    themes: librarySource.themes,
+    groups: librarySource.groups,
+    authorityLevels: librarySource.authorityLevels,
+    resources: libraryResources
+  },
   documents,
   procedures: source.procedures,
   cautions: source.cautions,
@@ -110,11 +176,17 @@ const payload = {
     verificadoEn: document.verificadoEn,
     ...(document.sha256 ? { sha256: document.sha256 } : {}),
     ...(document.archivoServido ? { archivoServido: document.archivoServido } : {})
+  })),
+  librarySourceManifest: libraryResources.map((resource) => ({
+    id: resource.id,
+    fuenteOficial: resource.fuenteOficial,
+    verificadoEn: resource.verificadoEn,
+    files: resource.archivosServidos.map(({ label, archivoServido, sha256 }) => ({ label, archivoServido, sha256 }))
   }))
 };
 
 fs.writeFileSync(dataTarget, `${JSON.stringify(payload, null, 2)}\n`);
-console.log(`SIFE: ${documents.length} fichas, ${payload.relations.length} relaciones y ${payload.procedures.length} procedimientos. Versión ${catalogVersion}.`);
+console.log(`SIFE: ${documents.length} fichas normativas, ${libraryResources.length} fichas de Biblioteca (${libraryPreservedFiles} archivos), ${payload.relations.length} relaciones y ${payload.procedures.length} procedimientos. Versión ${catalogVersion}.`);
 
 function validateSource(value) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value.checkedAt)) throw new Error("checkedAt no válido.");
@@ -142,6 +214,12 @@ function validateSource(value) {
 
 function encodePath(relativePath) {
   return relativePath.split(path.sep).map(encodeURIComponent).join("/");
+}
+
+function resolveInside(root, relative) {
+  const target = path.resolve(root, relative);
+  if (!target.startsWith(path.resolve(root) + path.sep)) throw new Error(`Ruta fuera del destino permitido: ${relative}`);
+  return target;
 }
 
 function normalize(value) {

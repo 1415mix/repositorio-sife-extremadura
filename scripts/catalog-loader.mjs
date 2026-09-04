@@ -6,8 +6,10 @@ export function loadCatalog(appRoot) {
   const sourceRoot = path.join(workspaceRoot, "SIFE normativa");
   const basePath = path.join(sourceRoot, "00_indice", "catalogo-fuente.json");
   const expansionPath = path.join(appRoot, "catalog", "informe-maestro-2026-09-03.json");
+  const libraryPath = path.join(appRoot, "catalog", "biblioteca-internacional-2026-09-03.json");
   const base = JSON.parse(fs.readFileSync(basePath, "utf8"));
   const expansion = JSON.parse(fs.readFileSync(expansionPath, "utf8"));
+  const library = JSON.parse(fs.readFileSync(libraryPath, "utf8"));
 
   const documents = [
     ...base.documents.map((document) => ({ ...document, ...(expansion.overrides[document.id] ?? {}) })),
@@ -42,9 +44,11 @@ export function loadCatalog(appRoot) {
   });
 
   const relations = uniqueRelations([...base.relations, ...expansion.relations]);
+  validateLibrary(library);
   return {
     sourceRoot,
     expansion,
+    library,
     catalog: {
       ...base,
       checkedAt: expansion.checkedAt,
@@ -56,6 +60,20 @@ export function loadCatalog(appRoot) {
       compactKnowledgeIds: expansion.compactKnowledgeIds
     }
   };
+}
+
+function validateLibrary(library) {
+  const ids = new Set(library.resources.map((resource) => resource.id));
+  if (library.resources.length !== library.report.referenceCount || ids.size !== library.resources.length) {
+    throw new Error("La Biblioteca no contiene el número esperado de referencias únicas.");
+  }
+  const themes = new Set(library.themes.map((theme) => theme.id));
+  const groups = new Set(library.groups.map((group) => group.id));
+  const authorities = new Set(library.authorityLevels.map((level) => level.id));
+  for (const resource of library.resources) {
+    if (!groups.has(resource.grupo) || !authorities.has(resource.nivelAutoridad)) throw new Error(`Clasificación inválida: ${resource.id}`);
+    if (!resource.temas?.length || resource.temas.some((theme) => !themes.has(theme))) throw new Error(`Temas inválidos: ${resource.id}`);
+  }
 }
 
 function expandDocument(document) {

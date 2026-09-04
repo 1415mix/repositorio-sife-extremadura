@@ -47,6 +47,54 @@ export type MasterReportSummary = {
   discrepancies: Array<{ id: string; title: string; note: string }>;
 };
 
+export type LibraryFile = {
+  label: string;
+  language: string;
+  fuenteLocal: string;
+  archivoServido: string;
+  sha256: string;
+};
+
+export type LibraryResource = {
+  id: string;
+  titulo: string;
+  grupo: string;
+  nivelAutoridad: string;
+  emisor: string;
+  fecha: string;
+  naturaleza: string;
+  temas: string[];
+  prioridad: string;
+  transferibilidad: string;
+  resumen: string;
+  relevanciaSife: string;
+  cautela: string;
+  fuenteOficial: string;
+  restriccionAutomatizada?: boolean;
+  archivosServidos: LibraryFile[];
+  verificadoEn: string;
+  textoIndexable: string;
+};
+
+export type LibraryData = {
+  report: {
+    title: string;
+    fileName: string;
+    sha256: string;
+    cutoff: string;
+    analyzedAt: string;
+    references: number;
+    preservedResources: number;
+    linkOnly: number;
+    preservedFiles: number;
+    note: string;
+  };
+  themes: Array<{ id: string; label: string }>;
+  groups: Array<{ id: string; label: string }>;
+  authorityLevels: Array<{ id: string; label: string; rule: string }>;
+  resources: LibraryResource[];
+};
+
 export type ProcedureRecord = {
   id: string;
   title: string;
@@ -72,10 +120,11 @@ export type RepositoryData = {
   officialPortal: string;
   assistant: { status: "knowledge_prepared"; url: string | null };
   masterReport: MasterReportSummary;
+  library: LibraryData;
   documents: DocumentRecord[];
   procedures: ProcedureRecord[];
   cautions: Array<{ title: string; type: string; body: string }>;
   relations: RelationRecord[];
 };
 
-export type SectionId = "inicio" | "repositorio" | "asistente" | "procedimientos" | "relaciones" | "cautelas";
+export type SectionId = "inicio" | "repositorio" | "biblioteca" | "asistente" | "procedimientos" | "relaciones" | "cautelas";

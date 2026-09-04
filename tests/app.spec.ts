@@ -33,6 +33,23 @@ test("secciones principales y procedimientos", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Vigencia y cautelas" })).toBeVisible();
 });
 
+test("Biblioteca: búsqueda temática, selector y ficha con documento", async ({ page }) => {
+  await page.goto("/#biblioteca");
+  await expect(page.getByRole("heading", { name: "Biblioteca internacional" })).toBeVisible();
+  await expect(page.getByLabel("Cobertura del informe de recursos internacionales")).toContainText("37 recursos");
+  await expect(page.getByLabel("Cobertura del informe de recursos internacionales")).toContainText("23 documentos oficiales preservados");
+  await page.getByLabel("Tema", { exact: true }).selectOption({ label: "Competencia digital e IA" });
+  await page.getByLabel("Buscar en la biblioteca").fill("Reglamento");
+  await expect(page.getByText("1 recurso", { exact: false })).toBeVisible();
+  await page.getByRole("button", { name: "Ver ficha completa" }).click();
+  const dialog = page.getByRole("dialog");
+  await expect(dialog).toContainText("Reglamento (UE) 2024/1689");
+  await expect(dialog).toContainText("Relevancia para SIFE");
+  await expect(dialog.getByRole("link", { name: /Texto oficial en español/ })).toBeVisible();
+  await expect(dialog).toContainText("SHA-256");
+  await page.getByRole("button", { name: "Cerrar ficha de biblioteca" }).click();
+});
+
 test("marca SIFE y búsqueda global", async ({ page }) => {
   await page.goto("/#inicio");
   await expect(page.getByRole("img", { name: "Servicio de Innovación, Formación del Profesorado y Emprendimiento" })).toHaveAttribute("src", "/brand/sife-logo.png");
@@ -91,8 +108,8 @@ test("tokens esenciales del sistema de diseño", async ({ page }) => {
   });
 });
 
-test("sin infracciones axe automáticas en inicio y repositorio", async ({ page }) => {
-  for (const hash of ["inicio", "repositorio", "asistente", "procedimientos", "relaciones", "cautelas"]) {
+test("sin infracciones axe automáticas en las secciones", async ({ page }) => {
+  for (const hash of ["inicio", "repositorio", "biblioteca", "asistente", "procedimientos", "relaciones", "cautelas"]) {
     await page.goto(`/#${hash}`);
     await expect(page.locator("main h1")).toBeVisible();
     const results = await new AxeBuilder({ page }).analyze();

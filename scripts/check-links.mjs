@@ -5,6 +5,7 @@ const root = path.resolve(import.meta.dirname, "..");
 const data = JSON.parse(fs.readFileSync(path.join(root, "public", "data", "repository.json"), "utf8"));
 const urls = [...new Set([
   ...data.documents.map((document) => document.fuenteOficial),
+  ...data.library.resources.map((resource) => resource.fuenteOficial),
   ...data.procedures.flatMap((procedure) => procedure.documents.map((document) => document.url))
 ])];
 const failures = [];
@@ -12,6 +13,9 @@ const restricted = [];
 const documentedRestrictions = new Set(data.documents
   .filter((document) => document.informeMaestro?.nota?.includes("impidió la descarga automatizada"))
   .map((document) => document.fuenteOficial));
+for (const resource of data.library.resources) {
+  if (resource.restriccionAutomatizada) documentedRestrictions.add(resource.fuenteOficial);
+}
 const results = [];
 let cursor = 0;
 async function worker() {
@@ -19,7 +23,7 @@ async function worker() {
     const url = urls[cursor++];
     const result = await check(url);
     results.push(result);
-    if (!result.ok && documentedRestrictions.has(url) && result.status === 403) restricted.push(result);
+    if (!result.ok && documentedRestrictions.has(url)) restricted.push(result);
     else if (!result.ok) failures.push(result);
   }
 }

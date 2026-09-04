@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T00:00:00+02:00",
   "checkedAt": "2026-09-04",
   "closureNote": "Catálogo jurídico-operativo ampliado y comprobado el 4 de septiembre de 2026. Se han integrado las 47 referencias del informe maestro con correcciones de contraste oficial. No se ha localizado un Plan Regional 2026/2027; el último publicado continúa siendo el correspondiente a 2025/2026.",
-  "catalogVersion": "b8466ae6adb5",
+  "catalogVersion": "16f0e6dfe705",
   "officialPortal": "https://formacion.educarex.es/",
   "assistant": {
     "status": "knowledge_prepared",
@@ -44,6 +44,1225 @@
         "id": "AUD-05",
         "title": "Accesos no preservables como PDF",
         "note": "Los portales institucionales, Eurydice y EducAstur quedan como enlaces operativos. UNESCO bloqueó la descarga automatizada; se mantiene la referencia sin presentar una copia de terceros como oficial."
+      }
+    ]
+  },
+  "library": {
+    "report": {
+      "title": "Recursos internacionales para la modernización del ámbito de acción del SIFE",
+      "fileName": "Informe_recursos_internacionales_SIFE.docx",
+      "sha256": "90f8823451c7d19ff1f6cf11e5330cfce199ff996d88fc8d69ccb0157b3930a1",
+      "cutoff": "2026-09-03",
+      "analyzedAt": "2026-09-04",
+      "references": 37,
+      "preservedResources": 19,
+      "linkOnly": 18,
+      "preservedFiles": 23,
+      "note": "Biblioteca de orientación, evidencia y comparación. No amplía por sí misma el corpus de normativa SIFE aplicable."
+    },
+    "themes": [
+      {
+        "id": "1",
+        "label": "Formación y desarrollo profesional"
+      },
+      {
+        "id": "2",
+        "label": "Innovación y transferencia"
+      },
+      {
+        "id": "3",
+        "label": "Competencia digital e IA"
+      },
+      {
+        "id": "4",
+        "label": "Redes y apoyo territorial"
+      },
+      {
+        "id": "5",
+        "label": "Inclusión y equidad"
+      },
+      {
+        "id": "6",
+        "label": "Liderazgo, inducción y bienestar"
+      },
+      {
+        "id": "7",
+        "label": "Reconocimiento y microcredenciales"
+      },
+      {
+        "id": "8",
+        "label": "Evaluación e impacto"
+      },
+      {
+        "id": "9",
+        "label": "Gobernanza y planificación"
+      }
+    ],
+    "groups": [
+      {
+        "id": "normas_estandares",
+        "label": "Normas y estándares internacionales o europeos"
+      },
+      {
+        "id": "politica_ue",
+        "label": "Orientaciones políticas y soft law de la UE"
+      },
+      {
+        "id": "informes_globales",
+        "label": "Informes globales y marcos de política docente"
+      },
+      {
+        "id": "herramientas_redes",
+        "label": "Marcos técnicos, herramientas, redes y seguimiento"
+      },
+      {
+        "id": "modelos_nacionales",
+        "label": "Modelos nacionales comparables"
+      }
+    ],
+    "authorityLevels": [
+      {
+        "id": "norma_vinculante",
+        "label": "Norma vinculante o tratado",
+        "rule": "Comprobar ámbito, parte, calendario y relación con el Derecho español."
+      },
+      {
+        "id": "soft_law",
+        "label": "Soft law",
+        "rule": "Orienta principios y reforma, pero no debe presentarse como obligación autonómica."
+      },
+      {
+        "id": "marco_tecnico",
+        "label": "Marco técnico",
+        "rule": "Debe adaptarse, pilotarse, validarse y versionarse."
+      },
+      {
+        "id": "evidencia_comparada",
+        "label": "Evidencia comparada",
+        "rule": "Sirve para hipótesis e indicadores; no demuestra por sí sola causalidad o transferibilidad."
+      },
+      {
+        "id": "modelo_nacional",
+        "label": "Modelo nacional",
+        "rule": "Permite comparar funciones y opciones; no autoriza un trasplante institucional literal."
+      }
+    ],
+    "resources": [
+      {
+        "id": "N-01",
+        "titulo": "Reglamento de Inteligencia Artificial — Reglamento (UE) 2024/1689, texto vigente",
+        "grupo": "normas_estandares",
+        "nivelAutoridad": "norma_vinculante",
+        "emisor": "Unión Europea",
+        "fecha": "2024–2026",
+        "naturaleza": "Norma vinculante de la UE",
+        "temas": [
+          "3",
+          "8",
+          "9"
+        ],
+        "prioridad": "Crítica",
+        "transferibilidad": "Muy alta",
+        "resumen": "Marco europeo armonizado para el desarrollo, comercialización y uso de sistemas de inteligencia artificial, con obligaciones graduadas según riesgo y función.",
+        "relevanciaSife": "Desplegar alfabetización en IA, inventariar usos educativos y administrativos y definir supervisión humana, contratación y derivación a protección de datos.",
+        "cautela": "La obligación concreta depende del rol y del uso. El calendario y las excepciones deben comprobarse antes de cada implantación.",
+        "fuenteOficial": "https://data.europa.eu/eli/reg/2024/1689",
+        "archivosServidos": [
+          {
+            "label": "Texto oficial en español",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/01_normas_estandares/UE_2024_Reglamento_IA_2024-1689_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/01_normas_estandares/UE_2024_Reglamento_IA_2024-1689_ES.pdf",
+            "sha256": "29e6d41f41cc0efea6b5f8a1418a7ef31e9422f9eba0c297ddc7e7ed7f357b1c"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "n-01 reglamento de inteligencia artificial — reglamento (ue) 2024/1689, texto vigente union europea 2024–2026 norma vinculante de la ue critica muy alta marco europeo armonizado para el desarrollo, comercializacion y uso de sistemas de inteligencia artificial, con obligaciones graduadas segun riesgo y funcion. desplegar alfabetizacion en ia, inventariar usos educativos y administrativos y definir supervision humana, contratacion y derivacion a proteccion de datos. la obligacion concreta depende del rol y del uso. el calendario y las excepciones deben comprobarse antes de cada implantacion. competencia digital e ia evaluacion e impacto gobernanza y planificacion normas y estandares internacionales o europeos norma vinculante o tratado"
+      },
+      {
+        "id": "N-02",
+        "titulo": "Convenio Marco sobre inteligencia artificial, derechos humanos, democracia y Estado de Derecho (CETS 225)",
+        "grupo": "normas_estandares",
+        "nivelAutoridad": "norma_vinculante",
+        "emisor": "Consejo de Europa",
+        "fecha": "2024; ratificación de la UE en 2026",
+        "naturaleza": "Tratado vinculante para sus partes",
+        "temas": [
+          "3",
+          "5",
+          "9"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Media-alta",
+        "resumen": "Primer marco convencional internacional centrado en que el ciclo de vida de la IA sea compatible con derechos humanos, democracia y Estado de Derecho.",
+        "relevanciaSife": "Adoptar principios de derechos, transparencia, rendición de cuentas y gestión de riesgos para políticas y pilotos de IA educativa.",
+        "cautela": "Su efecto depende de la condición de parte, las declaraciones y la implementación; no sustituye el Derecho de la UE o español.",
+        "fuenteOficial": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "n-02 convenio marco sobre inteligencia artificial, derechos humanos, democracia y estado de derecho (cets 225) consejo de europa 2024; ratificacion de la ue en 2026 tratado vinculante para sus partes alta media-alta primer marco convencional internacional centrado en que el ciclo de vida de la ia sea compatible con derechos humanos, democracia y estado de derecho. adoptar principios de derechos, transparencia, rendicion de cuentas y gestion de riesgos para politicas y pilotos de ia educativa. su efecto depende de la condicion de parte, las declaraciones y la implementacion; no sustituye el derecho de la ue o espanol. competencia digital e ia inclusion y equidad gobernanza y planificacion normas y estandares internacionales o europeos norma vinculante o tratado"
+      },
+      {
+        "id": "N-03",
+        "titulo": "Recomendación relativa a la situación del personal docente",
+        "grupo": "normas_estandares",
+        "nivelAutoridad": "soft_law",
+        "emisor": "OIT–UNESCO",
+        "fecha": "1966; revisión 2026–2027",
+        "naturaleza": "Estándar internacional no vinculante",
+        "temas": [
+          "1",
+          "5",
+          "6",
+          "9"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta como principio",
+        "resumen": "Estándar internacional sobre preparación, carrera, formación continua, participación, derechos y condiciones de ejercicio del personal docente.",
+        "relevanciaSife": "Usar sus principios como control de coherencia de la política docente y de desarrollo profesional.",
+        "cautela": "La recomendación de 1966 continúa como referencia mientras el proceso de revisión no culmine en un nuevo texto.",
+        "fuenteOficial": "https://www.unesco.org/en/legal-affairs/recommendation-concerning-status-teachers",
+        "archivosServidos": [
+          {
+            "label": "Texto OIT–UNESCO",
+            "language": "en",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/01_normas_estandares/OIT_UNESCO_1966_Recomendacion_situacion_docentes_EN.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/01_normas_estandares/OIT_UNESCO_1966_Recomendacion_situacion_docentes_EN.pdf",
+            "sha256": "2af9fcc941891eca1bf9f56fba676b99c219f7943972f361301470e9e12b0f03"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "n-03 recomendacion relativa a la situacion del personal docente oit–unesco 1966; revision 2026–2027 estandar internacional no vinculante alta alta como principio estandar internacional sobre preparacion, carrera, formacion continua, participacion, derechos y condiciones de ejercicio del personal docente. usar sus principios como control de coherencia de la politica docente y de desarrollo profesional. la recomendacion de 1966 continua como referencia mientras el proceso de revision no culmine en un nuevo texto. formacion y desarrollo profesional inclusion y equidad liderazgo, induccion y bienestar gobernanza y planificacion normas y estandares internacionales o europeos soft law"
+      },
+      {
+        "id": "N-04",
+        "titulo": "Recomendación sobre la ética de la inteligencia artificial",
+        "grupo": "normas_estandares",
+        "nivelAutoridad": "soft_law",
+        "emisor": "UNESCO",
+        "fecha": "2021",
+        "naturaleza": "Recomendación internacional",
+        "temas": [
+          "3",
+          "5",
+          "9"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta como principio",
+        "resumen": "Marco mundial de valores, principios y ámbitos de acción pública para una inteligencia artificial centrada en los derechos y la dignidad humana.",
+        "relevanciaSife": "Incorporar inclusión, diversidad, gobernanza de datos, proporcionalidad y evaluación ética a la formación y a la innovación con IA.",
+        "cautela": "Es soft law: orienta criterios y salvaguardas, pero no crea por sí sola obligaciones autonómicas ejecutables.",
+        "fuenteOficial": "https://unesdoc.unesco.org/ark:/48223/pf0000381137",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "n-04 recomendacion sobre la etica de la inteligencia artificial unesco 2021 recomendacion internacional alta alta como principio marco mundial de valores, principios y ambitos de accion publica para una inteligencia artificial centrada en los derechos y la dignidad humana. incorporar inclusion, diversidad, gobernanza de datos, proporcionalidad y evaluacion etica a la formacion y a la innovacion con ia. es soft law: orienta criterios y salvaguardas, pero no crea por si sola obligaciones autonomicas ejecutables. competencia digital e ia inclusion y equidad gobernanza y planificacion normas y estandares internacionales o europeos soft law"
+      },
+      {
+        "id": "N-05",
+        "titulo": "Recomendación sobre los Recursos Educativos Abiertos (REA)",
+        "grupo": "normas_estandares",
+        "nivelAutoridad": "soft_law",
+        "emisor": "UNESCO",
+        "fecha": "2019",
+        "naturaleza": "Recomendación internacional",
+        "temas": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "9"
+        ],
+        "prioridad": "Media-alta",
+        "transferibilidad": "Alta",
+        "resumen": "Recomendación para fortalecer capacidades, políticas, calidad inclusiva, sostenibilidad y cooperación internacional en recursos educativos abiertos.",
+        "relevanciaSife": "Desarrollar una política de licencias, autoría, accesibilidad, repositorio y reutilización de recursos formativos abiertos.",
+        "cautela": "La apertura debe respetar propiedad intelectual, protección de datos, accesibilidad y sostenibilidad del repositorio.",
+        "fuenteOficial": "https://www.unesco.org/en/legal-affairs/recommendation-open-educational-resources-oer",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "n-05 recomendacion sobre los recursos educativos abiertos (rea) unesco 2019 recomendacion internacional media-alta alta recomendacion para fortalecer capacidades, politicas, calidad inclusiva, sostenibilidad y cooperacion internacional en recursos educativos abiertos. desarrollar una politica de licencias, autoria, accesibilidad, repositorio y reutilizacion de recursos formativos abiertos. la apertura debe respetar propiedad intelectual, proteccion de datos, accesibilidad y sostenibilidad del repositorio. formacion y desarrollo profesional innovacion y transferencia competencia digital e ia inclusion y equidad gobernanza y planificacion normas y estandares internacionales o europeos soft law"
+      },
+      {
+        "id": "P-01",
+        "titulo": "Segundo ciclo del marco estratégico del Espacio Europeo de Educación 2026–2030 — C/2026/3720",
+        "grupo": "politica_ue",
+        "nivelAutoridad": "soft_law",
+        "emisor": "Consejo de la Unión Europea",
+        "fecha": "2026",
+        "naturaleza": "Resolución; cooperación voluntaria",
+        "temas": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "prioridad": "Crítica",
+        "transferibilidad": "Alta",
+        "resumen": "Prioridades europeas de cooperación educativa para 2026–2030 en aprendizaje permanente, profesión docente, inclusión, competencia digital y movilidad.",
+        "relevanciaSife": "Alinear la planificación 2027–2030 del SIFE con los ejes del Espacio Europeo de Educación.",
+        "cautela": "Fija prioridades de cooperación y no sustituye las competencias ni la regulación estatal o autonómica.",
+        "fuenteOficial": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=OJ:C_202603720",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "p-01 segundo ciclo del marco estrategico del espacio europeo de educacion 2026–2030 — c/2026/3720 consejo de la union europea 2026 resolucion; cooperacion voluntaria critica alta prioridades europeas de cooperacion educativa para 2026–2030 en aprendizaje permanente, profesion docente, inclusion, competencia digital y movilidad. alinear la planificacion 2027–2030 del sife con los ejes del espacio europeo de educacion. fija prioridades de cooperacion y no sustituye las competencias ni la regulacion estatal o autonomica. formacion y desarrollo profesional innovacion y transferencia competencia digital e ia redes y apoyo territorial inclusion y equidad liderazgo, induccion y bienestar reconocimiento y microcredenciales evaluacion e impacto gobernanza y planificacion orientaciones politicas y soft law de la ue soft law"
+      },
+      {
+        "id": "P-02",
+        "titulo": "Factores facilitadores clave para el éxito de la educación y la formación digitales — C/2024/1115",
+        "grupo": "politica_ue",
+        "nivelAutoridad": "soft_law",
+        "emisor": "Consejo de la Unión Europea",
+        "fecha": "2023–2024",
+        "naturaleza": "Recomendación",
+        "temas": [
+          "1",
+          "3",
+          "4",
+          "5",
+          "6",
+          "9"
+        ],
+        "prioridad": "Crítica",
+        "transferibilidad": "Alta",
+        "resumen": "Recomendación para abordar la transformación digital como política sistémica: gobernanza, liderazgo, personas, infraestructura, inclusión y evaluación.",
+        "relevanciaSife": "Diseñar una estrategia digital que integre profesorado, liderazgo, apoyo técnico, infraestructura, inclusión y seguimiento.",
+        "cautela": "Debe adaptarse a la distribución competencial, los recursos disponibles y la estrategia digital regional.",
+        "fuenteOficial": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=OJ:C_202401115",
+        "archivosServidos": [
+          {
+            "label": "Diario Oficial de la UE",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/02_politica_ue/UE_2024_C-2024-1115_Educacion_digital_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2024_C-2024-1115_Educacion_digital_ES.pdf",
+            "sha256": "8d57f32a3fbd0ff99266bcee8a0be015c64bf277d1da3675bc12212c284d3814"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "p-02 factores facilitadores clave para el exito de la educacion y la formacion digitales — c/2024/1115 consejo de la union europea 2023–2024 recomendacion critica alta recomendacion para abordar la transformacion digital como politica sistemica: gobernanza, liderazgo, personas, infraestructura, inclusion y evaluacion. disenar una estrategia digital que integre profesorado, liderazgo, apoyo tecnico, infraestructura, inclusion y seguimiento. debe adaptarse a la distribucion competencial, los recursos disponibles y la estrategia digital regional. formacion y desarrollo profesional competencia digital e ia redes y apoyo territorial inclusion y equidad liderazgo, induccion y bienestar gobernanza y planificacion orientaciones politicas y soft law de la ue soft law"
+      },
+      {
+        "id": "P-03",
+        "titulo": "Mejora de la provisión de capacidades y competencias digitales — C/2024/1030",
+        "grupo": "politica_ue",
+        "nivelAutoridad": "soft_law",
+        "emisor": "Consejo de la Unión Europea",
+        "fecha": "2023–2024",
+        "naturaleza": "Recomendación",
+        "temas": [
+          "1",
+          "3",
+          "5",
+          "8"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta",
+        "resumen": "Orientación europea para mejorar de forma coordinada, inclusiva y evaluable la adquisición de capacidades y competencias digitales.",
+        "relevanciaSife": "Ordenar itinerarios de competencia digital docente desde niveles básicos hasta avanzados, con diagnóstico y atención a brechas.",
+        "cautela": "No prescribe una certificación regional concreta y debe armonizarse con los marcos españoles aplicables.",
+        "fuenteOficial": "https://eur-lex.europa.eu/eli/C/2024/1030/oj/spa",
+        "archivosServidos": [
+          {
+            "label": "Diario Oficial de la UE",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/02_politica_ue/UE_2024_C-2024-1030_Competencias_digitales_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2024_C-2024-1030_Competencias_digitales_ES.pdf",
+            "sha256": "50e4f89666d90e5083a2a8a10618cd08cc91166b92e610070b04bea83423f3e8"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "p-03 mejora de la provision de capacidades y competencias digitales — c/2024/1030 consejo de la union europea 2023–2024 recomendacion alta alta orientacion europea para mejorar de forma coordinada, inclusiva y evaluable la adquisicion de capacidades y competencias digitales. ordenar itinerarios de competencia digital docente desde niveles basicos hasta avanzados, con diagnostico y atencion a brechas. no prescribe una certificacion regional concreta y debe armonizarse con los marcos espanoles aplicables. formacion y desarrollo profesional competencia digital e ia inclusion y equidad evaluacion e impacto orientaciones politicas y soft law de la ue soft law"
+      },
+      {
+        "id": "P-04",
+        "titulo": "Enfoque europeo de las microcredenciales — 2022/C 243/02",
+        "grupo": "politica_ue",
+        "nivelAutoridad": "soft_law",
+        "emisor": "Consejo de la Unión Europea",
+        "fecha": "2022",
+        "naturaleza": "Recomendación",
+        "temas": [
+          "1",
+          "7",
+          "8",
+          "9"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta",
+        "resumen": "Marco común para diseñar y describir microcredenciales con resultados de aprendizaje, carga, evaluación, calidad, portabilidad y acumulación.",
+        "relevanciaSife": "Pilotar credenciales modulares con resultados, carga, evaluación, identidad del emisor y aseguramiento de calidad.",
+        "cautela": "Una microcredencial no equivale automáticamente a créditos o efectos administrativos en Extremadura.",
+        "fuenteOficial": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32022H0627(02)",
+        "archivosServidos": [
+          {
+            "label": "Diario Oficial de la UE",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/02_politica_ue/UE_2022_2022-C-243-02_Microcredenciales_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2022_2022-C-243-02_Microcredenciales_ES.pdf",
+            "sha256": "fc88f9d53e18570b1ae46cd6b9d0f1d9c37f5a65298b89d1283319515db6f083"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "p-04 enfoque europeo de las microcredenciales — 2022/c 243/02 consejo de la union europea 2022 recomendacion alta alta marco comun para disenar y describir microcredenciales con resultados de aprendizaje, carga, evaluacion, calidad, portabilidad y acumulacion. pilotar credenciales modulares con resultados, carga, evaluacion, identidad del emisor y aseguramiento de calidad. una microcredencial no equivale automaticamente a creditos o efectos administrativos en extremadura. formacion y desarrollo profesional reconocimiento y microcredenciales evaluacion e impacto gobernanza y planificacion orientaciones politicas y soft law de la ue soft law"
+      },
+      {
+        "id": "P-05",
+        "titulo": "«Europa en movimiento»: oportunidades de movilidad para el aprendizaje — C/2024/3364",
+        "grupo": "politica_ue",
+        "nivelAutoridad": "soft_law",
+        "emisor": "Consejo de la Unión Europea",
+        "fecha": "2024",
+        "naturaleza": "Recomendación",
+        "temas": [
+          "1",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "prioridad": "Media-alta",
+        "transferibilidad": "Media-alta",
+        "resumen": "Recomendación para ampliar y hacer más inclusivas las oportunidades de movilidad educativa y profesional en Europa.",
+        "relevanciaSife": "Integrar movilidad docente, reconocimiento y retorno de conocimiento en la internacionalización de SIFE y CPR.",
+        "cautela": "La movilidad exige financiación, sustituciones, accesibilidad territorial y reconocimiento claros.",
+        "fuenteOficial": "https://eur-lex.europa.eu/eli/C/2024/3364/oj/spa",
+        "archivosServidos": [
+          {
+            "label": "Diario Oficial de la UE",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/02_politica_ue/UE_2024_C-2024-3364_Europa_movimiento_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2024_C-2024-3364_Europa_movimiento_ES.pdf",
+            "sha256": "df03cf503aecdc42e6f5a345f57e3a3fde756609602b894225466d6ddb727de1"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "p-05 «europa en movimiento»: oportunidades de movilidad para el aprendizaje — c/2024/3364 consejo de la union europea 2024 recomendacion media-alta media-alta recomendacion para ampliar y hacer mas inclusivas las oportunidades de movilidad educativa y profesional en europa. integrar movilidad docente, reconocimiento y retorno de conocimiento en la internacionalizacion de sife y cpr. la movilidad exige financiacion, sustituciones, accesibilidad territorial y reconocimiento claros. formacion y desarrollo profesional redes y apoyo territorial inclusion y equidad liderazgo, induccion y bienestar reconocimiento y microcredenciales orientaciones politicas y soft law de la ue soft law"
+      },
+      {
+        "id": "P-06",
+        "titulo": "Enfoques de aprendizaje combinado — 2021/C 504/03",
+        "grupo": "politica_ue",
+        "nivelAutoridad": "soft_law",
+        "emisor": "Consejo de la Unión Europea",
+        "fecha": "2021",
+        "naturaleza": "Recomendación",
+        "temas": [
+          "1",
+          "3",
+          "4",
+          "5",
+          "9"
+        ],
+        "prioridad": "Media",
+        "transferibilidad": "Media",
+        "resumen": "Principios europeos para combinar entornos, herramientas y modalidades de aprendizaje con calidad, inclusión y resiliencia.",
+        "relevanciaSife": "Establecer criterios de calidad, accesibilidad y apoyo para actividades presenciales, híbridas y en línea.",
+        "cautela": "Su contexto pospandémico aconseja reutilizar principios y no replicar soluciones coyunturales.",
+        "fuenteOficial": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32021H1214(01)",
+        "archivosServidos": [
+          {
+            "label": "Diario Oficial de la UE",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/02_politica_ue/UE_2021_2021-C-504-03_Aprendizaje_combinado_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2021_2021-C-504-03_Aprendizaje_combinado_ES.pdf",
+            "sha256": "93a9ac6ff4f27303b41d8899a661e30cc45c13abe4dba8ffd513e0baa4626163"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "p-06 enfoques de aprendizaje combinado — 2021/c 504/03 consejo de la union europea 2021 recomendacion media media principios europeos para combinar entornos, herramientas y modalidades de aprendizaje con calidad, inclusion y resiliencia. establecer criterios de calidad, accesibilidad y apoyo para actividades presenciales, hibridas y en linea. su contexto pospandemico aconseja reutilizar principios y no replicar soluciones coyunturales. formacion y desarrollo profesional competencia digital e ia redes y apoyo territorial inclusion y equidad gobernanza y planificacion orientaciones politicas y soft law de la ue soft law"
+      },
+      {
+        "id": "P-07",
+        "titulo": "Caminos hacia el éxito escolar — 2022/C 469/01",
+        "grupo": "politica_ue",
+        "nivelAutoridad": "soft_law",
+        "emisor": "Consejo de la Unión Europea",
+        "fecha": "2022",
+        "naturaleza": "Recomendación",
+        "temas": [
+          "1",
+          "2",
+          "5",
+          "6",
+          "8",
+          "9"
+        ],
+        "prioridad": "Media-alta",
+        "transferibilidad": "Media-alta",
+        "resumen": "Marco preventivo y sistémico para promover éxito escolar, bienestar, inclusión, participación y mejora coordinada.",
+        "relevanciaSife": "Orientar formación e innovación a prevención, bienestar e inclusión con resultados evaluables en aula, centro y sistema.",
+        "cautela": "Su amplitud no exime de asociar cada actuación a una necesidad y a resultados medibles.",
+        "fuenteOficial": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32022H1209(01)",
+        "archivosServidos": [
+          {
+            "label": "Diario Oficial de la UE",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/02_politica_ue/UE_2022_2022-C-469-01_Exito_escolar_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2022_2022-C-469-01_Exito_escolar_ES.pdf",
+            "sha256": "ad652945fbb3c1334920dc42e27872cec09fbac2fc58f27300b0571d69fa8386"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "p-07 caminos hacia el exito escolar — 2022/c 469/01 consejo de la union europea 2022 recomendacion media-alta media-alta marco preventivo y sistemico para promover exito escolar, bienestar, inclusion, participacion y mejora coordinada. orientar formacion e innovacion a prevencion, bienestar e inclusion con resultados evaluables en aula, centro y sistema. su amplitud no exime de asociar cada actuacion a una necesidad y a resultados medibles. formacion y desarrollo profesional innovacion y transferencia inclusion y equidad liderazgo, induccion y bienestar evaluacion e impacto gobernanza y planificacion orientaciones politicas y soft law de la ue soft law"
+      },
+      {
+        "id": "P-08",
+        "titulo": "Políticas y prácticas informadas por evidencias en educación y formación — C/2024/3642",
+        "grupo": "politica_ue",
+        "nivelAutoridad": "soft_law",
+        "emisor": "Consejo de la Unión Europea",
+        "fecha": "2024",
+        "naturaleza": "Conclusiones del Consejo",
+        "temas": [
+          "1",
+          "2",
+          "8",
+          "9"
+        ],
+        "prioridad": "Crítica",
+        "transferibilidad": "Muy alta",
+        "resumen": "Conclusiones para reforzar capacidades de investigación y datos, intermediación de conocimiento, evaluación y culturas de decisión informada.",
+        "relevanciaSife": "Crear una función intermediaria de evidencia e integrar evaluación, alfabetización investigadora y ciclos de retroalimentación.",
+        "cautela": "La evidencia informa el juicio profesional; no se aplica de forma mecánica ni sin atender al contexto y a los valores.",
+        "fuenteOficial": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=OJ:C_202403642",
+        "archivosServidos": [
+          {
+            "label": "Diario Oficial de la UE",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/02_politica_ue/UE_2024_C-2024-3642_Evidencias_educacion_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2024_C-2024-3642_Evidencias_educacion_ES.pdf",
+            "sha256": "78ee0045944537ee2f16239cf7875af5eed6992c0a8d8a17e29d9d4a6e288d06"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "p-08 politicas y practicas informadas por evidencias en educacion y formacion — c/2024/3642 consejo de la union europea 2024 conclusiones del consejo critica muy alta conclusiones para reforzar capacidades de investigacion y datos, intermediacion de conocimiento, evaluacion y culturas de decision informada. crear una funcion intermediaria de evidencia e integrar evaluacion, alfabetizacion investigadora y ciclos de retroalimentacion. la evidencia informa el juicio profesional; no se aplica de forma mecanica ni sin atender al contexto y a los valores. formacion y desarrollo profesional innovacion y transferencia evaluacion e impacto gobernanza y planificacion orientaciones politicas y soft law de la ue soft law"
+      },
+      {
+        "id": "I-01",
+        "titulo": "Recomendaciones del Panel de Alto Nivel sobre la Profesión Docente",
+        "grupo": "informes_globales",
+        "nivelAutoridad": "soft_law",
+        "emisor": "Naciones Unidas, OIT y UNESCO",
+        "fecha": "2024",
+        "naturaleza": "Recomendaciones globales",
+        "temas": [
+          "1",
+          "5",
+          "6",
+          "9"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Media-alta",
+        "resumen": "Cincuenta y nueve recomendaciones globales para transformar la profesión docente en torno a dignidad, calidad, inclusión, innovación, liderazgo y sostenibilidad.",
+        "relevanciaSife": "Usar sus seis imperativos como marco de contraste de la política docente y del desarrollo profesional.",
+        "cautela": "Su alcance es global y programático; necesita concreción normativa, financiera y mediante diálogo social.",
+        "fuenteOficial": "https://www.unesco.org/sdg4education2030/en/articles/un-secretary-generals-high-level-panel-teaching-profession-puts-forward-recommendations-allow",
+        "archivosServidos": [
+          {
+            "label": "Informe de recomendaciones",
+            "language": "en",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/03_informes_globales/ONU_OIT_UNESCO_2024_Panel_Alto_Nivel_Profesion_Docente_EN.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/03_informes_globales/ONU_OIT_UNESCO_2024_Panel_Alto_Nivel_Profesion_Docente_EN.pdf",
+            "sha256": "6cf711c5f181f46c845eed9797f029162d7f10ae9f792fa9cf7e054cd344fdbd"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "i-01 recomendaciones del panel de alto nivel sobre la profesion docente naciones unidas, oit y unesco 2024 recomendaciones globales alta media-alta cincuenta y nueve recomendaciones globales para transformar la profesion docente en torno a dignidad, calidad, inclusion, innovacion, liderazgo y sostenibilidad. usar sus seis imperativos como marco de contraste de la politica docente y del desarrollo profesional. su alcance es global y programatico; necesita concrecion normativa, financiera y mediante dialogo social. formacion y desarrollo profesional inclusion y equidad liderazgo, induccion y bienestar gobernanza y planificacion informes globales y marcos de politica docente soft law"
+      },
+      {
+        "id": "I-02",
+        "titulo": "Global Report on Teachers: Addressing teacher shortages and transforming the profession",
+        "grupo": "informes_globales",
+        "nivelAutoridad": "evidencia_comparada",
+        "emisor": "UNESCO y Teacher Task Force",
+        "fecha": "2024",
+        "naturaleza": "Informe global",
+        "temas": [
+          "1",
+          "5",
+          "6",
+          "8",
+          "9"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Media",
+        "resumen": "Diagnóstico mundial sobre escasez, atracción, retención, condiciones, formación y transformación de la profesión docente.",
+        "relevanciaSife": "Conectar desarrollo profesional con planificación de necesidades, atracción, condiciones, bienestar y retención.",
+        "cautela": "Los datos globales requieren contraste con diagnóstico y series regionales de Extremadura.",
+        "fuenteOficial": "https://unesdoc.unesco.org/ark:/48223/pf0000387400",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "i-02 global report on teachers: addressing teacher shortages and transforming the profession unesco y teacher task force 2024 informe global alta media diagnostico mundial sobre escasez, atraccion, retencion, condiciones, formacion y transformacion de la profesion docente. conectar desarrollo profesional con planificacion de necesidades, atraccion, condiciones, bienestar y retencion. los datos globales requieren contraste con diagnostico y series regionales de extremadura. formacion y desarrollo profesional inclusion y equidad liderazgo, induccion y bienestar evaluacion e impacto gobernanza y planificacion informes globales y marcos de politica docente evidencia comparada"
+      },
+      {
+        "id": "I-03",
+        "titulo": "Teacher Policy Development Guide",
+        "grupo": "informes_globales",
+        "nivelAutoridad": "marco_tecnico",
+        "emisor": "UNESCO y Teacher Task Force",
+        "fecha": "2019",
+        "naturaleza": "Guía de política",
+        "temas": [
+          "1",
+          "5",
+          "6",
+          "8",
+          "9"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta",
+        "resumen": "Método para diagnosticar, formular, gobernar, financiar, implementar y evaluar políticas docentes integrales.",
+        "relevanciaSife": "Aplicar su secuencia de política pública a la reforma del sistema de formación permanente.",
+        "cautela": "Debe completarse con marco jurídico español, participación de actores y análisis presupuestario.",
+        "fuenteOficial": "https://unesdoc.unesco.org/ark:/48223/pf0000370966",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "i-03 teacher policy development guide unesco y teacher task force 2019 guia de politica alta alta metodo para diagnosticar, formular, gobernar, financiar, implementar y evaluar politicas docentes integrales. aplicar su secuencia de politica publica a la reforma del sistema de formacion permanente. debe completarse con marco juridico espanol, participacion de actores y analisis presupuestario. formacion y desarrollo profesional inclusion y equidad liderazgo, induccion y bienestar evaluacion e impacto gobernanza y planificacion informes globales y marcos de politica docente marco tecnico"
+      },
+      {
+        "id": "I-04",
+        "titulo": "AI Competency Framework for Teachers",
+        "grupo": "informes_globales",
+        "nivelAutoridad": "marco_tecnico",
+        "emisor": "UNESCO",
+        "fecha": "2024",
+        "naturaleza": "Marco competencial",
+        "temas": [
+          "1",
+          "3",
+          "5",
+          "8"
+        ],
+        "prioridad": "Crítica",
+        "transferibilidad": "Muy alta",
+        "resumen": "Quince competencias docentes de IA en cinco dimensiones y tres niveles de progresión, con enfoque humano, ético y pedagógico.",
+        "relevanciaSife": "Definir un perfil de competencia en IA y convertirlo en itinerarios por roles, niveles y contextos docentes.",
+        "cautela": "Debe armonizarse con DigCompEdu, el marco español de competencia digital docente y el Derecho de la UE.",
+        "fuenteOficial": "https://unesdoc.unesco.org/ark:/48223/pf0000391104",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "i-04 ai competency framework for teachers unesco 2024 marco competencial critica muy alta quince competencias docentes de ia en cinco dimensiones y tres niveles de progresion, con enfoque humano, etico y pedagogico. definir un perfil de competencia en ia y convertirlo en itinerarios por roles, niveles y contextos docentes. debe armonizarse con digcompedu, el marco espanol de competencia digital docente y el derecho de la ue. formacion y desarrollo profesional competencia digital e ia inclusion y equidad evaluacion e impacto informes globales y marcos de politica docente marco tecnico"
+      },
+      {
+        "id": "I-05",
+        "titulo": "ICT Competency Framework for Teachers, versión 3",
+        "grupo": "informes_globales",
+        "nivelAutoridad": "marco_tecnico",
+        "emisor": "UNESCO",
+        "fecha": "2018",
+        "naturaleza": "Marco competencial",
+        "temas": [
+          "1",
+          "3",
+          "5",
+          "8"
+        ],
+        "prioridad": "Media-alta",
+        "transferibilidad": "Alta",
+        "resumen": "Marco modular de competencias TIC docentes organizado por áreas de práctica y niveles de adquisición, profundización y creación de conocimiento.",
+        "relevanciaSife": "Usarlo como banco modular para programas y capacidades institucionales adaptados al territorio.",
+        "cautela": "Es anterior al auge de la IA generativa y debe complementarse con marcos de IA y fuentes europeas actuales.",
+        "fuenteOficial": "https://www.unesco.org/en/articles/unesco-ict-competency-framework-teachers",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "i-05 ict competency framework for teachers, version 3 unesco 2018 marco competencial media-alta alta marco modular de competencias tic docentes organizado por areas de practica y niveles de adquisicion, profundizacion y creacion de conocimiento. usarlo como banco modular para programas y capacidades institucionales adaptados al territorio. es anterior al auge de la ia generativa y debe complementarse con marcos de ia y fuentes europeas actuales. formacion y desarrollo profesional competencia digital e ia inclusion y equidad evaluacion e impacto informes globales y marcos de politica docente marco tecnico"
+      },
+      {
+        "id": "I-06",
+        "titulo": "Guidance for Generative AI in Education and Research",
+        "grupo": "informes_globales",
+        "nivelAutoridad": "marco_tecnico",
+        "emisor": "UNESCO",
+        "fecha": "2023",
+        "naturaleza": "Guía oficial",
+        "temas": [
+          "3",
+          "5",
+          "8",
+          "9"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta",
+        "resumen": "Guía temprana para regular, validar y usar IA generativa con enfoque humano en educación e investigación.",
+        "relevanciaSife": "Formar sobre privacidad, agencia humana, validación pedagógica, equidad y uso responsable de IA generativa.",
+        "cautela": "La conformidad jurídica debe determinarse con la normativa europea y española vigente.",
+        "fuenteOficial": "https://unesdoc.unesco.org/ark:/48223/pf0000386693",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "i-06 guidance for generative ai in education and research unesco 2023 guia oficial alta alta guia temprana para regular, validar y usar ia generativa con enfoque humano en educacion e investigacion. formar sobre privacidad, agencia humana, validacion pedagogica, equidad y uso responsable de ia generativa. la conformidad juridica debe determinarse con la normativa europea y espanola vigente. competencia digital e ia inclusion y equidad evaluacion e impacto gobernanza y planificacion informes globales y marcos de politica docente marco tecnico"
+      },
+      {
+        "id": "I-07",
+        "titulo": "Teacher Professional Learning: Drawing Upon International Practice for a Future Vision for Ukraine",
+        "grupo": "informes_globales",
+        "nivelAutoridad": "evidencia_comparada",
+        "emisor": "OCDE",
+        "fecha": "2025",
+        "naturaleza": "Informe comparado",
+        "temas": [
+          "1",
+          "4",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "prioridad": "Crítica",
+        "transferibilidad": "Muy alta",
+        "resumen": "Síntesis internacional del aprendizaje profesional a lo largo de la carrera: preparación, incentivos, provisión, redes e infraestructura de conocimiento.",
+        "relevanciaSife": "Rediseñar la formación como ecosistema de carrera con inducción, mentoría, colaboración, redes, reconocimiento y movilización de conocimiento.",
+        "cautela": "La aplicación final responde a Ucrania; para Extremadura deben usarse la síntesis y los ejemplos con adaptación.",
+        "fuenteOficial": "https://doi.org/10.1787/0cceeddf-en",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [
+          {
+            "label": "Informe OCDE",
+            "language": "en",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/03_informes_globales/OCDE_2025_Teacher_Professional_Learning_EN.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/03_informes_globales/OCDE_2025_Teacher_Professional_Learning_EN.pdf",
+            "sha256": "6d54e15649d255c69e101b68a11457d112c45981403ba917c80967ea007a7084"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "i-07 teacher professional learning: drawing upon international practice for a future vision for ukraine ocde 2025 informe comparado critica muy alta sintesis internacional del aprendizaje profesional a lo largo de la carrera: preparacion, incentivos, provision, redes e infraestructura de conocimiento. redisenar la formacion como ecosistema de carrera con induccion, mentoria, colaboracion, redes, reconocimiento y movilizacion de conocimiento. la aplicacion final responde a ucrania; para extremadura deben usarse la sintesis y los ejemplos con adaptacion. formacion y desarrollo profesional redes y apoyo territorial liderazgo, induccion y bienestar reconocimiento y microcredenciales evaluacion e impacto gobernanza y planificacion informes globales y marcos de politica docente evidencia comparada"
+      },
+      {
+        "id": "I-08",
+        "titulo": "Results from TALIS 2024",
+        "grupo": "informes_globales",
+        "nivelAutoridad": "evidencia_comparada",
+        "emisor": "OCDE",
+        "fecha": "2025",
+        "naturaleza": "Informe comparado y datos",
+        "temas": [
+          "1",
+          "3",
+          "4",
+          "6",
+          "8"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta para indicadores",
+        "resumen": "Resultados comparados de la encuesta TALIS 2024 sobre práctica, desarrollo profesional, colaboración, liderazgo, bienestar e IA.",
+        "relevanciaSife": "Seleccionar indicadores comparables de aprendizaje profesional, colaboración, bienestar, liderazgo y preparación para la IA.",
+        "cautela": "Las asociaciones de encuesta no prueban causalidad y deben combinarse con datos y evaluación regionales.",
+        "fuenteOficial": "https://doi.org/10.1787/90df6235-en",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [
+          {
+            "label": "Informe TALIS 2024",
+            "language": "en",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/03_informes_globales/OCDE_2025_TALIS_2024_EN.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/03_informes_globales/OCDE_2025_TALIS_2024_EN.pdf",
+            "sha256": "35a07cf5a46f926717707d6f71f7f1ac4144536195bcf05e1ed7d729d3999024"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "i-08 results from talis 2024 ocde 2025 informe comparado y datos alta alta para indicadores resultados comparados de la encuesta talis 2024 sobre practica, desarrollo profesional, colaboracion, liderazgo, bienestar e ia. seleccionar indicadores comparables de aprendizaje profesional, colaboracion, bienestar, liderazgo y preparacion para la ia. las asociaciones de encuesta no prueban causalidad y deben combinarse con datos y evaluacion regionales. formacion y desarrollo profesional competencia digital e ia redes y apoyo territorial liderazgo, induccion y bienestar evaluacion e impacto informes globales y marcos de politica docente evidencia comparada"
+      },
+      {
+        "id": "I-09",
+        "titulo": "Unlocking High-Quality Teaching",
+        "grupo": "informes_globales",
+        "nivelAutoridad": "evidencia_comparada",
+        "emisor": "OCDE",
+        "fecha": "2025",
+        "naturaleza": "Informe de evidencia",
+        "temas": [
+          "1",
+          "2",
+          "6",
+          "8"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta",
+        "resumen": "Taxonomía y revisión de evidencia sobre prácticas de enseñanza de calidad y condiciones escolares para sostenerlas.",
+        "relevanciaSife": "Traducir evidencia sobre enseñanza a contenidos, acompañamiento, observación, colaboración y transferencia al aula.",
+        "cautela": "Los descriptores no deben convertirse en listas rígidas; la práctica profesional sigue siendo contextual.",
+        "fuenteOficial": "https://doi.org/10.1787/f5b82176-en",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [
+          {
+            "label": "Informe OCDE",
+            "language": "en",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/03_informes_globales/OCDE_2025_Unlocking_High_Quality_Teaching_EN.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/03_informes_globales/OCDE_2025_Unlocking_High_Quality_Teaching_EN.pdf",
+            "sha256": "d2d6e0ad568f55ba3c32e9c5839a241904decca3f52f23760afd0f3bfcb5cb7e"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "i-09 unlocking high-quality teaching ocde 2025 informe de evidencia alta alta taxonomia y revision de evidencia sobre practicas de ensenanza de calidad y condiciones escolares para sostenerlas. traducir evidencia sobre ensenanza a contenidos, acompanamiento, observacion, colaboracion y transferencia al aula. los descriptores no deben convertirse en listas rigidas; la practica profesional sigue siendo contextual. formacion y desarrollo profesional innovacion y transferencia liderazgo, induccion y bienestar evaluacion e impacto informes globales y marcos de politica docente evidencia comparada"
+      },
+      {
+        "id": "I-10",
+        "titulo": "OECD Teaching Compass",
+        "grupo": "informes_globales",
+        "nivelAutoridad": "marco_tecnico",
+        "emisor": "OCDE",
+        "fecha": "2025",
+        "naturaleza": "Marco conceptual",
+        "temas": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "prioridad": "Media-alta",
+        "transferibilidad": "Media",
+        "resumen": "Brújula conceptual que sitúa agencia docente, competencias, bienestar y capacidad de cambio en el centro de la profesión.",
+        "relevanciaSife": "Orientar el desarrollo profesional en torno a agencia, bienestar y competencias para futuros cambiantes.",
+        "cautela": "No es un estándar de acreditación ni un instrumento de evaluación listo para usar.",
+        "fuenteOficial": "https://doi.org/10.1787/8297a24a-en",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [
+          {
+            "label": "Documento OCDE",
+            "language": "en",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/03_informes_globales/OCDE_2025_Teaching_Compass_EN.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/03_informes_globales/OCDE_2025_Teaching_Compass_EN.pdf",
+            "sha256": "090d534c08eeefe48d34ed012b26fab998f6e3dfd2e5067815dbf8c44190976e"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "i-10 oecd teaching compass ocde 2025 marco conceptual media-alta media brujula conceptual que situa agencia docente, competencias, bienestar y capacidad de cambio en el centro de la profesion. orientar el desarrollo profesional en torno a agencia, bienestar y competencias para futuros cambiantes. no es un estandar de acreditacion ni un instrumento de evaluacion listo para usar. formacion y desarrollo profesional innovacion y transferencia competencia digital e ia inclusion y equidad liderazgo, induccion y bienestar informes globales y marcos de politica docente marco tecnico"
+      },
+      {
+        "id": "T-01",
+        "titulo": "Digital Education Action Plan 2021–2027",
+        "grupo": "herramientas_redes",
+        "nivelAutoridad": "soft_law",
+        "emisor": "Comisión Europea",
+        "fecha": "2021–2027",
+        "naturaleza": "Estrategia y cartera de acciones",
+        "temas": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "9"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta",
+        "resumen": "Estrategia europea para un ecosistema de educación digital de alto rendimiento y la mejora de capacidades para la transformación digital.",
+        "relevanciaSife": "Enmarcar la transformación digital en calidad, inclusión, accesibilidad, capacidades, cooperación y recursos.",
+        "cautela": "El periodo concluye en 2027; debe seguirse el marco posterior y usarse como transición.",
+        "fuenteOficial": "https://education.ec.europa.eu/focus-topics/digital-education/actions/plan",
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "t-01 digital education action plan 2021–2027 comision europea 2021–2027 estrategia y cartera de acciones alta alta estrategia europea para un ecosistema de educacion digital de alto rendimiento y la mejora de capacidades para la transformacion digital. enmarcar la transformacion digital en calidad, inclusion, accesibilidad, capacidades, cooperacion y recursos. el periodo concluye en 2027; debe seguirse el marco posterior y usarse como transicion. formacion y desarrollo profesional innovacion y transferencia competencia digital e ia redes y apoyo territorial inclusion y equidad gobernanza y planificacion marcos tecnicos, herramientas, redes y seguimiento soft law"
+      },
+      {
+        "id": "T-02",
+        "titulo": "Paquete de cuatro guías docentes sobre IA, desinformación, informática y contenidos digitales",
+        "grupo": "herramientas_redes",
+        "nivelAutoridad": "marco_tecnico",
+        "emisor": "Comisión Europea",
+        "fecha": "2026",
+        "naturaleza": "Guías prácticas oficiales",
+        "temas": [
+          "1",
+          "3",
+          "5",
+          "6",
+          "8"
+        ],
+        "prioridad": "Crítica",
+        "transferibilidad": "Muy alta e inmediata",
+        "resumen": "Cuatro guías prácticas actualizadas para el uso ético de IA y datos, la desinformación, la enseñanza de informática y la selección de contenidos digitales.",
+        "relevanciaSife": "Actualizar el catálogo formativo, los apoyos a equipos directivos y los criterios para crear o seleccionar contenidos digitales.",
+        "cautela": "Las guías apoyan la práctica, pero no certifican cumplimiento jurídico en IA, protección de datos o propiedad intelectual.",
+        "fuenteOficial": "https://education.ec.europa.eu/whats-new/news/new-guidelines-to-help-teachers-lead-europes-digital-education",
+        "archivosServidos": [
+          {
+            "label": "Uso ético de IA y datos",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/04_herramientas_redes/CE_2026_Guia_IA_datos_docentes_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/CE_2026_Guia_IA_datos_docentes_ES.pdf",
+            "sha256": "ab6a2720ed22ba046ced5130ea826d43ff88b22621c85fba22f29368c0e074df"
+          },
+          {
+            "label": "Desinformación y alfabetización digital",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/04_herramientas_redes/CE_2026_Guia_desinformacion_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/CE_2026_Guia_desinformacion_ES.pdf",
+            "sha256": "9e9af59453049b206f1d576c00e245a01cc220934409b36191bfd5851402ea72"
+          },
+          {
+            "label": "Enseñanza de la informática",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/04_herramientas_redes/CE_2026_Guia_informatica_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/CE_2026_Guia_informatica_ES.pdf",
+            "sha256": "79cf8b13e39c8fbe981886b2f1abd74e8c14fb93cce1782eed6bd7dfabac6a1d"
+          },
+          {
+            "label": "Contenidos educativos digitales",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/04_herramientas_redes/CE_2026_Guia_contenidos_digitales_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/CE_2026_Guia_contenidos_digitales_ES.pdf",
+            "sha256": "831584fc204df9d549bb72dfbd5fc698f2e522e5a25a82a81507be96e803d35e"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "t-02 paquete de cuatro guias docentes sobre ia, desinformacion, informatica y contenidos digitales comision europea 2026 guias practicas oficiales critica muy alta e inmediata cuatro guias practicas actualizadas para el uso etico de ia y datos, la desinformacion, la ensenanza de informatica y la seleccion de contenidos digitales. actualizar el catalogo formativo, los apoyos a equipos directivos y los criterios para crear o seleccionar contenidos digitales. las guias apoyan la practica, pero no certifican cumplimiento juridico en ia, proteccion de datos o propiedad intelectual. formacion y desarrollo profesional competencia digital e ia inclusion y equidad liderazgo, induccion y bienestar evaluacion e impacto marcos tecnicos, herramientas, redes y seguimiento marco tecnico"
+      },
+      {
+        "id": "T-03",
+        "titulo": "European Framework for the Digital Competence of Educators — DigCompEdu",
+        "grupo": "herramientas_redes",
+        "nivelAutoridad": "marco_tecnico",
+        "emisor": "JRC–Comisión Europea",
+        "fecha": "2017; actualización iniciada en 2026",
+        "naturaleza": "Marco competencial",
+        "temas": [
+          "1",
+          "3",
+          "5",
+          "7",
+          "8"
+        ],
+        "prioridad": "Crítica",
+        "transferibilidad": "Muy alta",
+        "resumen": "Marco europeo de 22 competencias digitales docentes distribuidas en seis áreas y niveles de progresión.",
+        "relevanciaSife": "Estructurar niveles, itinerarios, diagnóstico, contenidos, reconocimiento y evaluación de la competencia digital docente.",
+        "cautela": "La adaptación debe indicar versión y fecha porque su actualización europea está en curso.",
+        "fuenteOficial": "https://joint-research-centre.ec.europa.eu/scientific-activities/key-competences-lifelong-learning/digcompedu_en",
+        "archivosServidos": [
+          {
+            "label": "Marco DigCompEdu",
+            "language": "en",
+            "fuenteLocal": "SIFE normativa/07_informe_maestro/08_Comparacion_y_marcos_internacionales/UE_2017_DigCompEdu_JRC107466.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/07_informe_maestro/08_Comparacion_y_marcos_internacionales/UE_2017_DigCompEdu_JRC107466.pdf",
+            "sha256": "253e583b818c4913ee8b6d84a8ef2f21faeb347576777f1659d4d16e01186d2b"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "t-03 european framework for the digital competence of educators — digcompedu jrc–comision europea 2017; actualizacion iniciada en 2026 marco competencial critica muy alta marco europeo de 22 competencias digitales docentes distribuidas en seis areas y niveles de progresion. estructurar niveles, itinerarios, diagnostico, contenidos, reconocimiento y evaluacion de la competencia digital docente. la adaptacion debe indicar version y fecha porque su actualizacion europea esta en curso. formacion y desarrollo profesional competencia digital e ia inclusion y equidad reconocimiento y microcredenciales evaluacion e impacto marcos tecnicos, herramientas, redes y seguimiento marco tecnico"
+      },
+      {
+        "id": "T-04",
+        "titulo": "SELFIEforTEACHERS",
+        "grupo": "herramientas_redes",
+        "nivelAutoridad": "marco_tecnico",
+        "emisor": "JRC–Comisión Europea",
+        "fecha": "Herramienta vigente",
+        "naturaleza": "Autorreflexión individual y grupal",
+        "temas": [
+          "1",
+          "3",
+          "4",
+          "8"
+        ],
+        "prioridad": "Crítica",
+        "transferibilidad": "Muy alta",
+        "resumen": "Herramienta europea de autorreflexión sobre competencia digital docente, con uso individual o por grupos y resultados agregados.",
+        "relevanciaSife": "Pilotar diagnósticos por grupos y emplear datos agregados para programar oferta territorial y de centro.",
+        "cautela": "Es autorreflexión, no certificación; exige finalidad, privacidad, interpretación y uso no punitivo definidos.",
+        "fuenteOficial": "https://joint-research-centre.ec.europa.eu/scientific-activities/key-competences-lifelong-learning/digcompedu/digcompedu-self-reflection-tools_en",
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "t-04 selfieforteachers jrc–comision europea herramienta vigente autorreflexion individual y grupal critica muy alta herramienta europea de autorreflexion sobre competencia digital docente, con uso individual o por grupos y resultados agregados. pilotar diagnosticos por grupos y emplear datos agregados para programar oferta territorial y de centro. es autorreflexion, no certificacion; exige finalidad, privacidad, interpretacion y uso no punitivo definidos. formacion y desarrollo profesional competencia digital e ia redes y apoyo territorial evaluacion e impacto marcos tecnicos, herramientas, redes y seguimiento marco tecnico"
+      },
+      {
+        "id": "T-05",
+        "titulo": "Teacher Professional Learning for Inclusion — Profile y Policy Self-Review Tool",
+        "grupo": "herramientas_redes",
+        "nivelAutoridad": "marco_tecnico",
+        "emisor": "European Agency for Special Needs and Inclusive Education",
+        "fecha": "2022",
+        "naturaleza": "Perfil y herramienta abierta de revisión",
+        "temas": [
+          "1",
+          "4",
+          "5",
+          "6",
+          "8",
+          "9"
+        ],
+        "prioridad": "Crítica",
+        "transferibilidad": "Muy alta",
+        "resumen": "Perfil competencial y herramienta abierta para revisar la visión, apoyos, capacidad, financiación y seguimiento de políticas de formación inclusiva.",
+        "relevanciaSife": "Auditar la inclusión en el diseño y la gobernanza del sistema regional de formación permanente.",
+        "cautela": "La herramienta es adaptable y debe validarse con actores extremeños y evidencia local.",
+        "fuenteOficial": "https://www.european-agency.org/resources/publications/TPL4I-policy-self-review-tool",
+        "archivosServidos": [
+          {
+            "label": "Policy Self-Review Tool",
+            "language": "en",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/04_herramientas_redes/EA_2022_TPL4I_Policy_Self_Review_Tool_EN.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/EA_2022_TPL4I_Policy_Self_Review_Tool_EN.pdf",
+            "sha256": "0b2aaa70aaf91ec90721babdddcde382ad14d49b6eb37b877e8a95c1edfbf020"
+          },
+          {
+            "label": "Profile for Inclusive TPL",
+            "language": "en",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/04_herramientas_redes/EA_2022_Profile_Inclusive_TPL_EN.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/EA_2022_Profile_Inclusive_TPL_EN.pdf",
+            "sha256": "318744f865f7bef7dd23dead8f8c54315974c2314eea62bde399ef1227b52e66"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "t-05 teacher professional learning for inclusion — profile y policy self-review tool european agency for special needs and inclusive education 2022 perfil y herramienta abierta de revision critica muy alta perfil competencial y herramienta abierta para revisar la vision, apoyos, capacidad, financiacion y seguimiento de politicas de formacion inclusiva. auditar la inclusion en el diseno y la gobernanza del sistema regional de formacion permanente. la herramienta es adaptable y debe validarse con actores extremenos y evidencia local. formacion y desarrollo profesional redes y apoyo territorial inclusion y equidad liderazgo, induccion y bienestar evaluacion e impacto gobernanza y planificacion marcos tecnicos, herramientas, redes y seguimiento marco tecnico"
+      },
+      {
+        "id": "T-06",
+        "titulo": "Teachers in Europe: Careers, Development and Well-being",
+        "grupo": "herramientas_redes",
+        "nivelAutoridad": "evidencia_comparada",
+        "emisor": "Eurydice",
+        "fecha": "2021",
+        "naturaleza": "Informe comparado",
+        "temas": [
+          "1",
+          "4",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta",
+        "resumen": "Comparación europea de inducción, desarrollo, evaluación, carrera, movilidad, condiciones de trabajo y bienestar docente.",
+        "relevanciaSife": "Contrastar opciones de carrera y desarrollo profesional en sistemas europeos.",
+        "cautela": "Sus datos de referencia son 2018–2020; deben comprobarse reformas nacionales posteriores.",
+        "fuenteOficial": "https://op.europa.eu/en/publication-detail/-/publication/78fbf243-974f-11eb-b85c-01aa75ed71a1/language-es",
+        "archivosServidos": [
+          {
+            "label": "Informe Eurydice en español",
+            "language": "es",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/04_herramientas_redes/UE_2021_Teachers_in_Europe_ES.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/UE_2021_Teachers_in_Europe_ES.pdf",
+            "sha256": "380bd6c09021a5285a7b665101b7aeca1a3c7378c505b0180033b1c048c222ba"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "t-06 teachers in europe: careers, development and well-being eurydice 2021 informe comparado alta alta comparacion europea de induccion, desarrollo, evaluacion, carrera, movilidad, condiciones de trabajo y bienestar docente. contrastar opciones de carrera y desarrollo profesional en sistemas europeos. sus datos de referencia son 2018–2020; deben comprobarse reformas nacionales posteriores. formacion y desarrollo profesional redes y apoyo territorial liderazgo, induccion y bienestar reconocimiento y microcredenciales evaluacion e impacto gobernanza y planificacion marcos tecnicos, herramientas, redes y seguimiento evidencia comparada"
+      },
+      {
+        "id": "T-07",
+        "titulo": "Education and Training Monitor 2025",
+        "grupo": "herramientas_redes",
+        "nivelAutoridad": "evidencia_comparada",
+        "emisor": "Comisión Europea",
+        "fecha": "2025",
+        "naturaleza": "Informe anual e indicadores",
+        "temas": [
+          "1",
+          "3",
+          "5",
+          "8",
+          "9"
+        ],
+        "prioridad": "Media-alta",
+        "transferibilidad": "Media-alta",
+        "resumen": "Monitor anual interactivo con contexto, indicadores y análisis comparados de los sistemas europeos de educación y formación.",
+        "relevanciaSife": "Construir un cuadro de contexto europeo y seleccionar indicadores de seguimiento para el plan regional.",
+        "cautela": "El foco anual no reemplaza un sistema específico de indicadores de formación docente.",
+        "fuenteOficial": "https://op.europa.eu/webpub/eac/education-and-training-monitor/en/index.html",
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "t-07 education and training monitor 2025 comision europea 2025 informe anual e indicadores media-alta media-alta monitor anual interactivo con contexto, indicadores y analisis comparados de los sistemas europeos de educacion y formacion. construir un cuadro de contexto europeo y seleccionar indicadores de seguimiento para el plan regional. el foco anual no reemplaza un sistema especifico de indicadores de formacion docente. formacion y desarrollo profesional competencia digital e ia inclusion y equidad evaluacion e impacto gobernanza y planificacion marcos tecnicos, herramientas, redes y seguimiento evidencia comparada"
+      },
+      {
+        "id": "T-08",
+        "titulo": "Erasmus+ Teacher Academies y European School Education Platform",
+        "grupo": "herramientas_redes",
+        "nivelAutoridad": "marco_tecnico",
+        "emisor": "Comisión Europea",
+        "fecha": "2021–2026",
+        "naturaleza": "Red, financiación y plataforma profesional",
+        "temas": [
+          "1",
+          "2",
+          "4",
+          "6"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta operativa",
+        "resumen": "Iniciativa europea de cooperación, movilidad, formación y comunidades profesionales para docentes y formadores.",
+        "relevanciaSife": "Buscar socios para formar formadores, experimentar, crear redes y devolver conocimiento a los CPR.",
+        "cautela": "La participación exige capacidad de proyecto, sostenibilidad y mecanismos explícitos de transferencia regional.",
+        "fuenteOficial": "https://education.ec.europa.eu/education-levels/school-education/erasmus-teacher-academies",
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "t-08 erasmus+ teacher academies y european school education platform comision europea 2021–2026 red, financiacion y plataforma profesional alta alta operativa iniciativa europea de cooperacion, movilidad, formacion y comunidades profesionales para docentes y formadores. buscar socios para formar formadores, experimentar, crear redes y devolver conocimiento a los cpr. la participacion exige capacidad de proyecto, sostenibilidad y mecanismos explicitos de transferencia regional. formacion y desarrollo profesional innovacion y transferencia redes y apoyo territorial liderazgo, induccion y bienestar marcos tecnicos, herramientas, redes y seguimiento marco tecnico"
+      },
+      {
+        "id": "T-09",
+        "titulo": "Digital Citizenship Education y Reference Framework of Competences for Democratic Culture",
+        "grupo": "herramientas_redes",
+        "nivelAutoridad": "marco_tecnico",
+        "emisor": "Consejo de Europa",
+        "fecha": "Marco vigente",
+        "naturaleza": "Marcos y materiales",
+        "temas": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "prioridad": "Media-alta",
+        "transferibilidad": "Media-alta",
+        "resumen": "Conjunto de marcos y materiales sobre ciudadanía digital, derechos, participación, alfabetización mediática y cultura democrática.",
+        "relevanciaSife": "Crear una línea formativa coherente de ciudadanía digital y competencias para una cultura democrática.",
+        "cautela": "Debe integrarse curricularmente y no reducirse a seguridad técnica o campañas aisladas.",
+        "fuenteOficial": "https://www.coe.int/en/web/education/digital-citizenship-education",
+        "restriccionAutomatizada": true,
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "t-09 digital citizenship education y reference framework of competences for democratic culture consejo de europa marco vigente marcos y materiales media-alta media-alta conjunto de marcos y materiales sobre ciudadania digital, derechos, participacion, alfabetizacion mediatica y cultura democratica. crear una linea formativa coherente de ciudadania digital y competencias para una cultura democratica. debe integrarse curricularmente y no reducirse a seguridad tecnica o campanas aisladas. formacion y desarrollo profesional innovacion y transferencia competencia digital e ia inclusion y equidad liderazgo, induccion y bienestar marcos tecnicos, herramientas, redes y seguimiento marco tecnico"
+      },
+      {
+        "id": "T-10",
+        "titulo": "Technology for Teaching — T4T",
+        "grupo": "herramientas_redes",
+        "nivelAutoridad": "marco_tecnico",
+        "emisor": "Banco Mundial",
+        "fecha": "Programa vigente",
+        "naturaleza": "Programa y guías de implementación",
+        "temas": [
+          "1",
+          "3",
+          "4",
+          "5",
+          "8"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta",
+        "resumen": "Programa y recursos para diseñar desarrollo profesional mediado por tecnología en las fases de acceso, participación y aplicación a la práctica.",
+        "relevanciaSife": "Diseñar formación tecnológica atendiendo a acceso, participación, soporte y transferencia al trabajo docente.",
+        "cautela": "Su evidencia global incluye contextos muy distintos; infraestructura, soporte y evaluación deben adaptarse a Extremadura.",
+        "fuenteOficial": "https://www.worldbank.org/en/topic/teachers/brief/technology-for-teaching",
+        "archivosServidos": [
+          {
+            "label": "Navigation Guide",
+            "language": "en",
+            "fuenteLocal": "SIFE normativa/08_biblioteca_internacional/04_herramientas_redes/BM_T4T_Navigation_Guide_EN.pdf",
+            "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/BM_T4T_Navigation_Guide_EN.pdf",
+            "sha256": "3ac597acf632d6a61f7dc98d6e2447b6de945d9f98cae05ba9695e7cd9284f52"
+          }
+        ],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "t-10 technology for teaching — t4t banco mundial programa vigente programa y guias de implementacion alta alta programa y recursos para disenar desarrollo profesional mediado por tecnologia en las fases de acceso, participacion y aplicacion a la practica. disenar formacion tecnologica atendiendo a acceso, participacion, soporte y transferencia al trabajo docente. su evidencia global incluye contextos muy distintos; infraestructura, soporte y evaluacion deben adaptarse a extremadura. formacion y desarrollo profesional competencia digital e ia redes y apoyo territorial inclusion y equidad evaluacion e impacto marcos tecnicos, herramientas, redes y seguimiento marco tecnico"
+      },
+      {
+        "id": "C-01",
+        "titulo": "Régimen jurídico de formación continua del profesorado — Decreto-Lei n.º 22/2014 y reforma de 2025",
+        "grupo": "modelos_nacionales",
+        "nivelAutoridad": "modelo_nacional",
+        "emisor": "Portugal",
+        "fecha": "2014–2025",
+        "naturaleza": "Norma nacional comparada",
+        "temas": [
+          "1",
+          "3",
+          "4",
+          "7",
+          "8",
+          "9"
+        ],
+        "prioridad": "Crítica",
+        "transferibilidad": "Muy alta como comparación",
+        "resumen": "Régimen portugués consolidado de entidades formadoras, acreditación, modalidades, evaluación y reconocimiento de formación continua docente.",
+        "relevanciaSife": "Comparar entidades, acreditación, calidad y reconocimiento de formación a distancia y MOOC al preparar una reforma extremeña.",
+        "cautela": "No es trasplantable: deben verificarse competencias, carrera, negociación y organización administrativa españolas.",
+        "fuenteOficial": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2014-73250880",
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "c-01 regimen juridico de formacion continua del profesorado — decreto-lei n.º 22/2014 y reforma de 2025 portugal 2014–2025 norma nacional comparada critica muy alta como comparacion regimen portugues consolidado de entidades formadoras, acreditacion, modalidades, evaluacion y reconocimiento de formacion continua docente. comparar entidades, acreditacion, calidad y reconocimiento de formacion a distancia y mooc al preparar una reforma extremena. no es trasplantable: deben verificarse competencias, carrera, negociacion y organizacion administrativa espanolas. formacion y desarrollo profesional competencia digital e ia redes y apoyo territorial reconocimiento y microcredenciales evaluacion e impacto gobernanza y planificacion modelos nacionales comparables modelo nacional"
+      },
+      {
+        "id": "C-02",
+        "titulo": "Oide — servicio de apoyo profesional al profesorado y al liderazgo escolar",
+        "grupo": "modelos_nacionales",
+        "nivelAutoridad": "modelo_nacional",
+        "emisor": "Irlanda · Department of Education and Youth",
+        "fecha": "Servicio vigente",
+        "naturaleza": "Modelo organizativo nacional",
+        "temas": [
+          "1",
+          "3",
+          "4",
+          "5",
+          "6",
+          "9"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Muy alta",
+        "resumen": "Servicio público integrado de inducción, liderazgo, inclusión, currículo, tecnología y aprendizaje profesional docente.",
+        "relevanciaSife": "Estudiar la integración coherente de apoyos y áreas profesionales dentro de un único servicio público.",
+        "cautela": "La escala y centralización irlandesas difieren; deben compararse funciones y experiencia de usuario, no organigramas.",
+        "fuenteOficial": "https://oide.ie/",
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "c-02 oide — servicio de apoyo profesional al profesorado y al liderazgo escolar irlanda · department of education and youth servicio vigente modelo organizativo nacional alta muy alta servicio publico integrado de induccion, liderazgo, inclusion, curriculo, tecnologia y aprendizaje profesional docente. estudiar la integracion coherente de apoyos y areas profesionales dentro de un unico servicio publico. la escala y centralizacion irlandesas difieren; deben compararse funciones y experiencia de usuario, no organigramas. formacion y desarrollo profesional competencia digital e ia redes y apoyo territorial inclusion y equidad liderazgo, induccion y bienestar gobernanza y planificacion modelos nacionales comparables modelo nacional"
+      },
+      {
+        "id": "C-03",
+        "titulo": "National Model of Professional Learning, Education Scotland, y estándares profesionales GTCS",
+        "grupo": "modelos_nacionales",
+        "nivelAutoridad": "modelo_nacional",
+        "emisor": "Escocia",
+        "fecha": "Modelo vigente",
+        "naturaleza": "Modelo público y regulación profesional",
+        "temas": [
+          "1",
+          "2",
+          "4",
+          "6",
+          "7",
+          "8"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta",
+        "resumen": "Modelo nacional de aprendizaje profesional reflexivo y colaborativo, conectado con estándares, evidencias e impacto.",
+        "relevanciaSife": "Combinar aprendizaje reflexivo, colaboración, estándares profesionales y registro de evidencias e impacto.",
+        "cautela": "El GTCS ejerce funciones regulatorias sin equivalente directo en la administración extremeña.",
+        "fuenteOficial": "https://education.gov.scot/professional-learning/",
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "c-03 national model of professional learning, education scotland, y estandares profesionales gtcs escocia modelo vigente modelo publico y regulacion profesional alta alta modelo nacional de aprendizaje profesional reflexivo y colaborativo, conectado con estandares, evidencias e impacto. combinar aprendizaje reflexivo, colaboracion, estandares profesionales y registro de evidencias e impacto. el gtcs ejerce funciones regulatorias sin equivalente directo en la administracion extremena. formacion y desarrollo profesional innovacion y transferencia redes y apoyo territorial liderazgo, induccion y bienestar reconocimiento y microcredenciales evaluacion e impacto modelos nacionales comparables modelo nacional"
+      },
+      {
+        "id": "C-04",
+        "titulo": "National Professional Learning Entitlement",
+        "grupo": "modelos_nacionales",
+        "nivelAutoridad": "modelo_nacional",
+        "emisor": "Gales · Welsh Government",
+        "fecha": "2022–vigente",
+        "naturaleza": "Garantía nacional de aprendizaje profesional",
+        "temas": [
+          "1",
+          "4",
+          "5",
+          "6",
+          "8",
+          "9"
+        ],
+        "prioridad": "Alta",
+        "transferibilidad": "Alta",
+        "resumen": "Garantía pública de acceso a aprendizaje profesional coherente, de calidad, con tiempo, liderazgo y orientación al impacto.",
+        "relevanciaSife": "Valorar una garantía explícita de acceso, tiempo, coherencia, calidad, liderazgo e impacto.",
+        "cautela": "Una garantía efectiva exige financiación, organización del tiempo y responsabilidades verificables.",
+        "fuenteOficial": "https://www.gov.wales/professional-learning-schools",
+        "archivosServidos": [],
+        "verificadoEn": "2026-09-04",
+        "textoIndexable": "c-04 national professional learning entitlement gales · welsh government 2022–vigente garantia nacional de aprendizaje profesional alta alta garantia publica de acceso a aprendizaje profesional coherente, de calidad, con tiempo, liderazgo y orientacion al impacto. valorar una garantia explicita de acceso, tiempo, coherencia, calidad, liderazgo e impacto. una garantia efectiva exige financiacion, organizacion del tiempo y responsabilidades verificables. formacion y desarrollo profesional redes y apoyo territorial inclusion y equidad liderazgo, induccion y bienestar evaluacion e impacto gobernanza y planificacion modelos nacionales comparables modelo nacional"
       }
     ]
   },
@@ -3561,6 +4780,364 @@
       "verificadoEn": "2026-09-04",
       "sha256": "349bdc120696f6a1beefef6ad52f0fab7296c4ea716935f8c0cf18f5876a36c0",
       "archivoServido": "/repository/SIFE%20normativa/07_informe_maestro/03_Organizacion_SIFE_y_CPR/EXT_2026_Decreto_112_correccion_31-07.pdf"
+    }
+  ],
+  "librarySourceManifest": [
+    {
+      "id": "N-01",
+      "fuenteOficial": "https://data.europa.eu/eli/reg/2024/1689",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Texto oficial en español",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/01_normas_estandares/UE_2024_Reglamento_IA_2024-1689_ES.pdf",
+          "sha256": "29e6d41f41cc0efea6b5f8a1418a7ef31e9422f9eba0c297ddc7e7ed7f357b1c"
+        }
+      ]
+    },
+    {
+      "id": "N-02",
+      "fuenteOficial": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "N-03",
+      "fuenteOficial": "https://www.unesco.org/en/legal-affairs/recommendation-concerning-status-teachers",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Texto OIT–UNESCO",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/01_normas_estandares/OIT_UNESCO_1966_Recomendacion_situacion_docentes_EN.pdf",
+          "sha256": "2af9fcc941891eca1bf9f56fba676b99c219f7943972f361301470e9e12b0f03"
+        }
+      ]
+    },
+    {
+      "id": "N-04",
+      "fuenteOficial": "https://unesdoc.unesco.org/ark:/48223/pf0000381137",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "N-05",
+      "fuenteOficial": "https://www.unesco.org/en/legal-affairs/recommendation-open-educational-resources-oer",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "P-01",
+      "fuenteOficial": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=OJ:C_202603720",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "P-02",
+      "fuenteOficial": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=OJ:C_202401115",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Diario Oficial de la UE",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2024_C-2024-1115_Educacion_digital_ES.pdf",
+          "sha256": "8d57f32a3fbd0ff99266bcee8a0be015c64bf277d1da3675bc12212c284d3814"
+        }
+      ]
+    },
+    {
+      "id": "P-03",
+      "fuenteOficial": "https://eur-lex.europa.eu/eli/C/2024/1030/oj/spa",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Diario Oficial de la UE",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2024_C-2024-1030_Competencias_digitales_ES.pdf",
+          "sha256": "50e4f89666d90e5083a2a8a10618cd08cc91166b92e610070b04bea83423f3e8"
+        }
+      ]
+    },
+    {
+      "id": "P-04",
+      "fuenteOficial": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32022H0627(02)",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Diario Oficial de la UE",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2022_2022-C-243-02_Microcredenciales_ES.pdf",
+          "sha256": "fc88f9d53e18570b1ae46cd6b9d0f1d9c37f5a65298b89d1283319515db6f083"
+        }
+      ]
+    },
+    {
+      "id": "P-05",
+      "fuenteOficial": "https://eur-lex.europa.eu/eli/C/2024/3364/oj/spa",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Diario Oficial de la UE",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2024_C-2024-3364_Europa_movimiento_ES.pdf",
+          "sha256": "df03cf503aecdc42e6f5a345f57e3a3fde756609602b894225466d6ddb727de1"
+        }
+      ]
+    },
+    {
+      "id": "P-06",
+      "fuenteOficial": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32021H1214(01)",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Diario Oficial de la UE",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2021_2021-C-504-03_Aprendizaje_combinado_ES.pdf",
+          "sha256": "93a9ac6ff4f27303b41d8899a661e30cc45c13abe4dba8ffd513e0baa4626163"
+        }
+      ]
+    },
+    {
+      "id": "P-07",
+      "fuenteOficial": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32022H1209(01)",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Diario Oficial de la UE",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2022_2022-C-469-01_Exito_escolar_ES.pdf",
+          "sha256": "ad652945fbb3c1334920dc42e27872cec09fbac2fc58f27300b0571d69fa8386"
+        }
+      ]
+    },
+    {
+      "id": "P-08",
+      "fuenteOficial": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=OJ:C_202403642",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Diario Oficial de la UE",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/02_politica_ue/UE_2024_C-2024-3642_Evidencias_educacion_ES.pdf",
+          "sha256": "78ee0045944537ee2f16239cf7875af5eed6992c0a8d8a17e29d9d4a6e288d06"
+        }
+      ]
+    },
+    {
+      "id": "I-01",
+      "fuenteOficial": "https://www.unesco.org/sdg4education2030/en/articles/un-secretary-generals-high-level-panel-teaching-profession-puts-forward-recommendations-allow",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Informe de recomendaciones",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/03_informes_globales/ONU_OIT_UNESCO_2024_Panel_Alto_Nivel_Profesion_Docente_EN.pdf",
+          "sha256": "6cf711c5f181f46c845eed9797f029162d7f10ae9f792fa9cf7e054cd344fdbd"
+        }
+      ]
+    },
+    {
+      "id": "I-02",
+      "fuenteOficial": "https://unesdoc.unesco.org/ark:/48223/pf0000387400",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "I-03",
+      "fuenteOficial": "https://unesdoc.unesco.org/ark:/48223/pf0000370966",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "I-04",
+      "fuenteOficial": "https://unesdoc.unesco.org/ark:/48223/pf0000391104",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "I-05",
+      "fuenteOficial": "https://www.unesco.org/en/articles/unesco-ict-competency-framework-teachers",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "I-06",
+      "fuenteOficial": "https://unesdoc.unesco.org/ark:/48223/pf0000386693",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "I-07",
+      "fuenteOficial": "https://doi.org/10.1787/0cceeddf-en",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Informe OCDE",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/03_informes_globales/OCDE_2025_Teacher_Professional_Learning_EN.pdf",
+          "sha256": "6d54e15649d255c69e101b68a11457d112c45981403ba917c80967ea007a7084"
+        }
+      ]
+    },
+    {
+      "id": "I-08",
+      "fuenteOficial": "https://doi.org/10.1787/90df6235-en",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Informe TALIS 2024",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/03_informes_globales/OCDE_2025_TALIS_2024_EN.pdf",
+          "sha256": "35a07cf5a46f926717707d6f71f7f1ac4144536195bcf05e1ed7d729d3999024"
+        }
+      ]
+    },
+    {
+      "id": "I-09",
+      "fuenteOficial": "https://doi.org/10.1787/f5b82176-en",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Informe OCDE",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/03_informes_globales/OCDE_2025_Unlocking_High_Quality_Teaching_EN.pdf",
+          "sha256": "d2d6e0ad568f55ba3c32e9c5839a241904decca3f52f23760afd0f3bfcb5cb7e"
+        }
+      ]
+    },
+    {
+      "id": "I-10",
+      "fuenteOficial": "https://doi.org/10.1787/8297a24a-en",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Documento OCDE",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/03_informes_globales/OCDE_2025_Teaching_Compass_EN.pdf",
+          "sha256": "090d534c08eeefe48d34ed012b26fab998f6e3dfd2e5067815dbf8c44190976e"
+        }
+      ]
+    },
+    {
+      "id": "T-01",
+      "fuenteOficial": "https://education.ec.europa.eu/focus-topics/digital-education/actions/plan",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "T-02",
+      "fuenteOficial": "https://education.ec.europa.eu/whats-new/news/new-guidelines-to-help-teachers-lead-europes-digital-education",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Uso ético de IA y datos",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/CE_2026_Guia_IA_datos_docentes_ES.pdf",
+          "sha256": "ab6a2720ed22ba046ced5130ea826d43ff88b22621c85fba22f29368c0e074df"
+        },
+        {
+          "label": "Desinformación y alfabetización digital",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/CE_2026_Guia_desinformacion_ES.pdf",
+          "sha256": "9e9af59453049b206f1d576c00e245a01cc220934409b36191bfd5851402ea72"
+        },
+        {
+          "label": "Enseñanza de la informática",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/CE_2026_Guia_informatica_ES.pdf",
+          "sha256": "79cf8b13e39c8fbe981886b2f1abd74e8c14fb93cce1782eed6bd7dfabac6a1d"
+        },
+        {
+          "label": "Contenidos educativos digitales",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/CE_2026_Guia_contenidos_digitales_ES.pdf",
+          "sha256": "831584fc204df9d549bb72dfbd5fc698f2e522e5a25a82a81507be96e803d35e"
+        }
+      ]
+    },
+    {
+      "id": "T-03",
+      "fuenteOficial": "https://joint-research-centre.ec.europa.eu/scientific-activities/key-competences-lifelong-learning/digcompedu_en",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Marco DigCompEdu",
+          "archivoServido": "/repository/SIFE%20normativa/07_informe_maestro/08_Comparacion_y_marcos_internacionales/UE_2017_DigCompEdu_JRC107466.pdf",
+          "sha256": "253e583b818c4913ee8b6d84a8ef2f21faeb347576777f1659d4d16e01186d2b"
+        }
+      ]
+    },
+    {
+      "id": "T-04",
+      "fuenteOficial": "https://joint-research-centre.ec.europa.eu/scientific-activities/key-competences-lifelong-learning/digcompedu/digcompedu-self-reflection-tools_en",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "T-05",
+      "fuenteOficial": "https://www.european-agency.org/resources/publications/TPL4I-policy-self-review-tool",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Policy Self-Review Tool",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/EA_2022_TPL4I_Policy_Self_Review_Tool_EN.pdf",
+          "sha256": "0b2aaa70aaf91ec90721babdddcde382ad14d49b6eb37b877e8a95c1edfbf020"
+        },
+        {
+          "label": "Profile for Inclusive TPL",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/EA_2022_Profile_Inclusive_TPL_EN.pdf",
+          "sha256": "318744f865f7bef7dd23dead8f8c54315974c2314eea62bde399ef1227b52e66"
+        }
+      ]
+    },
+    {
+      "id": "T-06",
+      "fuenteOficial": "https://op.europa.eu/en/publication-detail/-/publication/78fbf243-974f-11eb-b85c-01aa75ed71a1/language-es",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Informe Eurydice en español",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/UE_2021_Teachers_in_Europe_ES.pdf",
+          "sha256": "380bd6c09021a5285a7b665101b7aeca1a3c7378c505b0180033b1c048c222ba"
+        }
+      ]
+    },
+    {
+      "id": "T-07",
+      "fuenteOficial": "https://op.europa.eu/webpub/eac/education-and-training-monitor/en/index.html",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "T-08",
+      "fuenteOficial": "https://education.ec.europa.eu/education-levels/school-education/erasmus-teacher-academies",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "T-09",
+      "fuenteOficial": "https://www.coe.int/en/web/education/digital-citizenship-education",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "T-10",
+      "fuenteOficial": "https://www.worldbank.org/en/topic/teachers/brief/technology-for-teaching",
+      "verificadoEn": "2026-09-04",
+      "files": [
+        {
+          "label": "Navigation Guide",
+          "archivoServido": "/repository/SIFE%20normativa/08_biblioteca_internacional/04_herramientas_redes/BM_T4T_Navigation_Guide_EN.pdf",
+          "sha256": "3ac597acf632d6a61f7dc98d6e2447b6de945d9f98cae05ba9695e7cd9284f52"
+        }
+      ]
+    },
+    {
+      "id": "C-01",
+      "fuenteOficial": "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2014-73250880",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "C-02",
+      "fuenteOficial": "https://oide.ie/",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "C-03",
+      "fuenteOficial": "https://education.gov.scot/professional-learning/",
+      "verificadoEn": "2026-09-04",
+      "files": []
+    },
+    {
+      "id": "C-04",
+      "fuenteOficial": "https://www.gov.wales/professional-learning-schools",
+      "verificadoEn": "2026-09-04",
+      "files": []
     }
   ]
 }
