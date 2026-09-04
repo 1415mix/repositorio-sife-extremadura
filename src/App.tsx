@@ -31,10 +31,10 @@ import type { DocumentRecord, LibraryResource, ProcedureRecord, RelationRecord, 
 const sections: Array<{ id: SectionId; label: string; shortLabel: string; icon: typeof Home; showInMenu?: boolean }> = [
   { id: "inicio", label: "Inicio", shortLabel: "Inicio", icon: Home },
   { id: "repositorio", label: "Repositorio", shortLabel: "Repositorio", icon: BookOpen },
-  { id: "biblioteca", label: "Biblioteca", shortLabel: "Biblioteca", icon: Library },
   { id: "asistente", label: "GPT SIFE Normativa", shortLabel: "GPT SIFE", icon: Sparkles, showInMenu: false },
   { id: "procedimientos", label: "Procedimientos", shortLabel: "Trámites", icon: FileCheck2 },
   { id: "relaciones", label: "Relaciones", shortLabel: "Relaciones", icon: Network },
+  { id: "biblioteca", label: "Biblioteca", shortLabel: "Biblioteca", icon: Library },
   { id: "cautelas", label: "Vigencia y cautelas", shortLabel: "Vigencia", icon: ShieldCheck }
 ];
 

@@ -353,7 +353,7 @@ button.access-card { width: 100%; text-align: left; cursor: pointer; }
   .topbar-status span { display: none; }
   .sidebar { display: none; }
   .page-region { margin-left: 0; padding-bottom: 76px; }
-  .mobile-nav { position: fixed; z-index: 120; right: 0; bottom: 0; left: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); align-items: stretch; min-height: 72px; background: rgba(255,255,255,.98); border-top: 1px solid var(--line); box-shadow: var(--shadow); backdrop-filter: blur(12px); }
+  .mobile-nav { position: fixed; z-index: 120; right: 0; bottom: 0; left: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); align-items: stretch; min-height: 72px; background: rgba(255,255,255,.98); border-top: 1px solid var(--line); box-shadow: var(--shadow); backdrop-filter: blur(12px); }
   .mobile-nav a { position: relative; min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; padding: 9px 3px; color: #475569; font-size: .59rem; font-weight: 700; line-height: 1.1; text-align: center; text-decoration: none; }
   .mobile-nav .nav-label { display: none; }
   .mobile-nav .mobile-label { display: block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

@@ -40,6 +40,26 @@ test("GPT SIFE no aparece en el menú pero conserva su ruta directa", async ({ p
   await expect(page.getByRole("heading", { name: "GPT SIFE Normativa" })).toBeVisible();
 });
 
+test("Biblioteca aparece entre Relaciones y Vigencia en el menú", async ({ page }) => {
+  await page.goto("/#inicio");
+  await expect(page.locator(".sidebar > a .nav-label")).toHaveText([
+    "Inicio",
+    "Repositorio",
+    "Procedimientos",
+    "Relaciones",
+    "Biblioteca",
+    "Vigencia y cautelas"
+  ]);
+  await expect(page.locator(".mobile-nav > a .mobile-label")).toHaveText([
+    "Inicio",
+    "Repositorio",
+    "Trámites",
+    "Relaciones",
+    "Biblioteca",
+    "Vigencia"
+  ]);
+});
+
 test("Biblioteca: búsqueda temática, selector y ficha con documento", async ({ page }) => {
   await page.goto("/#biblioteca");
   await expect(page.getByRole("heading", { name: "Biblioteca internacional" })).toBeVisible();
